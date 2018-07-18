@@ -1,13 +1,40 @@
-// const express = require('express');
-// const app = express();
+var express = require('express');
+var app = express();
+app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'pug');
+//app.use(express.static('public'));
+app.use('/static', express.static(__dirname + '/public'));
 
-// app.get('/hello', (req, res) => {
-//   res.send('Hello World!');
-// });
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!'});
+});
 
-// app.listen(3000, function () {
-//   console.log('Example app listening on port 3000!');
-// });
+/*
+app.get('/', function(req, res){
+  res.type('text/plain');
+  res.send('Club Cherdak'); 
+}); 
+*/
+app.get('/about', function(req, res){
+  res.type('text/plain');
+  res.send('About club Cherdak'); 
+});
+
+// пользовательская страница 404
+app.use(function(req, res){
+  res.type('text/plain');
+  res.status(404);
+  res.send('404 — Не найдено'); });
+// пользовательская страница 500 
+app.use(function(err, req, res, next){
+  console.error(err.stack);
+  res.type('text/plain');
+  res.status(500);
+  res.send('500 — Ошибка сервера'); 
+}); 
+app.listen(app.get('port'), function(){
+    console.log( 'Express запущен на http://localhost:' +      app.get('port') + '; нажмите Ctrl+C для завершения.' ); 
+})
 
 // var http = require('http');
 // http.createServer(function(req,res){    
@@ -26,11 +53,13 @@
 //              res.end('Не найдено');
 //              break;    } }).listen(3000);
 //              console.log('Сервер запущен на localhost:3000; нажмите Ctrl+C для завершения....'); 
-
+/*
 var http = require('http'), fs = require('fs');
 function serveStaticFile(res, path, contentType, responseCode) {
-  if(!responseCode) responseCode = 200;
-    fs.readFile(__dirname + path, function(err,data) {
+  if(!responseCode) {
+    responseCode = 200;
+  }
+  fs.readFile(__dirname + path, function(err,data) {
     if(err) {
       res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('500 - Internal Error');
@@ -41,6 +70,7 @@ function serveStaticFile(res, path, contentType, responseCode) {
     }
   });
 }
+
 http.createServer(function(req,res){    
   // Приводим URL к единому виду путем удаления
   // строки запроса, необязательной косой черты
@@ -62,4 +92,4 @@ http.createServer(function(req,res){
   } 
 }).listen(3000);
 console.log(' Сервер запущен на localhost:3000; нажмите Ctrl+C для завершения....');
-
+*/
