@@ -1,0 +1,153 @@
+.page {
+    width: 100%;
+    margin: auto;
+}
+
+.homepage-header {
+    min-height: 176px;
+    background: #00000023;
+    display: block;
+    position: relative;
+}
+
+.header-menu-container{
+    margin: auto;
+    max-width: 1312px;
+    height: 176px;
+    background: #00000023;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    height: 120px;
+    float: left;
+}
+
+.header-menu {
+    width: 100%;
+    max-width: 839px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+}
+
+div.menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu {
+    width: 650px;
+}
+
+.footer-menu-container {
+    margin: auto;
+    max-width: 1312px;
+    height: 176px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 100px;
+    float: left;
+}
+
+.homepage-footer {
+    min-height: 300px;
+    background: #2c0b0b;
+    display: block;
+    position: relative;
+}
+
+.medialogo {
+    height: 60px;
+}
+
+.media-menu {
+    width: 350px;
+    display: flex;
+    justify-content: center
+}
+
+div.media-menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.white-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    max-width: 650px;
+} 
+
+div.footer-menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.teacher-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    max-width: 1312px;
+}
+
+.teacher-block {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+}
+
+.about-container {
+    margin: auto;
+    max-width: 1312px;
+}
+
+.events-container {
+    margin: auto;
+    max-width: 1312px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.last-news {
+    flex-grow: 2;
+}
+.last-news-img {
+    max-width: 856px;
+}
+.other-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.news {
+    flex-flow: column;
+}
+.news-size {
+    max-width: 400px;
+}

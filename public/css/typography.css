@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Anodyne';
+    src: url(../font/Anodyne.otf)
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: url(../font/Mariupol-Regular.otf);    
+}
+@font-face {
+    font-family: 'MariupolMedium';
+    src: url(../font/Mariupol-Medium.otf);
+}
+
+@font-face {
+    font-family: 'MariupolBold';
+    src: url(../font/Mariupol-Bold.otf);
+}
+
+
+@font-face {
+    font-family: 'AnodyneCombined';
+    src: url(../font/AhmetAltun-FestivoLettersNo.14.otf);
+}

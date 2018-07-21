@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html
+  head
+    link(rel="stylesheet", href="/static/css/reset.css")
+    link(rel="stylesheet", href="/static/css/grid.css")
+    link(rel="stylesheet", href="/static/css/style.css")
+    title Танцевальный клуб Чердак Красноярск | школа танцев, обучение танцам в Красноярске
+  body
+    .page
+      block headermenu
+        .homepage-header
+          .header-menu-container
+            a(href="/"): img.header-logo(src="/static/img/logo.png", alt="logo")
+            .menu
+              ul
+                li: a(href="/events") События
+                li: a(href="/dance") Направления
+                li: a(href="/schedule") Расписание
+                li: a(href="/teacher") Команда
+                li: a(href="/arenda") Аренда
+                li: a(href="/about") О клубе
+      block content      
+      block footer
+        .homepage-footer
+          .footer-menu-container
+            a(href="/"): img.footer-logo(src="/static/img/logo-footer.png", alt="logo-footer")
+            p.white-text ПРИСОЕДИНЯЙТЕСЬ К НАМ
+            .media-menu
+              ul
+                li: a(href="https://vk.com/tk_cherdak"): img.medialogo(src="/static/img/vk.png", alt="vk-logo")
+                li: a(href="https://www.instagram.com/clubcherdak/"): img.medialogo(src="/static/img/insta.png", alt="instagram-logo")
+                li: a(href="https://www.facebook.com/clubcherdak/"): img.medialogo(src="/static/img/fb.png", alt="fb-logo")
+                li: a(href="https://www.youtube.com/user/clubcherdak"): img.medialogo(src="/static/img/youtube.png", alt="youtube-logo")
+            div
+              p.white-text clubcherdak@mail.ru
+              p.white-text +7 391 271 22 77
+              p.white-text г.Красноярск
+              p.white-text ул. Авиаторов, 23а
+          .footer-menu
+            ul
+              li: a(href="/events") События
+              li: a(href="/dance") Направления
+              li: a(href="/schedule") Расписание
+              li: a(href="/teacher") Команда
+              li: a(href="/arenda") Аренда
+              li: a(href="/about") О клубе
+                
