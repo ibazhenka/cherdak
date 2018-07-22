@@ -151,3 +151,17 @@ div.footer-menu ul {
 .news-size {
     max-width: 400px;
 }
+.dance-container {
+    margin: auto;
+    max-width: 1312px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.dance {
+    flex-flow: column
+}
+.dance-size {
+    max-width: 430px
+}
