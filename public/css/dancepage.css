@@ -1,0 +1,36 @@
+.dance-container {
+    float: left;
+    width: 100%;
+    background: red;
+    /* position: relative; */
+}
+
+.dance {
+    width: 50%;
+    height: 30%;
+    display: inline-block;
+    vertical-align: baseline
+}
+@media screen and (min-width: 340px) {
+    .dance {
+      width: 33.333333%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .dance {
+      width: 25%
+    }
+}
+@media screen and (min-width: 840px) {
+    .dance {
+      width: 20%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .dance {
+      width: 16.6666%;
+    }
+
+.dance-size {
+    width: 100%;
+}

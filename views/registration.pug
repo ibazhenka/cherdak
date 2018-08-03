@@ -1,0 +1,24 @@
+extends layout.pug 
+
+mixin addDirection(arr) 
+  each item in arr
+    li= item
+//- body
+//-     .registration-container Sample Text
+//-     .registration-popup
+//-         .registration-popup-content Text in Popup
+
+
+
+
+block content
+  div(style="margin: auto; max-width: 1312px;")
+    form(action="", method="")
+      input(type="checkbox", name="Выберите направление")
+      input(type="text", name="Имя")
+      input(type="text", name="Фамилия")
+      input(type="tel", name="Телефон")
+      input(type="email", name="Электропочта")
+    div
+    - const directions= ['Аргентинское танго','Бачата','Сальса Касино','Сальса ЛА','Хастл','Руэда','Реггетон','Ирландские танцы']
+        +addDirection(directions) 

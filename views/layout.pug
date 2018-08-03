@@ -1,47 +1,70 @@
+-let today= new Date()
+
 <!DOCTYPE html>
 html
   head
     link(rel="stylesheet", href="/static/css/reset.css")
     link(rel="stylesheet", href="/static/css/grid.css")
     link(rel="stylesheet", href="/static/css/style.css")
-    title Танцевальный клуб Чердак Красноярск | школа танцев, обучение танцам в Красноярске
-  body
-    .page
-      block headermenu
-        .homepage-header
-          .header-menu-container
-            a(href="/"): img.header-logo(src="/static/img/logo.png", alt="logo")
+    link(rel="stylesheet", href="/static/css/table.css")
+    block link-css
+      link(rel="stylesheet", href="/static/css/teacher.css")
+    block title 
+      title Танцевальный клуб Чердак Красноярск | школа танцев, обучение танцам в Красноярске
+  body.page
+
+    block header
+      .header
+        .header-container
+          .logo: a(href="/"): img.header-logo(src="/static/img/logo.png", alt="logo")
+          .menu._column
             .menu
-              ul
-                li: a(href="/events") События
-                li: a(href="/dance") Направления
-                li: a(href="/schedule") Расписание
-                li: a(href="/teacher") Команда
-                li: a(href="/arenda") Аренда
-                li: a(href="/about") О клубе
-      block content      
-      block footer
-        .homepage-footer
-          .footer-menu-container
-            a(href="/"): img.footer-logo(src="/static/img/logo-footer.png", alt="logo-footer")
-            p.white-text ПРИСОЕДИНЯЙТЕСЬ К НАМ
-            .media-menu
-              ul
-                li: a(href="https://vk.com/tk_cherdak"): img.medialogo(src="/static/img/vk.png", alt="vk-logo")
-                li: a(href="https://www.instagram.com/clubcherdak/"): img.medialogo(src="/static/img/insta.png", alt="instagram-logo")
-                li: a(href="https://www.facebook.com/clubcherdak/"): img.medialogo(src="/static/img/fb.png", alt="fb-logo")
-                li: a(href="https://www.youtube.com/user/clubcherdak"): img.medialogo(src="/static/img/youtube.png", alt="youtube-logo")
-            div
-              p.white-text clubcherdak@mail.ru
-              p.white-text +7 391 271 22 77
-              p.white-text г.Красноярск
-              p.white-text ул. Авиаторов, 23а
-          .footer-menu
-            ul
+              .department: a(href="about/#map" title="Открыть карту") Красноярск
+              .phone: a(href="tel: +7(391)2712277" title="Позвоните нам!") +7 391 271 22 77 
+              ul.menu.menu__socialnets
+                li: a(href="https://vk.com/tk_cherdak"): img.medialogo_min(src="/static/img/vk.png", alt="vk-logo", title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
+                li: a(href="https://www.instagram.com/clubcherdak/"): img.medialogo_min(src="/static/img/insta.png", alt="instagram-logo", title="@clubcherdak")
+                li: a(href="https://www.facebook.com/clubcherdak/"): img.medialogo_min(src="/static/img/fb.png", alt="fb-logo" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
+                li: a(href="https://www.youtube.com/user/clubcherdak"): img.medialogo_min(src="/static/img/youtube.png", alt="youtube-logo" title="Клуб Чердак")
+              a(href="/registration").button-registration Пробный урок
+            ul.menu
               li: a(href="/events") События
               li: a(href="/dance") Направления
               li: a(href="/schedule") Расписание
-              li: a(href="/teacher") Команда
+              li: a(href="/price") Цены
+              li: a(href="/teacher") Преподаватели
               li: a(href="/arenda") Аренда
               li: a(href="/about") О клубе
+      
+      block content
+
+      block footer
+        .footer
+          .footer-container
+            ._column
+              a(href="/"): img.footer-logo(src="/static/img/logo-footer.png", alt="logo-footer")
+              .copyright © Чердак, 2011-#{today.getFullYear()}
+            .menu._column
+              .menu._row
+                ._column 
+                  p.white-text #{"Присоединяйтесь к нам в социальных сетях:".toUpperCase()}
+                  ul.menu.menu__socialnets.menu__socialnets-footer
+                    li: a(href="https://vk.com/tk_cherdak"): img.medialogo(src="/static/img/vk.png", alt="vk-logo", title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
+                    li: a(href="https://www.instagram.com/clubcherdak/"): img.medialogo(src="/static/img/insta.png", alt="instagram-logo", title="@clubcherdak")
+                    li: a(href="https://www.facebook.com/clubcherdak/"): img.medialogo(src="/static/img/fb.png", alt="fb-logo" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
+                    li: a(href="https://www.youtube.com/user/clubcherdak"): img.medialogo(src="/static/img/youtube.png", alt="youtube-logo" title="Клуб Чердак")
+                .contacts.white-text
+                  p clubcherdak@mail.ru
+                  p: a(href="tel: +7(391)2712277") +7 391 271 22 77
+                  p г. Красноярск
+                  p ул. Авиаторов, 23а
+              .menu
+                ul.menu
+                  li: a(href="/events") События
+                  li: a(href="/dance") Направления
+                  li: a(href="/schedule") Расписание
+                  li: a(href="/price") Цены
+                  li: a(href="/teacher") Преподаватели
+                  li: a(href="/arenda") Аренда
+                  li: a(href="/about") О клубе
                 

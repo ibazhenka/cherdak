@@ -1,0 +1,41 @@
+/* .cell {
+    width: 182px;
+} */
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid lightgrey;
+}
+/* Для тестовой страницы расписания */
+
+.calendar {
+    margin: auto;
+    max-width: 1312px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+}
+.time-column {
+    border: 1px solid lightgrey;
+    
+    display: flex;
+    flex-flow: column;
+}
+.time-cell {
+    border: 1px solid lightgrey;
+}
+.day-column {
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-flow: column;
+}
+.head-cell{
+    background-color: aliceblue;
+    font-size: 20px;
+    color: darkgray;
+}
+.cell{
+    border: 1px solid lightgrey;
+}

@@ -1,7 +1,7 @@
-import Shedule from './table/index.jsx'
+import TeachersPage from './teacher/index.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader'
 
-const App = hot(module)(Shedule)
+const App = hot(module)(TeachersPage)
 ReactDOM.render(<App />, document.getElementById('page'));

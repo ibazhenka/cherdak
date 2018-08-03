@@ -1,0 +1,15 @@
+.schedule-panel {
+    margin: auto;
+    max-width: 1312px;
+    border: solid 1px lightgrey;
+    padding: 10px;
+
+}
+.schedule-panel h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.panel-row {
+    display: flex;
+    justify-content: space-around;
+}

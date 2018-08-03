@@ -1,0 +1,84 @@
+/* .cell {
+    width: 182px;
+} */
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid lightgrey;
+}
+/* Для тестовой страницы расписания */
+
+.calendar {
+    margin: auto;
+    max-width: 1312px;
+    background-color: rgba(211, 211, 211, 0.418);
+
+}
+.time {
+    font-size: 9pt;
+}
+.time-level{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+.hustle {
+    border: solid 1px;
+    border-left-width: 6px;
+    border-left-color: yellow ;
+    background-color: white;
+}
+.casino {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: darkmagenta ;
+    background-color: white;
+}
+.bachata {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: pink;
+    background-color: white;
+}
+.reggeton {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: orange;
+    background-color: white;
+}
+.salsa {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: darkblue;
+    background-color: white;
+}
+.level {
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.irish {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: darkgreen;
+    background-color: white;
+}
+.tango {
+    border: solid lightgrey 1px;
+    border-left-width: 6px;
+    border-left-color: maroon;
+    background-color: white;
+}
+.party {
+    border: solid lightgrey 1px;
+    background-color: chartreuse
+
+}

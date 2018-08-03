@@ -8,7 +8,8 @@ app.set('view engine', 'pug');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
 const compiler = webpack(webpackConfig);
- 
+
+const {halls} = require('./data')
 app.use(require("webpack-dev-middleware")(compiler, {
     noInfo: true, publicPath: webpackConfig.output.publicPath
 }));
@@ -18,14 +19,16 @@ app.use(require("webpack-hot-middleware")(compiler));
 app.use('/static', express.static(`${__dirname}/public`));
 app.use('/static', express.static(`${__dirname}/dist`));
 
-const render = view => (req, res) => {res.render(view, {})}
+const render = (view, model) => (req, res) => {res.render(view, model)}
 app.get('/', render('index'));
 app.get('/about', render('about'));
-app.get('/arenda', render('arenda'));
+app.get('/arenda', render('arenda', halls));
 app.get('/dance', render('dance'));
+app.get('/price', render('price'));
 app.get('/events', render('events'));
 app.get('/schedule', render('schedule'));
 app.get('/teacher', render('teacher'));
+app.get('/registration', render('registration'));
 
 
 // пользовательская страница 404
@@ -36,10 +39,9 @@ app.use(function(req, res){
 // пользовательская страница 500 
 
 app.use(function(err, req, res, next){
-  console.error(err.stack);
   res.type('text/plain');
   res.status(500);
-  res.send('500 — Ошибка сервера'); 
+  res.send(err.message + "\n" + err.stack); 
 }); 
 
 app.listen(port, function(){
