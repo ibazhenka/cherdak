@@ -1,5 +1,6 @@
 
 module.exports = {
     halls: require('./halls'),
-    groups: require('./groups')
+    groups: require('./groups'),
+    teachers: require('./teachers')
 }

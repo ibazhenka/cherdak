@@ -12,7 +12,8 @@ const hotMiddlewareScript = 'webpack-hot-middleware/client?path=/__webpack_hmr&t
 module.exports = {
     mode: 'development',
     entry:{
-        schedule:  ['./assets/schedule/index.js', hotMiddlewareScript],
+        schedule: ['./assets/schedule/index.js', hotMiddlewareScript],
+        teacher: ['./assets/teacher/index.js', hotMiddlewareScript]
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

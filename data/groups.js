@@ -1,220 +1,242 @@
 
 const groups= [{
-    id:`irish`,
-    title: `Ирландские танцы`,
-    level: `Начинающие`,
+    id:'irish',
+    title: 'Ирландские танцы',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `17:00`, end: `18:00`, hall: `bighall`},
-        {day:`пт`, start: `17:00`, end: `18:00`, hall: `bighall`}
+        {day:'пн', start: '17:00', end: '18:00', hall: 'bighall'},
+        {day:'пт', start: '17:00', end: '18:00', hall: 'bighall'}
     ],
-    teachers: [`voronina`]
+    teachers: ['zholobova']
 },
 {
-    id:`irish`,
-    title: `Ирландские танцы`,
-    level: `Продолжающие`,
+    id:'irish',
+    title: 'Ирландские танцы',
+    levels: ['Продолжающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `18:00`, end: `19:00`, hall: `bighall`},
-        {day:`пт`, start: `18:00`, end: `19:00`, hall: `bighall`},
-        {day:`ср`, start: `20:00`, end: `21:00`, hall: `bighall`}
+        {day:'пн', start: '18:00', end: '19:00', hall: 'bighall'},
+        {day:'пт', start: '18:00', end: '19:00', hall: 'bighall'},
+        {day:'ср', start: '20:00', end: '21:00', hall: 'bighall'}
     ],
-    teachers: [`voronina`]
+    teachers: ['zholobova']
 },
 {
-    id:`irish`,
-    title: `Ирландские танцы`,
-    level: `Про`,
+    id:'irish',
+    title: 'Ирландские танцы',
+    levels: ['Про'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`ср`, start: `18:00`, end: `19:00`, hall: `bighall`},
-        {day:`ср`, start: `18:00`, end: `19:00`, hall: `bighall`},
-        {day:`сб`, start: `15:00`, end: `16:00`, hall: `bighall`}
+        {day:'ср', start: '17:00', end: '18:00', hall: 'bighall'},
+        {day:'ср', start: '18:00', end: '19:00', hall: 'bighall'},
+        {day:'сб', start: '15:00', end: '16:00', hall: 'bighall'}
     ],
-    teachers: [`voronina`]
+    teachers: ['voronina']
 },
 {
-    id:`irish`,
-    title: `Ирландские танцы`,
-    level: `Практика`,
+    id:'irish',
+    title: 'Ирландские танцы',
+    levels: ['Начинающие', 'Про','Продолжающие'],
+    type: 'Практика',
     times: [ 
-        {day:`сб`, start: `16:00`, end: `18:00`, hall: `bighall`},
+        {day:'сб', start: '16:00', end: '18:00', hall: 'bighall'},
     ],
     teachers: []
 },
 {
-    id:`hustle`,
-    title: `Хастл`,
-    level: `Начинающие`,
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `19:00`, end: `20:00`, hall: `bighall`},
-        {day:`чт`, start: `19:00`, end: `20:00`, hall: `bighall`}
+        {day:'пн', start: '19:00', end: '20:00', hall: 'bighall'},
+        {day:'чт', start: '19:00', end: '20:00', hall: 'bighall'}
     ],
-    teachers: [`severin`, `bolotina`]
+    teachers: ['severin', 'bolotina']
 },
 {
-    id:`hustle`,
-    title: `Хастл`,
-    level: `Продолжающие`,
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Продолжающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `20:00`, end: `21:00`, hall: `bighall`},
-        {day:`пт`, start: `20:00`, end: `21:00`, hall: `bighall`}
+        {day:'пн', start: '20:00', end: '21:00', hall: 'bighall'},
+        {day:'чт', start: '20:00', end: '21:00', hall: 'bighall'}
     ],
-    teachers: [`severin`, `bolotina`]
+    teachers: ['severin', 'bolotina']
 },
 {
-    id:`hustle`,
-    title: `Хастл`,
-    level: `Про`,
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Про'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `21:00`, end: `21:30`, hall: `bighall`},
-        {day:`пт`, start: `21:00`, end: `21:30`, hall: `bighall`}
+        {day:'пн', start: '21:00', end: '21:30', hall: 'bighall'},
+        {day:'чт', start: '21:00', end: '21:30', hall: 'bighall'}
     ],
-    teachers: [`severin`, `bolotina`]
+    teachers: ['mikhaylov', 'bolotina']
 },
 {
-    id:`hustle`,
-    title: `Хастл`,
-    level: `Техника`,
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Начинающие', 'Про', 'Продолжающие'],
+    type: 'Техника',
     times: [ 
-        {day:`вс`, start: `17:00`, end: `18:30`, hall: `loft`}
+        {day:'вс', start: '17:00', end: '18:30', hall: 'loft'}
     ],
-    teachers: [`severin`, `bolotina`]
+    teachers: ['mikhaylov', 'bolotina']
 },
 {
-    id:`hustle`,
-    title: `Хастл`,
-    level: `Практика`,
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Начинающие', 'Про', 'Продолжающие'],
+    type: 'Практика',
     times: [ 
-        {day:`вс`, start: `18:30`, end: `20:00`, hall: `loft`}
+        {day:'вс', start: '18:30', end: '20:00', hall: 'loft'}
     ],
     teachers: []
 },
 {
-    id:`bachata`,
-    title: `Бачата`,
-    level: `Начинающие`,
+    id:'bachata',
+    title: 'Бачата',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `19:00`, end: `20:00`, hall: `loft`},
-        {day:`ср`, start: `19:00`, end: `20:00`, hall: `loft`}
+        {day:'пн', start: '19:00', end: '20:00', hall: 'loft'},
+        {day:'ср', start: '19:00', end: '20:00', hall: 'loft'}
     ],
-    teachers: [`zolotarev`, `stanishevskaya`]
+    teachers: ['zolotarev', 'stanishevskaya']
 },
 {
-    id:`bachata`,
-    title: `Бачата`,
-    level: `Продолжающие`,
+    id:'bachata',
+    title: 'Бачата',
+    levels: ['Продолжающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `20:00`, end: `21:00`, hall: `loft`},
-        {day:`ср`, start: `20:00`, end: `21:00`, hall: `loft`}
+        {day:'пн', start: '20:00', end: '21:00', hall: 'loft'},
+        {day:'ср', start: '20:00', end: '21:00', hall: 'loft'}
     ],
-    teachers: [`zolotarev`, `stanishevskaya`]
+    teachers: ['zolotarev', 'stanishevskaya']
 },
 {
-    id:`salsa`,
-    title: `Руэда`,
-    level: `Продолжающие`,
+    id:'salsa',
+    title: 'Руэда',
+    levels: ['Продолжающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пн`, start: `21:00`, end: `22:00`, hall: `loft`},
-        {day:`ср`, start: `21:00`, end: `22:00`, hall: `loft`}
+        {day:'пн', start: '21:00', end: '22:00', hall: 'loft'},
+        {day:'ср', start: '21:00', end: '22:00', hall: 'loft'}
     ],
-    teachers: [`zolotarev`, `kokina`]
+    teachers: ['zolotarev', 'kokina']
 },
 {
-    id:`reggeton`,
-    title: `Реггетон`,
-    level: `Начинающие`,
+    id:'reggeton',
+    title: 'Реггетон',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `19:00`, end: `21:00`, hall: `loft`},
-        {day:`чт`, start: `19:00`, end: `21:00`, hall: `loft`},
-        {day:`сб`, start: `12:00`, end: `13:00`, hall: `bighall`}
+        {day:'вт', start: '19:00', end: '21:00', hall: 'loft'},
+        {day:'чт', start: '19:00', end: '21:00', hall: 'loft'},
+        {day:'сб', start: '12:00', end: '13:00', hall: 'bighall'}
     ],
-    teachers: [`kokina`]
+    teachers: ['nepomnyaschaya']
 },
 {
-    id:`salsa`,
-    title: `Сальса ЛА`,
-    level: `Начинающие`,
+    id:'salsa',
+    title: 'Сальса ЛА',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `20:00`, end: `21:00`, hall: `loft`},
-        {day:`чт`, start: `20:00`, end: `21:00`, hall: `loft`}
+        {day:'вт', start: '20:00', end: '21:00', hall: 'loft'},
+        {day:'чт', start: '20:00', end: '21:00', hall: 'loft'}
     ],
-    teachers: [`kaurakov`, `kokina`]
+    teachers: ['kaurakov', 'nepomnyaschaya']
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Начинающие`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `19:00`, end: `20:00`, hall: `bighall`},
-        {day:`пт`, start: `19:00`, end: `20:00`, hall: `bighall`}
+        {day:'вт', start: '19:00', end: '20:00', hall: 'bighall'},
+        {day:'пт', start: '19:00', end: '20:00', hall: 'bighall'}
     ],
-    teachers: [`bogdan`,`lacheva`]
+    teachers: ['bogdan','lacheva']
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Продолжающие`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Продолжающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `20:00`, end: `21:00`, hall: `bighall`},
-        {day:`пт`, start: `20:00`, end: `21:00`, hall: `bighall`}
+        {day:'вт', start: '20:00', end: '21:00', hall: 'bighall'},
+        {day:'пт', start: '20:00', end: '21:00', hall: 'bighall'}
     ],
-    teachers: [`bogdan`,`perykina`]
+    teachers: ['bogdan','perykina']
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Про`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Про'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`вт`, start: `21:00`, end: `22:30`, hall: `bighall`},
-        {day:`пт`, start: `21:00`, end: `22:30`, hall: `bighall`}
+        {day:'вт', start: '21:00', end: '22:30', hall: 'bighall'},
+        {day:'пт', start: '21:00', end: '22:30', hall: 'bighall'}
     ],
-    teachers: [`bogdan`,`perykina`]
+    teachers: ['bogdan','perykina']
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Техника`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Начинающие', 'Про', 'Продолжающие'],
+    type: 'Техника',
     times: [ 
-        {day:`вс`, start: `18:00`, end: `19:30`, hall: `bighall`}
+        {day:'вс', start: '18:00', end: '19:30', hall: 'bighall'}
     ],
-    teachers: [``]
+    teachers: []
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Практика`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Начинающие', 'Про', 'Продолжающие'],
+    type: 'Практика',
     times: [ 
-        {day:`вс`, start: `19:30`, end: `21:00`, hall: `bighall`}
+        {day:'вс', start: '19:30', end: '21:00', hall: 'bighall'}
     ],
-    teachers: [``]
+    teachers: []
 },
 {
-    id:`tango`,
-    title: `Аргентинское танго`,
-    level: `Начинающие-2`,
+    id:'tango',
+    title: 'Аргентинское танго',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`сб`, start: `10:00`, end: `11:00`, hall: `bighall`},
-        {day:`сб`, start: `11:00`, end: `12:00`, hall: `bighall`}
+        {day:'сб', start: '10:00', end: '11:00', hall: 'bighall'},
+        {day:'сб', start: '11:00', end: '12:00', hall: 'bighall'}
     ],
-    teachers: [``]
+    teachers: ['bogdan','lacheva']
 },
 {
-    id:`salsa`,
-    title: `Cальса Касино`,
-    level: `Начинающие`,
+    id:'salsa',
+    title: 'Сальса Касино',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
     times: [ 
-        {day:`пт`, start: `20:00`, end: `21:00`, hall: `loft`},
-        {day:`пт`, start: `21:00`, end: `22:00`, hall: `loft`}
+        {day:'пт', start: '20:00', end: '21:00', hall: 'loft'},
+        {day:'пт', start: '21:00', end: '22:00', hall: 'loft'}
     ],
-    teachers: [`zolotarev`, `kokina`]
+    teachers: ['zolotarev', 'nepomnyaschaya']
 },
 {
-    id:`salsa`,
-    title: `Cальса Касино`,
-    level: `Женский стиль`,
+    id:'salsa',
+    title: 'Сальса Касино',
+    levels: ['Начинающие', 'Про', 'Продолжающие'],
+    type: 'Женский стиль',
     times: [ 
-        {day:`сб`, start: `13:00`, end: `14:00`, hall: `bighall`}
+        {day:'сб', start: '13:00', end: '14:00', hall: 'bighall'}
     ],
-    teachers: [`kokina`]
+    teachers: ['kokina']
 },
 ]
 module.exports = groups

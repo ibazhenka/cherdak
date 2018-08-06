@@ -2,8 +2,10 @@ import React from 'react'
 import './style.css'
 
 const Checkbox = (props) => <div >
-    <input type="checkbox" checked={props.active} />
-    {props.title}
+    <label>
+        <input type="checkbox" onChange={props.changeFilter} />
+        {props.title} 
+    </label>
     </div>
 export default Checkbox
 

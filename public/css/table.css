@@ -6,7 +6,7 @@ table {
     border-collapse: collapse;
 }
 table, th, td {
-    border: 1px solid lightgrey;
+    border: 1px solid darkgrey;
 }
 /* Для тестовой страницы расписания */
 
@@ -27,31 +27,33 @@ table, th, td {
 }
 
 .hustle {
-    border: solid 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: yellow ;
     background-color: white;
 }
-.casino {
-    border: solid lightgrey 1px;
-    border-left-width: 6px;
-    border-left-color: darkmagenta ;
-    background-color: white;
-}
 .bachata {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: pink;
     background-color: white;
 }
 .reggeton {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: orange;
     background-color: white;
 }
 .salsa {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: darkblue;
     background-color: white;
@@ -66,19 +68,25 @@ h3 {
 }
 
 .irish {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: darkgreen;
     background-color: white;
 }
 .tango {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgba(255, 255, 255, 0) 1px;
     border-left-width: 6px;
     border-left-color: maroon;
     background-color: white;
 }
 .party {
-    border: solid lightgrey 1px;
+    width: 182px;
+    height: 100px;
+    border: solid rgb(236, 236, 236) 1px;
     background-color: chartreuse
 
 }

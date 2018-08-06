@@ -1,68 +1,62 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './table.css'
 import days, {timeIntervals} from "./const.js"
-import {groups} from '../../../../data'
+import {groups, teachers} from '../../../../data'
+import getLesson, {getTeacherFullName} from './data-builder.js' 
+import WeekDay from './weekday.jsx'
 
-const hallsNumber = {'bighall':1, 'loft':2}
-function getLessons() {
-    const list = { }
-    for (const group of groups) {
-        // if (group.level == 'Начинающие'|| group.level == 'Практика' && group.title == 'Сальса ЛА'|| group.title == 'Хастл' ) { 
-            for (const time of group.times){
-                const key= time.day + ' ' + time.start + ',' + hallsNumber[time.hall]
-                const forkTimes= time.start + ' - ' + time.end
-                list[key] = [group.id, group.title, forkTimes, group.level, group.teachers[0]]
-            }
-        // }
+function checkLevels(levels){
+    if (levels.length==3){
+        return 'Все уровни'
     }
-    return list
+    return levels
 }
-const getKey = (day, time, hall) => {
-    return day.short.toLowerCase() + " "+ time + "," + hall
-}
-const TableLessons = (props) => {
-    const key = getKey(props.day, props.time, 2)
-    const lesson = props.lessons[key]
-    if (!lesson) {
-        return <td>-</td>
+
+const LessonCard = (props) => {
+    if (!props.lesson) {
+        return <div></div>
     }
-    const [className, name, time, level, teacher1] = lesson
-    return <td className={className}>
-        <h3>{name}</h3>
+    return <div className={props.lesson.className}>
+        <h3>{props.lesson.name}</h3>
+        <h5>{props.lesson.type}</h5>
         <div className="time-level">
-            <p className="time">{time}</p>
-            <p className="level">{level}</p>
+            <p className="time">{props.lesson.time}</p>
+            <p className="level">{checkLevels(props.lesson.levels)}</p>
         </div>
-        <Teacher  firstname={teacher1.firstname} surname={teacher1.surname}/>
-        {/* <Teacher  firstname={teacher2.firstname} surname={teacher2.surname}/> */}
-    </td>
-}
-
-const TableRow = (props) =><tr>
-    <td>{props.time}</td>
-    {days.map(day=> <TableLessons day={day} time={props.time} lessons={props.lessons}/>)}
-</tr>
-
-const Teacher = (props) => <div>{props.firstname} {props.surname}</div>
-
-const TableHeader = (props) => <td className="cell" title={props.full}>{props.short}</td>
-
-//    'пн 17:00,1':['irish','Ирландские танцы', '17:00 - 18:00', 'Начинающие', voronina, '']
-const Table = (props) => {
-    const lessons = getLessons() 
-    return <div className="center">
-        <table>
-            <thead>
-                <tr>
-                    <td></td>
-                    {days.map(el=> <TableHeader full={el.full} short={el.short}/>)}
-                </tr>
-            </thead>
-            <tbody>
-                {timeIntervals.map(t => <TableRow lessons={lessons} time = {t} />)}
-            </tbody>
-        </table>
+         {props.lesson.teacher.map(t => <div>{getTeacherFullName(t)}</div>)}
     </div>
 }
 
-export default Table
+
+const TimeRow = (props) =>  <tr>
+    <td><b>{props.time}</b></td>
+    {days.map(day=> <td valign="top">
+        <LessonCard lesson={getLesson(day, props.time, 'bighall', props.filter)}/>
+        <LessonCard lesson={getLesson(day, props.time, 'loft', props.filter)}/>
+    </td>)}
+</tr>
+
+class Schedule extends Component {
+    constructor(props) {
+        super(props)
+    }
+    
+    render() {
+        const filters = this.props.filters; //{title: ['Бачата']}
+        return <div className="center">
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        {days.map(el=> <WeekDay full={el.full} short={el.short}/>)}
+                    </tr>
+                </thead>
+                <tbody>
+                    {timeIntervals.map(t => <TimeRow time = {t} filter={filters} />)}
+                </tbody>
+            </table>
+        </div>
+    }
+}
+
+export default Schedule

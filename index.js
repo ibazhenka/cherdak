@@ -22,8 +22,9 @@ app.use('/static', express.static(`${__dirname}/dist`));
 const render = (view, model) => (req, res) => {res.render(view, model)}
 app.get('/', render('index'));
 app.get('/about', render('about'));
-app.get('/arenda', render('arenda', halls));
+app.get('/about/arenda', render('arenda', halls));
 app.get('/dance', render('dance'));
+app.get('/dance/salsa', render('dance_salsa'));
 app.get('/price', render('price'));
 app.get('/events', render('events'));
 app.get('/schedule', render('schedule'));

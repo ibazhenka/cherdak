@@ -1,4 +1,4 @@
-import TeachersPage from './teacher/index.jsx'
+import TeachersPage from './index.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader'
