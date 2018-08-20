@@ -1,0 +1,90 @@
+.Modal {
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    border: solid 3px #831b52;
+    background-color: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 2vw;
+  }
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+  }
+
+.form-input{
+    border: solid 1px lightgrey;
+    background-color: white;
+    color:lightgray;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+}
+.close-button{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #831b52;
+    color: white;
+    background-color: #841b52;
+    font-size: 30px;
+}
+
+.form-button{
+    padding: 10px;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:white;
+    background-color: #841b52;
+}
+
+.form-button:hover {
+background-color: coral;
+color: #000;
+text-decoration: none;
+}
+.form-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    height: 450px;
+    width: 430px;
+}
+
+.accept-text{
+    width: 200px;
+    height: 50px;
+    font-size: 10px;
+}
+
+.registration-panel{
+    margin: auto;
+    border: solid 1px lightgrey;
+    padding: 10px;
+}
+.registration-panel h4{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.registration-panel-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 408px;
+}

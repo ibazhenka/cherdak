@@ -19,7 +19,6 @@ class ScheduleTable extends React.Component{
         }
     }
     changeTitleFilter(value, field, e) {
-        console.log(value)
         if (e.target.checked) {
             const newValues = this.state[field]
             newValues.push(value)
@@ -37,21 +36,20 @@ class ScheduleTable extends React.Component{
             type: this.state.type,
             levels: this.state.levels,
         }
-        console.log(filters)
         return <div>
             <H1 align="center">Расписание</H1>
-            <Panel title="направление">
+            <Panel title="направление" page="schedule">
             {
                 danceTitle.map(dance=><Checkbox title={dance} changeFilter={(e)=>this.changeTitleFilter(dance, 'title', e)}/>)
             }
             </Panel>
 
-            <Panel title="вид занятия">
+            <Panel title="вид занятия" page="schedule">
             {
                 typeOfLessons.map(type=><Checkbox title={type} changeFilter={(e)=>this.changeTitleFilter(type, 'type', e)}/>)
             }
             </Panel>
-            <Panel title="урОвень">
+            <Panel title="уровень" page="schedule">
             {
                 levelOfLesson.map( lvl=><Checkbox title={lvl} changeFilter={(e)=>this.changeTitleFilter(lvl, 'levels', e)}/>)
             }

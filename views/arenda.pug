@@ -3,14 +3,6 @@ extends layout.pug
 block title 
   title Аренда залов для танцев в Красноярске | Танцевальный клуб Чердак Красноярск
 
-//- mixin createLesson(arr)
-//-   div(class=`${arr[0]}`)
-//-     h3= arr[1]
-//-     .time-level
-//-       p= arr[2]
-//-       p.level= arr[3]
-
-
 mixin createHallSlider(hall)
   //-console.log(hall)
   != JSON.stringify(hall)
@@ -44,7 +36,8 @@ mixin createHall(hall)
 
 
 block content 
-
+  #page
+  script(src="/static/arenda.js")
   .calendar
     ul
       +createHallSlider(bighall)
@@ -55,26 +48,6 @@ block content
       +createHall(wardrobes)
       +createHall(wc)
       +createHall(bathroom)
-    
-    
-    //- table
-    //-   thead
-    //-     tr
-    //-       th
-    //-       for day in days
-    //-         th=day   
-    //-   tbody
-    //-     for time in times
-    //-       tr
-    //-         td= time
-    //-         for day in days
-    //-           td
-    //-             - var c1 = schedule[`${day} ${time},1`]
-    //-             - var c2 = schedule[`${day} ${time},2`]
-    //-             if c1
-    //-               +createLesson(c1)
-    //-             if c2
-    //-               +createLesson(c2)
 
     
         

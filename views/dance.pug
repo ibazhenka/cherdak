@@ -1,29 +1,10 @@
 extends layout.pug
 block link-css
-  link(rel="stylesheet", href="dancepage.css")
+  link(rel="stylesheet", href="/static/css/dancepage.css")
 block title 
   title Танцы | Танцевальный клуб Чердак Красноярск
 block content 
-  .dance-container 
-    .dance
-      img.dance-size(src="/static/img/tango2.jpg", alt="tango")
-      h2 Аргентинское танго
-    .dance
-      img.dance-size(src="/static/img/bachata.jpg", alt="bachata")
-      h2 Бачата
-    .dance
-      img.dance-size(src="/static/img/salsa.jpg", alt="salsa")
-      h2 Сальса
-    .dance
-      img.dance-size(src="/static/img/hustle.jpg", alt="hustle")
-      h2 Хастл
-    .dance
-      img.dance-size(src="/static/img/reggetone.jpg", alt="reggetone")
-      h2  Реггетон
-    .dance
-      img.dance-size(src="/static/img/irish.jpg", alt="irish")
-      h2 Ирландские танцы
-    .dance
-      img.dance-size(src="/static/img/poledance.jpg", alt="poledance")
-      h2 Полдэнс
- 
+
+  #page
+  script(src="/static/dance.js")
+

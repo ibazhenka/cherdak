@@ -1,24 +1,62 @@
 @font-face {
-    font-family: 'Anodyne';
-    src: url(../font/Anodyne.otf)
+    font-family: 'MADE_Evo';
+    src: url(../font/made_evo.otf)
 }
 
-@font-face {
-    font-family: 'Mariupol';
-    src: url(../font/Mariupol-Regular.otf);    
-}
-@font-face {
-    font-family: 'MariupolMedium';
-    src: url(../font/Mariupol-Medium.otf);
-}
-
-@font-face {
-    font-family: 'MariupolBold';
-    src: url(../font/Mariupol-Bold.otf);
+._typography-name-item-menu {
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
 }
 
+._typography-name-item-menu:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 5px solid #af3977;
+    padding-bottom: 8px;
+}
+._typography-phone-number {
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 14px;
+    color:   black;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+}
 
-@font-face {
-    font-family: 'AnodyneCombined';
-    src: url(../font/AhmetAltun-FestivoLettersNo.14.otf);
+._typography-adress {
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 12px;
+    color:   black;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+._typography-department {
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 16px;
+    color:   black;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+._typography-button{
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+}
+
+._typography-title-dance {
+    font-family: 'MADE_Evo', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+.white-text {
+    color: white;
 }

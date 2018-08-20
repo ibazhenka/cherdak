@@ -1,36 +1,188 @@
 .dance-container {
-    float: left;
     width: 100%;
-    background: red;
-    /* position: relative; */
+    position: relative;
 }
 
-.dance {
-    width: 50%;
-    height: 30%;
+.dance-card {
+    /* width: 50%;
+    height: 30%; */
     display: inline-block;
-    vertical-align: baseline
+    position: relative;
+    box-sizing: border-box;
+    /* vertical-align: baseline; */
 }
 @media screen and (min-width: 340px) {
-    .dance {
-      width: 33.333333%;
+    .dance-card{
+      width: 100%;
     }
 }
 @media screen and (min-width: 640px) {
-    .dance {
-      width: 25%
+    .dance-card{
+      width: 50%
     }
 }
 @media screen and (min-width: 840px) {
-    .dance {
-      width: 20%;
+    .dance-card{
+      width: 33.3333333%;
     }
 }
 @media screen and (min-width: 1024px) {
-    .dance {
-      width: 16.6666%;
+    .dance-card{
+      width: 25%;
     }
 }
-.dance-size {
-    width: 100%;
+.dance-card_title{
+    position: absolute;
+    right: 3%;
+    padding: 10px 20px;
+    background: lightseagreen;
+    bottom: 20px;
+}
+
+.title-section-dance-page {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.even-section-dance-page {
+    box-sizing: border-box;
+    /* height: 100vh; */
+    padding: 2vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}
+.odd-section-dance-page{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title-dance-page_text {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2vw;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.title-dance-page_text_dark {
+    text-transform: uppercase;
+    color:black;
+    font-size: 2vw;
+}
+.salsa-title-img {
+    background-image: url(../img/salsa-title-page.jpg);
+}
+.tango-title-img {
+    background-image: url(../img/tango-title-page.jpg);
+}
+.button-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+}
+.button-menu_location-salsa-page {
+    width: 60vw;
+    margin-top: 60vh;
+}
+.button-menu_location-tango-page {
+    width: 60vw;
+    margin-top: 60vh;
+}
+.button-salsa-page{
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.400);
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.button-tango-page{
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.400);
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.button-salsa-page:hover{
+    background-color: rgba(0, 0, 255, 0.247);
+    color: white;
+    text-decoration: none;
+}
+.button-tango-page:hover{
+    background-color: rgba(0, 0, 255, 0.247);
+    color: white;
+    text-decoration: none;
+}
+.salsa-about-img {
+    background-image: url(../img/salsa3.jpg);
+}
+.tango-about-img {
+    background-image: url(../img/salsa3.jpg);
+}
+.salsa-openLesson-img{
+    background-image: url(../img/salsa-openLesson-img.jpg);
+}
+.tango-openLesson-img{
+    background-image: url(../img/salsa-openLesson-img.jpg);
+}
+.size-img {
+    width: 40vw;
+}
+.even-section__text {
+    color: black;
+    font-size: 2vh;
+    text-align: left;
+    width: 40vw;
+}
+.odd-section__text {
+    color: black;
+    background-color: #fff;
+    font-size: 2vh;
+    text-align: left;
+    width: 40vw;
+    padding: 2vw;
+}
+._alin-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+}
+.img-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2vw;
+}
+._row_nowrap{
+    display: flex;
+    flex-flow: row nowrap ;
+}
+
+.text {
+    padding: 10px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
 }

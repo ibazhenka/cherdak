@@ -24,7 +24,7 @@ app.get('/', render('index'));
 app.get('/about', render('about'));
 app.get('/about/arenda', render('arenda', halls));
 app.get('/dance', render('dance'));
-app.get('/dance/salsa', render('dance_salsa'));
+app.get('/dance/:danceName', (req, res) => {res.render('dance-page',  {danceName: req.params.danceName})});
 app.get('/price', render('price'));
 app.get('/events', render('events'));
 app.get('/schedule', render('schedule'));

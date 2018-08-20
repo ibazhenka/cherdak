@@ -4,7 +4,7 @@ const teachersData= {
         id:'bogdan',
         forename: 'Павел',
         surname: 'Богдан',
-        direction: ['Аргентинское танго'],
+        directionsID: ['tango'],
         biography: '',
         img: 'bogdan.jpg'
     },
@@ -12,7 +12,7 @@ const teachersData= {
         id:'bolotina',
         forename: 'Анна',
         surname: 'Болотина',
-        direction: ['Хастл'],
+        directionsID: ['hustle'],
         biography: '',
         img: 'bolotina.jpg'
     },
@@ -20,7 +20,7 @@ const teachersData= {
         id:'burdakova',
         forename: 'Кристина',
         surname: 'Бурдакова',
-        direction: ['Полдэнс'],
+        directionsID: ['poledance'],
         biography: '',
         img: 'burdakova.jpg'
     },
@@ -28,7 +28,7 @@ const teachersData= {
         id:'voronina',
         forename: 'Анна',
         surname: 'Воронина',
-        direction: ['Ирландские танцы'],
+        directionsID: ['irish'],
         biography: '',
         img: 'voronina.jpg'
     },
@@ -36,7 +36,7 @@ const teachersData= {
         id:'evdokimova',
         forename: 'Мария',
         surname: 'Евдокимова',
-        direction: ['Полдэнс'],
+        directionsID: ['poledance'],
         biography: '',
         img: 'evdokimova.jpg'
     },
@@ -44,7 +44,7 @@ const teachersData= {
         id:'zholobova',
         forename: 'Алена',
         surname: 'Жолобова',
-        direction: ['Ирландские танцы'],
+        directionsID: ['irish'],
         biography: '',
         img: 'zholobova.jpg'
     },
@@ -52,7 +52,7 @@ const teachersData= {
         id:'zolotarev',
         forename: 'Константин',
         surname: 'Золотарев',
-        direction: ['Сальса','Бачата'],
+        directionsID: ['salsa','bachata'],
         biography: '',
         img: 'zolotarev.jpg'
     },
@@ -60,7 +60,7 @@ const teachersData= {
         id:'kaurakov',
         forename: 'Павел',
         surname: 'Каураков',
-        direction: ['Сальса','Бачата'],
+        directionsID: ['salsa'],
         biography: '',
         img: 'kaurakov.jpg'
     },
@@ -68,7 +68,7 @@ const teachersData= {
         id:'lacheva',
         forename: 'Ольга',
         surname: 'Лачева',
-        direction: ['Аргентинское танго'],
+        directionsID: ['tango'],
         biography: '',
         img: 'lacheva.jpg'
     },
@@ -76,7 +76,7 @@ const teachersData= {
         id:'mikhaylov',
         forename: 'Сергей',
         surname: 'Михайлов',
-        direction: ['Хастл'],
+        directionsID: ['hustle'],
         biography: '',
         img: 'mikhaylov.jpg'
     },
@@ -84,15 +84,14 @@ const teachersData= {
         id:'nepomnyaschaya',
         forename: 'Юлия',
         surname: 'Непомнящая',
-        direction: ['Сальса','Бачата'],
-        biography: '',
+        directionsID: ['salsa','bachata', 'reggeton'],
         img: 'nepomnyaschaya.jpg'
     },
     peryakina: {
         id:'peryakina',
         forename: 'Марина',
         surname: 'Перякина',
-        direction: ['Аргентинское танго'],
+        directionsID: ['tango'],
         biography: '',
         img: 'peryakina.jpg'
     },
@@ -100,7 +99,7 @@ const teachersData= {
         id:'severin',
         forename: 'Алексей',
         surname: 'Северин',
-        direction: ['Хастл'],
+        directionsID: ['hustle'],
         biography: '',
         img: 'severin.jpg'
     },
@@ -108,7 +107,7 @@ const teachersData= {
         id:'stanishevskaya',
         forename: 'Ольга',
         surname: 'Станишевская',
-        direction: ['Сальса','Бачата'],
+        directionsID: ['salsa','bachata'],
         biography: '',
         img: 'stanishevskaya.jpg'
     },
@@ -116,7 +115,7 @@ const teachersData= {
         id:'kokina',
         forename: 'Мила',
         surname: 'Кокина',
-        direction: ['Сальса','Бачата'],
+        directionsID: ['salsa','bachata'],
         biography: '',
         img: 'kokina.jpg'
     }

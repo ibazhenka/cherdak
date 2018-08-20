@@ -154,6 +154,17 @@ const groups= [{
     teachers: ['kaurakov', 'nepomnyaschaya']
 },
 {
+id:'salsa',
+title: 'Сальса ЛА',
+levels: ['Продолжающие'],
+type: 'Регулярное занятие',
+times: [ 
+    {day:'вт', start: '21:00', end: '22:00', hall: 'loft'},
+    {day:'чт', start: '21:00', end: '22:00', hall: 'loft'}
+],
+teachers: ['kaurakov', 'nepomnyaschaya']
+},
+{
     id:'tango',
     title: 'Аргентинское танго',
     levels: ['Начинающие'],

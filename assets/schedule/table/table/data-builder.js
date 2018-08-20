@@ -1,6 +1,7 @@
 
-import {groups} from '../../../../data'
-import {teachers} from '../../../../data'
+import {groups, directions} from '../../../../data'
+import {teachers, team} from '../../../../data'
+
 
 function getTeacherFullName(idTeacher) {
     for (const teacher of Object.values(teachers)) {
@@ -11,6 +12,17 @@ function getTeacherFullName(idTeacher) {
     return ''
 }
 
+function getTeacherDirections(directionsID) {
+    let arr=[]
+    for (const dir of directionsID)
+        for (const direction of Object.values(directions)){
+            if(direction.id == dir) {
+                arr.push(direction.title)
+            }
+            continue
+    }
+    return arr.join(' ')
+}
 
 function okField(group, filter, field) {
     if (filter[field]==undefined) {
@@ -98,4 +110,4 @@ function getLesson(day, timeStart, hall, filter){
 
 
 export default getLesson 
-export {getTeacherFullName}
+export {getTeacherFullName, getTeacherDirections}

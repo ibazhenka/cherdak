@@ -39,3 +39,41 @@ table, th, td {
 .cell{
     border: 1px solid lightgrey;
 }
+/*Вариант адаптива - не подходит - схлапывается строками*/
+table td {
+    text-align: left;
+    border: 1px solid #a0a0a0;
+}
+
+@media screen and (max-width: 1024px){
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border: 0;
+        border-bottom: 1px dotted #a0a0a0;
+        width: 100%;
+    }
+}
+
+table tr {
+    border: 1px solid #a0a0a0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #a0a0a0;
+    }
+}
+@media screen and (max-width: 1024px){
+table thead {
+    display: none;
+   }
+}
+
+table td:before {
+    content: attr(data-label);
+}

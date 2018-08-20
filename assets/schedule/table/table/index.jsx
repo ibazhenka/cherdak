@@ -23,14 +23,14 @@ const LessonCard = (props) => {
             <p className="time">{props.lesson.time}</p>
             <p className="level">{checkLevels(props.lesson.levels)}</p>
         </div>
-         {props.lesson.teacher.map(t => <div>{getTeacherFullName(t)}</div>)}
+         {props.lesson.teacher.map(t => <div key={t}>{getTeacherFullName(t)}</div>)}
     </div>
 }
 
 
 const TimeRow = (props) =>  <tr>
     <td><b>{props.time}</b></td>
-    {days.map(day=> <td valign="top">
+    {days.map(day=> <td key={day.short}>
         <LessonCard lesson={getLesson(day, props.time, 'bighall', props.filter)}/>
         <LessonCard lesson={getLesson(day, props.time, 'loft', props.filter)}/>
     </td>)}
@@ -48,11 +48,11 @@ class Schedule extends Component {
                 <thead>
                     <tr>
                         <td></td>
-                        {days.map(el=> <WeekDay full={el.full} short={el.short}/>)}
+                        {days.map(el=> <WeekDay key={el.full} full={el.full} short={el.short}/>)}
                     </tr>
                 </thead>
                 <tbody>
-                    {timeIntervals.map(t => <TimeRow time = {t} filter={filters} />)}
+                    {timeIntervals.map(t => <TimeRow key={t} time = {t} filter={filters} />)}
                 </tbody>
             </table>
         </div>

@@ -28,9 +28,9 @@ function getLevelOfLesson(){
     return Array.from(levelOfLesson)
 }
 
-const Panel = (props) => <div className="schedule-panel">
+const Panel = (props) => <div className={`${props.page}-panel`}>
     <h4>{props.title}</h4>
-    <div className="panel-row">{props.children}</div>
+    <div className={`${props.page}-panel-content`}>{props.children}</div>
 </div>
 
 export default Panel

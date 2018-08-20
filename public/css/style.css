@@ -1,3 +1,6 @@
+*a {
+    font-style: none;
+}
 .page {
     width: 100%;
     margin: auto;
@@ -6,16 +9,19 @@
 
 .header {
     min-height: 150px;
-    background: #c4c4c4;
+    border-bottom: black 3px solid;
+    background-color: white;
     display: block;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .header-container{
     margin: auto;
-    max-width: 1312px;
+    max-width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
     min-height: 150px;
     display: flex;
     flex-flow: row nowrap;
@@ -28,6 +34,16 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
+}
+.__sub-row-menu {
+    justify-content: space-between;
+    align-items: center;
+}
+.__main-menu{
+    width: 85%;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-top: -20px;
 }
 
 ._column{
@@ -51,10 +67,17 @@
 
 .button-registration {
     border-radius: 4px;
-    background-color: #9c1f00;
-    padding: 14px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000;
+}
+
+.button-registration:hover {
+    background-color: coral;
+    color: #000;
+    text-decoration: none;
 }
 
 .footer {
@@ -99,4 +122,30 @@
     flex-flow: column;
     justify-content: flex-start;
     font-size: 10pt;
+}
+
+.__header-contacts{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-width: 45%;
+    align-items: center;
+}
+.__sign-location {
+    height: 18pt;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.__sign-phone {
+    height: 18pt;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.__submenu {
+    width: 100%;
+    height: 35px;
+    justify-content: space-evenly;
+    background-color: #841b52;
+    border-top: #000 solid 3px;
+    align-items: center;
 }
