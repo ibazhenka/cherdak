@@ -12,7 +12,8 @@ const arendaData= {
       addServices:[
         'Проектор высокой мощности + экран.', 
         'Магнитная доска + маркеры.'],
-      cost: '700 &#8381;'
+      cost: '700 &#8381;',
+      imgs: ['bighall.jpg','bighall1.jpg']
     },
     loft: {
       id:'loft',
@@ -26,7 +27,8 @@ const arendaData= {
         'Проектор высокой мощности + экран.',
         'Магнитная доска + маркеры.',
         'Фортепиано.'],
-        cost: '500 &#8381;'
+        cost: '500 &#8381;',
+        imgs: ['loft.jpg', 'loft1.jpg', 'loft2.jpg', 'loft3.jpg', 'loft4.jpg', ],
     },
     poledancehall: {
       id:'poledancehall', 
@@ -40,7 +42,8 @@ const arendaData= {
       addServices:[
         'Пенополиуретановые коврики.',
         'Бумажные полотенца.'],
-      cost: '350 &#8381;'
+      cost: '350 &#8381;',
+      imgs: ['poledancehall.jpg'],
     },
     reception: {
       id: 'reception',
@@ -52,7 +55,8 @@ const arendaData= {
         'Кулер — чистая вода, одноразовые стаканчики.',
         'Магнитная доска + маркеры.'],
         addServices:'Стеклянные стаканы и глубокие тарелки, одноразовая посуда, микроволновка, чайник, френчпрессы, подносы, лед для коктейлей, холодильник.',
-        cost: ''
+        cost: '',
+        imgs: ['reception.jpg', 'reception1.jpg',],
     },
     wardrobes: {
       id:'wardrobes',
@@ -60,7 +64,8 @@ const arendaData= {
       description: 'Две удобные гардеробные.',
       equipments:'Вешалки для верхней одежды, квадратные ячейки для одежды и обуви, лавочки, зеркало.',
       addServices:'',
-      cost: ''
+      cost: '',
+      imgs:['wardrobes.jpg'],
     },
     wc: {
       id:'wc', 
@@ -68,7 +73,8 @@ const arendaData= {
       description: '2 туалета + отдельно раковина и зеркало.',
       equipments:'Бумажные полотенца, жидкое мыло, туалетная бумага, зеркала.',
       addServices:'',
-      cost: ''
+      cost: '',
+      imgs: ['wc.jpg', 'wc1.jpg'],
     },
     bathroom: {
       id:'bathroom', 
@@ -76,7 +82,8 @@ const arendaData= {
       description: 'Душ для одного человека.',
       equipments:'Кафель, душевая кабина, крючки для одежды.',
       addServices:'',
-      cost: ''
+      cost: '',
+      imgs: ['bathroom.jpg'],
     }
 }
 module.exports = arendaData

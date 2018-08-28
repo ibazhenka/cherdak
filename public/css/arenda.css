@@ -1,0 +1,90 @@
+.hall-container{
+     display: flex;
+     flex-flow: column;
+     margin: auto;
+     width: 100%;
+     align-content: center;
+ }
+.hall-description{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+ }
+.hall-additionally {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.description{
+    width: 50%
+}
+.additionally{
+    width: 50%
+}
+.title-section-arenda-page {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.arenda-title-img {
+    background-image: url(../img/arenda-title.jpg);
+}
+.title-arenda-page_text {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2vw;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding: 2vw;
+}
+.odd-section__text {
+    color: black;
+    background-color: #fff;
+    font-size: 2vh;
+    text-align: left;
+    width: 60vw;
+    padding: 2vw;
+}
+._align-row {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+._align-column {
+    display: flex;
+    flex-flow: column;
+}
+
+.title-arenda-page_text_dark {
+    text-transform: uppercase;
+    color:black;
+    font-size: 1.3vw;
+    padding: 1vw;
+    padding-left:0; 
+}
+.title_center{
+    margin: auto;
+}
+
+.even-section-dance-page {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}

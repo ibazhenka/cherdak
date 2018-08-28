@@ -3,9 +3,11 @@ import {groups, teachers} from '../../data'
 import getLesson, {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js' 
 
 export const TeacherCard = (props) => <div className="teacher-block">
-    <img src={`/static/img/${props.img}`} alt={`${props.id}`}/>
-    <p>{getTeacherFullName(props.id)}</p>
-    <p>{getTeacherDirections(props.direction)}</p>
+    <a href={`/teacher/${props.id}`}>
+        <img src={`/static/img/${props.img}`} alt={`${props.id}`}/>
+        <p>{getTeacherFullName(props.id)}</p>
+        <p>{getTeacherDirections(props.direction)}</p>
+    </a>
 </div>
 class TeachersPage extends React.Component{
     constructor(props){

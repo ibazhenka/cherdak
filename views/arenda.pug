@@ -1,58 +1,10 @@
 extends layout.pug
+block link-css
+  link(rel="stylesheet", href="/static/css/arenda.css")
 
 block title 
   title Аренда залов для танцев в Красноярске | Танцевальный клуб Чердак Красноярск
 
-mixin createHallSlider(hall)
-  //-console.log(hall)
-  != JSON.stringify(hall)
-  li
-    h2= hall.title
-    img(src=`./static/img/${hall.name}.jpg`, alt=`${hall.name}`)
-    div
-      h3 Оборудование
-      ul
-        each equipment in hall.equipments
-          li= '+' + equipment
-      h3 Дополнительные услуги
-      ul
-        each addService in hall.addServices
-          li= '+' + addService
-
-mixin createHall(hall)
-  div(style="max-width: 400px")
-    h2= title
-    img(src=`./static/img/${hall.name}.jpg`, alt=`${hall.name}`, style="max-width: 100%;")
-    div
-      h3 Оборудование
-      ul
-        each equipment in hall.equipments
-          li= '+' + equipment
-      h3 Дополнительные услуги
-      ul
-        each addService in hall.addServices
-          li= '+' + addService
-        
-
-
 block content 
   #page
   script(src="/static/arenda.js")
-  .calendar
-    ul
-      +createHallSlider(bighall)
-      +createHallSlider(loft)
-      +createHallSlider(poledancehall)
-    div(style="display: flex; flex-flow: row nowrap;")
-      +createHall(reception)
-      +createHall(wardrobes)
-      +createHall(wc)
-      +createHall(bathroom)
-
-    
-        
-
-  
-
-    
-    
