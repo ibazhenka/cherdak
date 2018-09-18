@@ -4,5 +4,7 @@ module.exports = {
     groups: require('./groups'),
     teachers: require('./teachers'),
     directions: require('./directions'),
-    team: require('./team')
+    team: require('./team'),
+    events: require('./events'),
+    price: require('./price'),
 }

@@ -1,0 +1,34 @@
+
+.about-container {
+    margin: auto;
+    max-width: 1312px;
+}
+
+.events-container {
+    margin: auto;
+    max-width: 1312px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.last-news {
+    flex-grow: 2;
+}
+.last-news-img {
+    max-width: 856px;
+}
+.other-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.news {
+    flex-flow: column;
+}
+.news-size {
+    max-width: 400px;
+}

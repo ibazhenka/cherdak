@@ -1,0 +1,47 @@
+.navigation{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: none;
+}
+.title-video {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: grayscale(70%)
+}
+.even-section-dance-page {
+    box-sizing: border-box;
+    /* height: 100vh; */
+    padding: 2vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}
+*a {
+    font-style: none;
+}
+.page {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.header {
+    min-height: 150px;
+    border-bottom: black 3px solid;
+    background-color: white;
+    display: block;
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+}

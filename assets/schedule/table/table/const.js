@@ -8,7 +8,7 @@ const qw = [
     {short:"Вс", full: "Воскресенье"}];
 
 const timeIntervals = [];
-for (var i = 10; i < 22; i++) {
+for (var i = 12; i < 22; i++) {
     timeIntervals.push(i+":00")
 }
 

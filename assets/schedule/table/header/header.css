@@ -1,7 +1,13 @@
+ @font-face {
+    font-family: 'EBGaramondSemiBold';
+    src: url(/static/font/EBGaramond-SemiBold.ttf);
+}
 h1 {
-    font-size: 28px;
+    font-family: EBGaramondSemiBold;
+    font-size: 3em;
+    text-align: center;
 }
 .center {
     margin: auto;
-    max-width: 1312px;
+    max-width: 1650px;
 }

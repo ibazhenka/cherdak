@@ -1,6 +1,149 @@
 @font-face {
     font-family: 'MADE_Evo';
-    src: url(../font/made_evo.otf)
+    src: url(/static/font/made_evo.otf)
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(/static/font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url(/static/font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(/static/font/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'CormorantGaramondBoldItalic';
+    src: url(/static/font/CormorantGaramond-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'CormorantGaramondBold';
+    src: url(/static/font/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: 'CormorantGaramondLight';
+    src: url(/static/font/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url(/static/font/EBGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondBold';
+    src: url(/static/font/EBGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondSemiBold';
+    src: url(/static/font/EBGaramond-SemiBold.ttf);
+}
+
+
+.typo-nav{
+    font-family: OpenSansSemiBold,  sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.typo-nav__contact{
+    font-family: OpenSansSemiBold,  sans-serif;
+    font-size: 1em;
+    color: white;
+}
+.typo-slogan{
+    font-family: EBGaramondBold,  sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.typo-autor{
+    font-family: CormorantGaramondBoldItalic, sans-serif;
+    font-size: 2em;
+    text-align: right;
+    color: white;
+}
+.down {
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+.typo-title{
+    font-family: EBGaramondSemiBold,  sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #1c1c1c;
+}
+.typo-subtitle{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: lowercase;
+}
+.typo-section-title{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}
+.typo-button{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}
+.typo-button:hover{
+    color: #1c1c1c;
+    text-decoration: none;
+}
+.typo-cost{
+    font-family: OpenSansRegular,  sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #1c1c1c;
+}
+.typo-cost-title{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: lowercase;
+}
+.ruble{
+    font-family: PT_SansRegular, sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    color: #1c1c1c;  
+}
+
+.lesson-card-title{
+    font-family: EBGaramondSemiBold,  sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1c1c1c;
+}
+.lesson-type{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #5d5d5d;
+    text-transform: lowercase;
+}
+
+.copyright{
+    font-family: OpenSansSemiBold,  sans-serif;
+    font-size: 1em;
+    color: white;
+}
+.footer-title{
+    font-family: OpenSansSemiBold,  sans-serif;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
 }
 
 ._typography-name-item-menu {

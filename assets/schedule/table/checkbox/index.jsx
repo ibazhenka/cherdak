@@ -4,7 +4,7 @@ import './style.css'
 const Checkbox = (props) => <div >
     <label>
         <input type="checkbox" onChange={props.changeFilter} />
-        {props.title} 
+        <span className="title">{props.title}</span>
     </label>
     </div>
 export default Checkbox

@@ -1,79 +1,83 @@
-/* .cell {
-    width: 182px;
-} */
-
-table {
+.schedule td {
     border-collapse: collapse;
+    border: 1px solid #72a9b066;
+    border-top: none;
+    border-left: none;
 }
-table, th, td {
-    border: 1px solid lightgrey;
+tr {
+    border-bottom: 2px solid #72a9b066;
 }
-/* Для тестовой страницы расписания */
-
-.calendar {
+.schedule-container{
+    display: flex;
+    flex-flow: column;
     margin: auto;
-    max-width: 1312px;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row;
+    padding: 2vw;
+    max-width: 1665px;
 }
-.time-column {
-    border: 1px solid lightgrey;
-    
+.panel-container{
     display: flex;
     flex-flow: column;
+    margin-top: 3vh;
 }
-.time-cell {
-    border: 1px solid lightgrey;
+.panel50{
+    min-width: 49%;
 }
-.day-column {
-    border: 1px solid lightgrey;
+.panel-in-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.table-container{
+    margin: auto;
+    margin-top: 10vh;
+}
+.cell-size {
+    width: 220px;
+    border-top: none;
+    border-left: none;
+}
+.lesson-card{
+    width: 220px;
+    height: 110px;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    background-color: white;
+    /* border-bottom: #72a9b0 0.5px solid;  */
 }
-.head-cell{
-    background-color: aliceblue;
-    font-size: 20px;
-    color: darkgray;
+.title-lesson-card{
+    width: 220px;
+    padding: 5px;
 }
-.cell{
-    border: 1px solid lightgrey;
+.time-level{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    width: 200px;
 }
-/*Вариант адаптива - не подходит - схлапывается строками*/
-table td {
-    text-align: left;
-    border: 1px solid #a0a0a0;
+.time-cell{
+    width: 60px;
+    border-left: none;
 }
-
-@media screen and (max-width: 1024px){
-    table td {
-        display: block;
-        text-align: right;
-        font-size: 13px;
-        border: 0;
-        border-bottom: 1px dotted #a0a0a0;
-        width: 100%;
-    }
+.hustle {
+    background-color: #ffffca;
 }
-
-table tr {
-    border: 1px solid #a0a0a0;
-    text-align: center;
+.bachata {
+    background-color: #f2d7ed;
 }
-
-@media screen and (max-width: 1024px){
-    table tr {
-        margin-bottom: 10px;
-        display: block;
-        border-bottom: 2px solid #a0a0a0;
-    }
+.reggeton {
+    background-color: #ffe7cc;
 }
-@media screen and (max-width: 1024px){
-table thead {
-    display: none;
-   }
+.salsa {
+    background-color: #c4daf3;
 }
-
-table td:before {
-    content: attr(data-label);
+.irish {
+    background-color: #d1f3d1;
+}
+.tango {
+    background-color: #ff8d8d;
+}
+.party {
+    background-color: white;
 }

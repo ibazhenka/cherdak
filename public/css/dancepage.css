@@ -9,7 +9,19 @@
     display: inline-block;
     position: relative;
     box-sizing: border-box;
+
     /* vertical-align: baseline; */
+}
+
+.dance-img {
+    filter: grayscale(70%);
+    transition: 1s;
+    border-bottom: #fff solid 3px;
+    border-left: #fff solid 3px;
+}
+.dance-img:hover{
+    filter: grayscale(0);
+    transition: 1s;
 }
 @media screen and (min-width: 340px) {
     .dance-card{

@@ -40,7 +40,7 @@ const groups= [{
     levels: ['Начинающие', 'Про','Продолжающие'],
     type: 'Практика',
     times: [ 
-        {day:'сб', start: '16:00', end: '18:00', hall: 'bighall'},
+        {day:'сб', start: '16:00', end: '18:00', hall: 'loft'},
     ],
     teachers: []
 },
@@ -50,8 +50,19 @@ const groups= [{
     levels: ['Начинающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пн', start: '19:00', end: '20:00', hall: 'bighall'},
-        {day:'чт', start: '19:00', end: '20:00', hall: 'bighall'}
+        {day:'пн', start: '20:00', end: '21:00', hall: 'loft'},
+        {day:'ср', start: '20:00', end: '21:00', hall: 'loft'}
+    ],
+    teachers: ['severin', 'bolotina']
+},
+{
+    id:'hustle',
+    title: 'Хастл',
+    levels: ['Начинающие'],
+    type: 'Регулярное занятие',
+    times: [ 
+        {day:'вт', start: '19:00', end: '20:00', hall: 'loft'},
+        {day:'пт', start: '19:00', end: '20:00', hall: 'loft'}
     ],
     teachers: ['severin', 'bolotina']
 },
@@ -61,19 +72,19 @@ const groups= [{
     levels: ['Продолжающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пн', start: '20:00', end: '21:00', hall: 'bighall'},
-        {day:'чт', start: '20:00', end: '21:00', hall: 'bighall'}
+        {day:'пн', start: '19:00', end: '20:00', hall: 'loft'},
+        {day:'чт', start: '19:00', end: '20:00', hall: 'loft'}
     ],
     teachers: ['severin', 'bolotina']
 },
 {
     id:'hustle',
     title: 'Хастл',
-    levels: ['Про'],
+    levels: ['Disco'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пн', start: '21:00', end: '21:30', hall: 'bighall'},
-        {day:'чт', start: '21:00', end: '21:30', hall: 'bighall'}
+        {day:'пн', start: '21:00', end: '21:30', hall: 'loft'},
+        {day:'пт', start: '21:00', end: '21:30', hall: 'loft'}
     ],
     teachers: ['mikhaylov', 'bolotina']
 },
@@ -103,8 +114,8 @@ const groups= [{
     levels: ['Начинающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пн', start: '19:00', end: '20:00', hall: 'loft'},
-        {day:'ср', start: '19:00', end: '20:00', hall: 'loft'}
+        {day:'ср', start: '19:00', end: '20:00', hall: 'loft'},
+        {day:'пт', start: '19:00', end: '20:00', hall: 'loft'}
     ],
     teachers: ['zolotarev', 'stanishevskaya']
 },
@@ -114,8 +125,19 @@ const groups= [{
     levels: ['Продолжающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пн', start: '20:00', end: '21:00', hall: 'loft'},
-        {day:'ср', start: '20:00', end: '21:00', hall: 'loft'}
+        {day:'ср', start: '20:00', end: '21:00', hall: 'bighall'},
+        {day:'пт', start: '20:00', end: '21:00', hall: 'bighall'}
+    ],
+    teachers: ['zolotarev', 'stanishevskaya']
+},
+{
+    id:'bachata',
+    title: 'Бачата',
+    levels: ['Про'],
+    type: 'Регулярное занятие',
+    times: [ 
+        {day:'ср', start: '21:00', end: '22:00', hall: 'bighall'},
+        {day:'пт', start: '21:00', end: '22:00', hall: 'bighall'}
     ],
     teachers: ['zolotarev', 'stanishevskaya']
 },
@@ -126,9 +148,9 @@ const groups= [{
     type: 'Регулярное занятие',
     times: [ 
         {day:'пн', start: '21:00', end: '22:00', hall: 'loft'},
-        {day:'ср', start: '21:00', end: '22:00', hall: 'loft'}
+        {day:'сб', start: '13:00', end: '14:00', hall: 'loft'},
     ],
-    teachers: ['zolotarev', 'kokina']
+    teachers: ['zolotarev', 'nepomnyaschaya']
 },
 {
     id:'reggeton',
@@ -136,9 +158,8 @@ const groups= [{
     levels: ['Начинающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'вт', start: '19:00', end: '21:00', hall: 'loft'},
-        {day:'чт', start: '19:00', end: '21:00', hall: 'loft'},
-        {day:'сб', start: '12:00', end: '13:00', hall: 'bighall'}
+        {day:'пн', start: '19:00', end: '21:00', hall: 'bighall'},
+        {day:'сб', start: '14:00', end: '15:00', hall: 'bighall'}
     ],
     teachers: ['nepomnyaschaya']
 },
@@ -171,7 +192,7 @@ teachers: ['kaurakov', 'nepomnyaschaya']
     type: 'Регулярное занятие',
     times: [ 
         {day:'вт', start: '19:00', end: '20:00', hall: 'bighall'},
-        {day:'пт', start: '19:00', end: '20:00', hall: 'bighall'}
+        {day:'чт', start: '19:00', end: '20:00', hall: 'bighall'}
     ],
     teachers: ['bogdan','lacheva']
 },
@@ -182,7 +203,7 @@ teachers: ['kaurakov', 'nepomnyaschaya']
     type: 'Регулярное занятие',
     times: [ 
         {day:'вт', start: '20:00', end: '21:00', hall: 'bighall'},
-        {day:'пт', start: '20:00', end: '21:00', hall: 'bighall'}
+        {day:'чт', start: '20:00', end: '21:00', hall: 'bighall'}
     ],
     teachers: ['bogdan','perykina']
 },
@@ -193,7 +214,7 @@ teachers: ['kaurakov', 'nepomnyaschaya']
     type: 'Регулярное занятие',
     times: [ 
         {day:'вт', start: '21:00', end: '22:30', hall: 'bighall'},
-        {day:'пт', start: '21:00', end: '22:30', hall: 'bighall'}
+        {day:'чт', start: '21:00', end: '22:30', hall: 'bighall'}
     ],
     teachers: ['bogdan','perykina']
 },
@@ -223,8 +244,8 @@ teachers: ['kaurakov', 'nepomnyaschaya']
     levels: ['Начинающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'сб', start: '10:00', end: '11:00', hall: 'bighall'},
-        {day:'сб', start: '11:00', end: '12:00', hall: 'bighall'}
+        {day:'сб', start: '16:00', end: '17:00', hall: 'bighall'},
+        {day:'сб', start: '17:00', end: '18:00', hall: 'bighall'}
     ],
     teachers: ['bogdan','lacheva']
 },
@@ -234,8 +255,8 @@ teachers: ['kaurakov', 'nepomnyaschaya']
     levels: ['Начинающие'],
     type: 'Регулярное занятие',
     times: [ 
-        {day:'пт', start: '20:00', end: '21:00', hall: 'loft'},
-        {day:'пт', start: '21:00', end: '22:00', hall: 'loft'}
+        {day:'пн', start: '20:00', end: '21:00', hall: 'loft'},
+        {day:'сб', start: '12:00', end: '13:00', hall: 'loft'}
     ],
     teachers: ['zolotarev', 'nepomnyaschaya']
 },

@@ -22,6 +22,7 @@ module.exports = {
         events: './assets/events/index.js',
         homepage: './assets/homepage/index.js',
         dancePage: './assets/dance/page/index.js',
+        teacherPage: './assets/teacher/page/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

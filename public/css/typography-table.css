@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(/static/font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url(/static/font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(/static/font/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'CormorantGaramondBold';
+    src: url(/static/font/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: 'CormorantGaramondLight';
+    src: url(/static/font/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url(/static/font/font/EBGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondSemiBold';
+    src: url(/static/font/EBGaramond-SemiBold.ttf);
+}
+
+.typo-weekday{
+    font-family: OpenSansRegular;
+    font-size: 1em;
+    text-align: center;
+    color: #5d5d5d;
+    text-transform: lowercase;
+}
+.typo-lesson-card-title{
+    font-family: EBGaramondSemiBold,  sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    color: #1c1c1c;
+}
+.typo-lesson-type{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    color: #5d5d5d;
+    text-transform: lowercase;
+    line-height: 1em;
+}
+.typo-lesson-time{
+    font-family: CormorantGaramondBold,  sans-serif;
+    font-size: 1.5em;
+    color: #1c1c1c;
+    text-align: center;
+}
+.typo-lesson-level{
+    font-family: OpenSansRegular,  sans-serif;
+    font-size: 0.75em;
+    color: #5d5d5d;
+    text-transform: uppercase;
+}
+.typo-lesson-teacher{
+    font-family: EBGaramondRegular,  sans-serif;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #1c1c1c;
+}
+

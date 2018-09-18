@@ -1,0 +1,8 @@
+.event-card{
+    display:inline-block;
+    border: solid 3px #000000;
+}
+.event-img{
+    width: 480px;
+    height: 350px;
+}

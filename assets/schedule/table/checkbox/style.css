@@ -1,4 +1,10 @@
-.dance-title {
-    font-size: 18px;
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url(/static/font/font/EBGaramond-Regular.ttf);
+}
+
+.title {
+    font-family: EBGaramondRegular;
+    font-size: 1.25em;
     margin: 10px;
 }

@@ -1,0 +1,11 @@
+extends layout.pug
+block link-css
+  link(rel="stylesheet", href="/static/css/dancepage.css")
+  link(rel="stylesheet", href="/static/css/teacher.css")
+block title 
+  title Танцы | Танцевальный клуб Чердак Красноярск
+block content
+  #page
+  script(src="/static/teacherPage.js")
+  script.
+    window.teacherPageModule.render("page", "#{teacherName}")

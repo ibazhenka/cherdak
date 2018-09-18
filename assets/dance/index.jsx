@@ -3,7 +3,7 @@ import {directions} from '../../data'
 
 const DanceCard = (props) => <div className="dance-card">
     <a href={`/dance/${props.id}`}>
-        <img src={`/static/img/${props.img}`} alt={`${props.id}`}/>
+        <img src={`/static/img/${props.img}`} alt={`${props.id}`} className="dance-img"/>
         <h2 className="dance-card_title _typography-title-dance">{props.title}</h2>
     </a>
 </div>

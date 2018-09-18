@@ -1,76 +1,106 @@
 .teacher-container {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
-    max-width: 1174px;
+    padding: 2vw;
 }
-
-.teacher-block {
-    margin-top: 10px;
+.teacher-card {
+    margin: 1vw;
     display: flex;
-    justify-content: flex-start;
     flex-flow: column nowrap;
+    border: #000 solid 3px;
 }
 
-.about-container {
+.teacher-img {
+    max-width: 250px;
+    border-bottom: #000 solid 3px;
+    filter: grayscale(70%);
+    transition: 1s;
+}
+.teacher-img:hover {
+    filter: grayscale(0);
+    transition: 1s;
+}
+
+.teacher-name{
+    text-align: center;
+    color: #000;
+    letter-spacing: 1.5;
+    font-weight: bold;
+    font-size: 18px;
+}
+.teacher-direction{
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    letter-spacing: 1.5;
+    font-size: 10px;
+}
+
+.title-dance-page_text_dark {
+    text-transform: uppercase;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 3vw;
+
+}
+
+.teacher-title_fon{
+    background-color: #fbba00;
+}
+
+.teacherpage-container {
     margin: auto;
-    max-width: 1312px;
-}
-
-.events-container {
-    margin: auto;
-    max-width: 1312px;
-}
-
-.first-row{
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
-
-.last-news {
-    flex-grow: 2;
-}
-.last-news-img {
-    max-width: 856px;
-}
-.other-row {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
-.news {
     flex-flow: column;
-}
-.news-size {
-    max-width: 400px;
+    align-items: flex-start;
+    padding: 2vw;
 }
 
-.registration-container{
-    width:200px;
-    height:150px;
-    background-color: #ccc;
-    margin:0px auto;
-    padding:10px;
-    font-size:30px;
-    color: #fff;
+.title-teacher-page_text_dark {
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+    font-size: 2vw;
+    text-align: left;
 }
-.registration-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+
+.biography-container{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
 }
-.registration-popup .registration-popup-content{
-    margin:40px auto 0px auto;
-    width:100px;
-    height: 40px;
-    padding:10px;
-    background-color: #c5c5c5;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
+.biography{
+    padding-left: 2vw;
+    max-width: 45vw;
+    font-size: 2vh;
+    text-align: justify;
+}
+.teacherpage-img {
+    border: #000 solid 3px;
+}
+
+.name-button{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.button-individual-lesson {
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000;
+}
+
+.button-individual-lesson:hover {
+    background-color: coral;
+    color: #000;
+    text-decoration: none;
 }

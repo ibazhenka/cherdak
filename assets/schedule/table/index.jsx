@@ -36,26 +36,28 @@ class ScheduleTable extends React.Component{
             type: this.state.type,
             levels: this.state.levels,
         }
-        return <div>
-            <H1 align="center">Расписание</H1>
-            <Panel title="направление" page="schedule">
-            {
-                danceTitle.map(dance=><Checkbox title={dance} changeFilter={(e)=>this.changeTitleFilter(dance, 'title', e)}/>)
-            }
-            </Panel>
-
-            <Panel title="вид занятия" page="schedule">
-            {
-                typeOfLessons.map(type=><Checkbox title={type} changeFilter={(e)=>this.changeTitleFilter(type, 'type', e)}/>)
-            }
-            </Panel>
-            <Panel title="уровень" page="schedule">
-            {
-                levelOfLesson.map( lvl=><Checkbox title={lvl} changeFilter={(e)=>this.changeTitleFilter(lvl, 'levels', e)}/>)
-            }
-            </Panel>
-
-            <Schedule filters={filters} />
+        return <div className="schedule-container">
+            <H1>Расписание</H1>
+            <div className="panel-container">
+                <Panel title="направление" page="schedule">
+                    {danceTitle.map(dance=><Checkbox title={dance} changeFilter={(e)=>this.changeTitleFilter(dance, 'title', e)}/>)}
+                </Panel>
+                <div className="panel-in-row">
+                    <div className="panel50">
+                        <Panel title="вид занятия" page="schedule">
+                            {typeOfLessons.map(type=><Checkbox title={type} changeFilter={(e)=>this.changeTitleFilter(type, 'type', e)}/>)}
+                        </Panel>
+                    </div>
+                    <div className="panel50">
+                        <Panel title="уровень" page="schedule">
+                            {levelOfLesson.map( lvl=><Checkbox title={lvl} changeFilter={(e)=>this.changeTitleFilter(lvl, 'levels', e)}/>)}
+                        </Panel>
+                    </div>
+                </div>
+            </div>
+            <div className="table-container">
+                <Schedule filters={filters} />
+            </div>
         </div>
     }
 }

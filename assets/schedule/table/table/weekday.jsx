@@ -1,4 +1,4 @@
 import React from 'react'
-const WeekDay = (props) => <td className="cell-size" title={props.full}>{props.short}</td>
+const WeekDay = (props) => <td className="cell-size typo-weekday" title={props.full}>{props.full}</td>
 
 export default WeekDay

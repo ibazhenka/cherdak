@@ -21,7 +21,7 @@ function getTeacherDirections(directionsID) {
             }
             continue
     }
-    return arr.join(' ')
+    return arr.join(' | ')
 }
 
 function okField(group, filter, field) {

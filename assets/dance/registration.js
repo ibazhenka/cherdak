@@ -36,7 +36,7 @@ class RegistrationWindow extends React.Component {
     
     render() {
         return <div>
-            <button onClick={() => this.openModal()}>Пробный урок</button>
+            <button onClick={() => this.openModal()} className="typo-button button">Пробный урок</button>
             <Modal className="Modal"
                 overlayClassName="Overlay"
                 isOpen={this.state.modalIsOpen}
