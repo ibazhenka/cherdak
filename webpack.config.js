@@ -23,6 +23,7 @@ module.exports = {
         homepage: './assets/homepage/index.js',
         dancePage: './assets/dance/page/index.js',
         teacherPage: './assets/teacher/page/index.js',
+        price: './assets/price/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

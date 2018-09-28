@@ -1,6 +1,6 @@
 import React from 'react'
 import {halls} from '../../data'
-import SimpleSlider from '../slider/slider.js'
+import HallsSlider from '../slider-halls-arenda/slider-halls.js'
 
 const FotoHall=(imgName, props)=><div>
     <img src={`/static/img/${imgName}`} alt={imgName} style={{height: '75vh', objectFit: 'cover'}}/>
@@ -10,9 +10,9 @@ const FotoHall=(imgName, props)=><div>
 const Hall=(props)=> <div className="even-section-dance-page">
     <h2 className="title-arenda-page_text_dark title_center" id={props.id}>{props.title}</h2>
     <div>
-        <SimpleSlider>
+        <HallsSlider>
             {props.imgs.map(img=>FotoHall(img, props.description ))}            
-        </SimpleSlider>        
+        </HallsSlider>        
     </div>
     <div className="hall-additionally">
         <div className="additionally">{props.equipments}</div>

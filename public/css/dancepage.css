@@ -99,7 +99,7 @@
     font-size: 2vw;
 }
 .salsa-title-img {
-    background-image: url(../img/salsa-title-page.jpg);
+    background-image: url(/static/img/salsa-title-page.jpg);
 }
 .tango-title-img {
     background-image: url(../img/tango-title-page.jpg);

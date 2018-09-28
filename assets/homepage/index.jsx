@@ -6,6 +6,7 @@ import {TeacherCard} from '../teacher/index.jsx'
 import RegistrationWindow from '../dance/registration.js'
 import {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js'
 import HallsSlider from '../slider-halls-main/slider-halls.js'
+import {H1, H2} from '../typography/titles/index.jsx'
 
 const DirectionSlide=(props)=><div>
     <div className="direction-slide">
@@ -23,7 +24,7 @@ const MainDirection=(props)=><section className="main-section-white-background">
         и уже семь лет мы учим танцевать взрослых и детей
         и танцуем вместе с вами!
     </div>
-    <h2 className="typo-section-title title_margin">ПАРНЫЕ ТАНЦЫ</h2>
+    <H1 color="grey" sans-serif>ПАРНЫЕ ТАНЦЫ</H1>
     <DirectionsSlider>
         {Object.values(directions).filter(direction=> direction.species == 'couple').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
@@ -35,7 +36,7 @@ const MainDirection=(props)=><section className="main-section-white-background">
             <a href='/dance' className='button typo-button'>Подробнее о всех направлениях</a>
         </div>
     </div>
-    <h2 className="typo-section-title title_margin">Сольные ТАНЦЫ</h2>
+    <H2 color="grey" OpenSansRegular>Сольные ТАНЦЫ</H2>
     <DirectionsSlider>
         {Object.values(directions).filter(direction=> direction.species == 'solo').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
@@ -53,7 +54,7 @@ const MainPriceCard=(props)=><div className="col-md-4">
 </div>
 
 const MainPrice=(props)=><section className="main-section-white-background _grey-background">
-    <h2 className="typo-section-title title_margin">СТОИМОСТЬ ЗАНЯТИЙ</h2>
+    <H2 color="grey" OpenSansRegular>СТОИМОСТЬ ЗАНЯТИЙ</H2>
     <div className="price-container row">
         {Object.values(price).map(item=><MainPriceCard cost={item.cost.adult} title={item.title} />)}
     </div>
@@ -78,7 +79,7 @@ const MemberCard=(props)=><div>
 </div>
 
 const MainTeam=(props)=><section className="main-section-white-background">
-    <h2 className="typo-section-title title_margin">наша команда</h2>
+    <H2 color="grey" OpenSansRegular>наша команда</H2>
     <TeachersSlider>
         {Object.values(teachers).map(teacher=><MemberCard img={teacher.img} id={teacher.id} position={teacher.position} direction={teacher.directionsID}/>)}
     </TeachersSlider>
@@ -93,7 +94,7 @@ const HallSlide=(props)=><div className="slide-hall">
 </div>
 
 const MainHalls=(props)=><section className="main-section-white-background">
-    <h2 className="typo-section-title title_margin">Уютные залы</h2>
+    <H2 color="grey" OpenSansRegular>Уютные залы</H2>
     <HallsSlider>
         {Object.values(halls).map(hall=><HallSlide img={hall.imgs[0]} title={hall.title} department={hall.department}/>)}
     </HallsSlider>

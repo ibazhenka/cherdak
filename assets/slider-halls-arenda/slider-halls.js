@@ -1,14 +1,18 @@
 import React from 'react'
 import Slider from 'react-slick'
-import './slider.css'
+import './slider-halls.css'
 
-class SimpleSlider extends React.Component {
+
+class HallsSlider extends React.Component {
     render() {
       let settings = {
         dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
        
       };
-      return <div>
+      return <div className="directions-slider">
       <Slider {...settings}>
         {this.props.children}
       </Slider>
@@ -16,4 +20,4 @@ class SimpleSlider extends React.Component {
       
     }
   }
-export default SimpleSlider
+export default HallsSlider

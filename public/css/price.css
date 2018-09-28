@@ -1,7 +1,125 @@
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(/static/font/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(/static/font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url(/static/font/EBGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: 'CormorantGaramondBold';
+    src: url(/static/font/CormorantGaramond-Bold.ttf);
+}
+.cost-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.title-price-container{
+    border-top: solid 2px #4a90a0;
+    border-bottom: solid 2px #4a90a0;
+    margin: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .price-list {
     margin: auto;
     max-width: 1312px;
 }
 .rules {
-    max-width: 750px;
+    width: 750px;
+    margin: auto;
+}
+
+.typo-subscription-rules{
+    font-family: 'EBGaramondRegular';
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.price-one-time-container {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.price-one-time-img{
+    background-image: url(/static/img/price-title.jpg);
+}
+.price-mini-groups-img{
+    background-image: url(/static/img/mini-groups.jpg);
+}
+
+.typo-subtitle-price{
+    font-family: OpenSansLight, sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    text-transform: lowercase;
+    color: #828282;
+}
+.typo-cost{
+    font-family: OpenSansRegular, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: #828282;
+    margin-top: -10px;
+}
+.typo-title-price{
+    margin: -10px;
+    font-family: 'CormorantGaramondBold';
+    text-align: center;
+    font-size: 2.7em;
+    text-transform: lowercase;
+    color: #1c1c1c;
+}
+.subscription-container{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    justify-content: space-around;
+}
+.minigroup-container{
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-flow: row wrap;
+    width: 30vw;
+    justify-content: space-around;
+}
+.price-list-container{
+    padding: 3vw;
+}
+.typo-cost-title{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+}
+.button-row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 65vw;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 60vh;
+    margin-bottom: 0;
+}
+
+.white{
+    color: white;
+}
+.white-opacity{
+    color: #ffffffb8
 }

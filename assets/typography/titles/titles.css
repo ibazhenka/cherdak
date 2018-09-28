@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'EBGaramondBold';
+    src: url(/static/font/EBGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: 'EBGaramondSemiBold';
+    src: url(/static/font/EBGaramond-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url(/static/font/OpenSans-Regular.ttf);
+}
+
+.title {
+    text-align: center;
+}
+.grey {
+    color: #5b5b5b;
+}
+.black{
+    color: #1c1c1c;
+}
+.white{
+    color: white;
+}
+.sans-serif{
+    font-family: OpenSansRegular,  sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.serif{
+font-family: EBGaramondBold, sans-serif;
+font-size: 3em;
+}
+
+h3.sans-serif{
+    font-family: EBGaramondSemiBold, sans-serif;
+}
