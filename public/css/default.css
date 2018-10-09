@@ -9,7 +9,7 @@
 }
 .header{
     box-sizing: border-box;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-flow: column;
     background-size: cover;
@@ -36,15 +36,7 @@
     font-size: 0.75em;
     padding-left: 0.75em;
 }
-.button{
-    background-color:#8dcadc;
-    padding: 0.75em;
-    border: none;
-}
-.button:hover{
-    background-color:#488294;
-    padding: 0.75em;
-}
+
 .social-nets__icon{
     width: 2rem;
     font-size: 2em;

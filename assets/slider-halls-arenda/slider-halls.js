@@ -12,7 +12,7 @@ class HallsSlider extends React.Component {
         slidesToScroll: 1
        
       };
-      return <div className="directions-slider">
+      return <div className="arenda-slider">
       <Slider {...settings}>
         {this.props.children}
       </Slider>

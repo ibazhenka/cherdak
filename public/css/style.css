@@ -6,146 +6,217 @@
     margin: auto;
     position: relative;
 }
-
-.header {
-    min-height: 150px;
-    border-bottom: black 3px solid;
-    background-color: white;
-    display: block;
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
+.button{
+    background-color:#8dcadc;
+    padding: 0.75em;
+    padding-left: 1.5em; 
+    padding-right: 1.5em; 
+    border: none;
+}
+.button:hover{
+    background-color:#488294;
+}
+.main-section-white-background {
+    box-sizing: border-box;
+    /* height: 100vh; */
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+.row-button{
+    min-width: 18vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.standart-margin{
+    margin-top: 3vw;
+}
+.small-margin{
+    margin-top: 1vw;
+}
+.title_width{
+    width: 35vw;
+}
+.title_width2{
+    width: 50vw;
 }
 
-.header-container{
+/* слайдер */
+
+.directions-slider{
     margin: auto;
-    max-width: 100%;
-    padding-right: 2%;
-    padding-left: 2%;
-    min-height: 150px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
+    width: 80vw;
 }
 
-.menu {
+.direction-slide{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 100%;
-}
-.__sub-row-menu {
-    justify-content: space-between;
-    align-items: center;
-}
-.__main-menu{
-    width: 85%;
-    justify-content: space-evenly;
-    margin-left: 150px;
-    margin-top: -20px;
-}
-
-._column{
     flex-flow: column;
-}
-._row{
-    flex-flow: row;
+    align-items: center;
 }
 
-.menu__socialnets {
-    width: 140px;
+.carusel-direction-img {
+    max-width: 25vw;
+}
+@media screen and (max-width: 1200px) {
+    .carusel-direction-img {
+        max-width: 37vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .carusel-direction-img {
+        max-width: 75vw;
+    }
+}
+.member-slide{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-.menu__socialnets-footer {
-    width: 400px;
+a.slide{
+    filter: grayscale(40%);
+    transition: 1s;
 }
-
-.header-logo {
-    height: 120px;
-}
-
-.button-registration {
-    border-radius: 4px;
-    padding: 10px;
-    border: 2px solid black;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: #000;
-}
-
-.button-registration:hover {
-    background-color: coral;
-    color: #000;
+a.slide:hover{
+    filter: grayscale(0);
+    transition: 1s;
     text-decoration: none;
 }
-
-.footer {
+.arenda-slider{
     margin: auto;
-    min-height: 200px;
-    background: #554a4a;
-    display: block;
+    max-width: 60vw;
+}
+.carusel-direction-title{
+    margin-top: 2vh;
+}
+.carusel-direction-description{
+    line-height: 2em;
+}
+
+.slide-hall{
     position: relative;
 }
 
-.footer-container {
+.carusel-halls-img{
+    max-height: 70vh;
+    max-width: 50vw;
+}
+@media screen and (max-width: 800px) {
+    .carusel-halls-img {
+        max-width: 75vw;
+    }
+}
+.hall-title{
     margin: auto;
-    max-width: 1142px;
-    height: 176px;
+    max-width: 15vw;
+}
+
+/* \слайдер */
+
+.title-subscription-container{
+    border-top: solid 2px #4a90a0;
+    border-bottom: solid 2px #4a90a0;
+    margin: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.price-subscription-container{
+    margin-top: 5vh;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-content: space-between;
+    width: 50vw;
+}
+.price-unlimited-container{
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 25vw;
+}
+.main-section-photo-background{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section-photo-background{
+    box-sizing: border-box;
+    height: 5vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-about-photo-background {
+    background-image: url(../img/salsa-title-page.jpg);
 }
 
-.footer-logo {
-    height: 97px;
-}
-.medialogo {
-    height: 60px;
-}
-.medialogo_min {
-    height: 30px;
-}
-
-.white-text {
-    color: white;
-}
-
-.copyright{
-    margin-top: 10px;
-    font-size: 9px;
-    color: white;
-}
-.contacts{
+.footer-container{
+    background-color: #4a90a0;
+    height: 350px;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    font-size: 10pt;
+    padding: 2vw;
 }
-
-.__header-contacts{
+.column-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 33.3333333%;
+    justify-content: center;
+}
+.row-container{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    min-width: 45%;
+    margin: auto;
+    min-width: 70vw;
+}
+.price-img{
+    background-image: url(/static/img/main-price.jpg);
+}
+.event-img{
+    background-image: url(/static/img/event-img.jpg);
+    background-color: #658886;
+    background-blend-mode: luminosity;
+    justify-content: center;
+}
+
+.first-section-container {
+    margin: auto;
+    box-sizing: border-box;
+    height: 89vh;
+    padding: 3vw;
+    display: flex;
+    text-align: center;
     align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.__sign-location {
-    height: 18pt;
-    margin-right: 7px;
-    vertical-align: middle;
-}
-.__sign-phone {
-    height: 18pt;
-    margin-right: 7px;
-    vertical-align: middle;
-}
-.__submenu {
-    width: 100%;
-    height: 35px;
-    justify-content: space-evenly;
-    background-color: #841b52;
-    border-top: #000 solid 3px;
-    align-items: center;
+.arenda-cost-container{
+    margin-top: 1vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 40vw;
 }

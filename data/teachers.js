@@ -1,6 +1,7 @@
 
 const teachersData= {
     bogdan: {
+        parentsPage: 'teacher',
         id:'bogdan',
         forename: 'Павел',
         surname: 'Богдан',
@@ -10,6 +11,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     bolotina: {
+        parentsPage: 'teacher',
         id:'bolotina',
         forename: 'Анна',
         surname: 'Болотина',
@@ -19,6 +21,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     voronina: {
+        parentsPage: 'teacher',
         id:'voronina',
         forename: 'Анна',
         surname: 'Воронина',
@@ -28,6 +31,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     evdokimova:{
+        parentsPage: 'teacher',
         id:'evdokimova',
         forename: 'Мария',
         surname: 'Евдокимова',
@@ -37,6 +41,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     zholobova:{
+        parentsPage: 'teacher',
         id:'zholobova',
         forename: 'Алена',
         surname: 'Жолобова',
@@ -46,6 +51,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     zolotarev: {
+        parentsPage: 'teacher',
         id:'zolotarev',
         forename: 'Константин',
         surname: 'Золотарев',
@@ -55,6 +61,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     kaurakov: {
+        parentsPage: 'teacher',
         id:'kaurakov',
         forename: 'Павел',
         surname: 'Каураков',
@@ -64,6 +71,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     lacheva: {
+        parentsPage: 'teacher',
         id:'lacheva',
         forename: 'Ольга',
         surname: 'Лачева',
@@ -73,6 +81,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     mikhaylov: {
+        parentsPage: 'teacher',
         id:'mikhaylov',
         forename: 'Сергей',
         surname: 'Михайлов',
@@ -82,6 +91,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     nepomnyaschaya: {
+        parentsPage: 'teacher',
         id:'nepomnyaschaya',
         forename: 'Юлия',
         surname: 'Непомнящая',
@@ -90,6 +100,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     peryakina: {
+        parentsPage: 'teacher',
         id:'peryakina',
         forename: 'Марина',
         surname: 'Перякина',
@@ -99,6 +110,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     severin: {
+        parentsPage: 'teacher',
         id:'severin',
         forename: 'Алексей',
         surname: 'Северин',
@@ -108,6 +120,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     stanishevskaya: {
+        parentsPage: 'teacher',
         id:'stanishevskaya',
         forename: 'Ольга',
         surname: 'Станишевская',
@@ -117,6 +130,7 @@ const teachersData= {
         position: 'Преподаватель'
     },
     kokina: {
+        parentsPage: 'teacher',
         id:'kokina',
         forename: 'Мила',
         surname: 'Кокина',

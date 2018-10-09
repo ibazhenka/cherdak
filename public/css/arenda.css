@@ -1,3 +1,26 @@
+
+.arenda-title-buttons-row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 35vw;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 2vw;
+}
+.arenda-title-txt-row{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1vw;
+}
+.arenda-text-column{
+    display: flex;
+    flex-flow: column ;
+    width: 34vw;
+    margin-top: 1vw;
+}
 .hall-container{
      display: flex;
      flex-flow: column;
@@ -16,14 +39,15 @@
     display: flex;
     flex-flow: row wrap;
     margin: auto;
-    width: 100%;
+    width: 48vw;
     justify-content: space-between;
 }
 .description{
-    width: 50%
+    width: 50%;
 }
 .additionally{
-    width: 50%
+    width: 50%;
+    text-align: justify;
 }
 .title-section-arenda-page {
     box-sizing: border-box;
@@ -38,7 +62,10 @@
     background-attachment: fixed;
 }
 .arenda-title-img {
-    background-image: url(../img/arenda-title.jpg);
+    background-image: url(/static/img/arenda-title.jpg);
+}
+.arenda-background-img{
+    background-image: url(/static/img/arenda1.jpg);
 }
 .title-arenda-page_text {
     text-transform: uppercase;
@@ -77,14 +104,3 @@
     margin: auto;
 }
 
-.even-section-dance-page {
-    box-sizing: border-box;
-    height: 100vh;
-    padding: 2vw;
-    display: flex;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #fff;
-}

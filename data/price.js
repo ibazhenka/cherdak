@@ -6,7 +6,7 @@ const priceData= {
         cost: {
             adult: '400',
             preferential: '350'},
-        title: 'Разовое посещение',
+        title: '1 занятие',
         numberOfLesson: '1',
         practic: '-',
         individualLesson: '-',

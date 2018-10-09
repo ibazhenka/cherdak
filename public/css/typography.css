@@ -75,6 +75,7 @@
     text-align: center;
     color: #1c1c1c;
 }
+
 .typo-subtitle{
     font-family: OpenSansLight,  sans-serif;
     font-size: 1em;
@@ -82,6 +83,7 @@
     color: #1c1c1c;
     text-transform: lowercase;
 }
+
 .typo-section-title{
     font-family: OpenSansLight,  sans-serif;
     font-size: 1.5em;
@@ -91,7 +93,7 @@
 }
 .typo-button{
     font-family: OpenSansLight,  sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     color: #1c1c1c;
     text-transform: uppercase;
@@ -141,6 +143,65 @@
     font-family: OpenSansSemiBold,  sans-serif;
     font-size: 1em;
     color: white;
+    text-transform: uppercase;
+}
+
+.typo-subtitle-price{
+    font-family: OpenSansLight, sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    text-transform: lowercase;
+    color: #828282;
+}
+.typo-cost{
+    font-family: OpenSansRegular, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: #828282;
+    margin-top: -10px;
+}
+.typo-title-price{
+    margin: -10px;
+    font-family: 'CormorantGaramondBold';
+    text-align: center;
+    font-size: 2.7em;
+    text-transform: lowercase;
+    color: #1c1c1c;
+}
+.typo-cost-title{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+}
+.typo-subscription-rules{
+    font-family: 'EBGaramondRegular';
+    font-size: 1.5em;
+    color: #1c1c1c;
+    text-align: left;
+}
+.typo-arenda-text{
+    font-family: OpenSansRegular;
+    font-size: 1.2em;
+    text-align: center;
+    color:#1c1c1c;
+}
+
+.white{
+    color: white;
+}
+.white-opacity{
+    color: #ffffffb8;
+}
+
+.typo-hall-title{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #1c1c1c;
+}
+.upper{
     text-transform: uppercase;
 }
 

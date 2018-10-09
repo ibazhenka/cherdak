@@ -1,5 +1,6 @@
 const teamData= {
     bogdan: {
+        parentsPage: 'about',
         id:'bogdan',
         forename: 'Павел',
         surname: 'Богдан',
@@ -8,22 +9,25 @@ const teamData= {
         img: 'bogdan.jpg'
     },
     sikilinda: {
+        parentsPage: 'about',
         id:'sikilinda',
         forename: 'Юлия',
         surname: 'Сикилинда',
-        position: 'Директор филиала Авиаторов',
+        position: 'Директор филиала',
         biography: '',
         img: 'sikilinda.jpg'
     },
     ivanova: {
+        parentsPage: 'about',
         id:'ivanova',
         forename: 'София',
         surname: 'Иванова',
-        position: 'Администратор филиала Авиаторов',
+        position: 'Администратор филиала',
         biography: '',
         img: 'sikilinda.jpg'
     },
     yakovleva_a: {
+        parentsPage: 'about',
         id:'yakovleva_a',
         forename: 'Анна',
         surname: 'Яковлева',
@@ -32,6 +36,7 @@ const teamData= {
         img: 'yakovleva_a.jpg'
     },
     yakovleva_n: {
+        parentsPage: 'about',
         id:'yakovleva_n',
         forename: 'Надежда',
         surname: 'Яковлева',
