@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 html
   head
-    meta()
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     script(src="/static/lib.js")
     link(rel="stylesheet", href="/static/css/reset.css")
     link(rel="stylesheet", href="/static/css/grid.css")
@@ -24,8 +24,10 @@ html
         //- video.video.header__video(src="/static/video/bachata.mp4" autoplay loop)
         block navigation
           div.nav-container
+            .logo: a(href="/"): img.header__logo(src="/static/img/logo-w-t.svg", alt="logo")
+            #burger-menu
+            script(src="/static/burgerMenu.js")
             ul.nav
-              li.logo: a(href="/"): img.header__logo(src="/static/img/logo-w-t.svg", alt="logo")
               li: a.nav__item.typo-nav(href="/events") События
               li: a.nav__item.typo-nav(href="/dance") Направления
               li: a.nav__item.typo-nav(href="/schedule") Расписание
@@ -34,14 +36,16 @@ html
               li: a.nav__item.typo-nav(href="/about/arenda") Аренда залов
               li: a.nav__item.typo-nav(href="/about") О клубе
               li.social-nets
-                a.social-nets__icon(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
-                  i.fab.fa-vk
-                a.social-nets__icon(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
-                  i.fab.fa-facebook-square
-                a.social-nets__icon(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
-                  i.fab.fa-instagram  
-                a.social-nets__icon(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
-                  i.fab.fa-youtube
+                .social-nets__icon_row
+                  a.social-nets__icon(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
+                    i.fab.fa-vk
+                  a.social-nets__icon(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
+                    i.fab.fa-facebook-square
+                .social-nets__icon_row
+                  a.social-nets__icon(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
+                    i.fab.fa-instagram  
+                  a.social-nets__icon(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
+                    i.fab.fa-youtube
               li.contact
                 p.department.typo-nav__contact 
                   span Красноярск | Авиаторов

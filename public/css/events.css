@@ -1,8 +1,41 @@
+@font-face{
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    src: url(/public/font/fa-solid-900.ttf) format('truetype');
+    src: url(/public/font/fa-solid-900.eot) format('embedded-opentype'); 
+    src: url(/public/font/fa-solid-900.woff) format('woff');
+    src: url(/public/font/fa-solid-900.svg) format('svg');
+}
+.event-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 94vw;
+    justify-content: space-between;
+}
 .event-card{
-    display:inline-block;
-    border: solid 3px #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border: solid 1px #72a9b066;
+    width: 24%;
+    align-items: center;
 }
 .event-img{
-    width: 480px;
-    height: 350px;
+    width: 20vw;
+}
+.when:before{
+    font-family: 'Font Awesome 5 Free';
+    content:'\f073 ';
+}
+.time::before{
+    font-family: 'Font Awesome 5 Free';
+    content:'\f017 ';
+}
+.time-none{
+    display: none;
+}
+.place::before{
+    font-family: 'Font Awesome 5 Free';
+    content:'\f3c5 ';
 }

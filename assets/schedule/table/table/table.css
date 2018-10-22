@@ -12,12 +12,19 @@ tr {
     flex-flow: column;
     margin: auto;
     padding: 2vw;
-    max-width: 1665px;
+    /* max-width: 1665px; */
 }
 .panel-container{
     display: flex;
     flex-flow: column;
+    margin: auto;
     margin-top: 3vh;
+    width: 80vw;
+}
+@media screen and (max-width:1500px){
+    .panel-container {
+        width: 94vw;
+    }
 }
 .panel50{
     min-width: 49%;
@@ -32,12 +39,17 @@ tr {
     margin-top: 10vh;
 }
 .cell-size {
-    width: 220px;
+    width: 11vw;
     border-top: none;
     border-left: none;
 }
+@media screen and (max-width:1500px){
+    .cell-size {
+        width: 13vw;
+    }
+}
 .lesson-card{
-    width: 220px;
+    width: 11vw;
     height: 110px;
     display: flex;
     flex-flow: column;
@@ -45,19 +57,46 @@ tr {
     background-color: white;
     /* border-bottom: #72a9b0 0.5px solid;  */
 }
+@media screen and (max-width: 1500px){
+    .lesson-card{
+        width: 13vw;
+    }
+}
+@media screen and (max-width: 1350px){
+    .lesson-card{
+        height: 115px;
+    }
+}
 .title-lesson-card{
-    width: 220px;
+    width: 11vw;
     padding: 5px;
+}
+@media screen and (max-width: 1500px){
+    .title-lesson-card{
+        width: 13vw;
+    }
 }
 .time-level{
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
     align-items: baseline;
-    width: 200px;
+    width: 10.5vw;
+}
+@media screen and (max-width: 1500px){
+    .time-level{
+        width: 12.5vw;
+    }
+}
+@media screen and (max-width: 1350px){
+    .time-level{
+        flex-flow: column-reverse;
+        align-items: center;
+        margin-top: 4px;
+    }
 }
 .time-cell{
-    width: 60px;
+    width: 2vw;
     border-left: none;
 }
 .hustle {
@@ -76,7 +115,7 @@ tr {
     background-color: #d1f3d1;
 }
 .tango {
-    background-color: #ff8d8d;
+    background-color: #ff8d8d85;
 }
 .party {
     background-color: white;

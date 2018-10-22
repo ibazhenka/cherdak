@@ -14,6 +14,9 @@ function getTeacherFullName(idTeacher) {
 
 function getTeacherDirections(directionsID) {
     let arr=[]
+    if (directionsID==undefined){
+        return ''
+    }
     for (const dir of directionsID)
         for (const direction of Object.values(directions)){
             if(direction.id == dir) {

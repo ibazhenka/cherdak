@@ -41,6 +41,16 @@
     text-align: center;
     color: #1c1c1c;
 }
+@media screen and (max-width:1500px){
+    .typo-lesson-card-title{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:1350px){
+    .typo-lesson-card-title{
+        font-size: 1.1em;
+    }
+}
 .typo-lesson-type{
     font-family: OpenSansRegular, sans-serif;
     font-size: 0.9em;
@@ -49,23 +59,48 @@
     text-transform: lowercase;
     line-height: 1em;
 }
+@media screen and (max-width:1500px){
+    .typo-lesson-type{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:1350px){
+    .typo-lesson-type{
+        font-size: 0.7em;
+    }
+}
 .typo-lesson-time{
     font-family: CormorantGaramondBold,  sans-serif;
     font-size: 1.5em;
     color: #1c1c1c;
     text-align: center;
 }
+@media screen and (max-width:1500px){
+    .typo-lesson-time{
+        font-size: 1.3em;
+    }
+}
 .typo-lesson-level{
     font-family: OpenSansRegular,  sans-serif;
-    font-size: 0.75em;
+    font-size: 0.7em;
     color: #5d5d5d;
     text-transform: uppercase;
+}
+@media screen and (max-width:1500px){
+    .typo-lesson-level{
+        font-size: 0.65em;
+    }
 }
 .typo-lesson-teacher{
     font-family: EBGaramondRegular,  sans-serif;
     font-size: 1.25em;
-    line-height: 1em;
+    line-height: 1.25em;
     text-align: center;
     color: #1c1c1c;
+}
+@media screen and (max-width:1350px){
+    .typo-lesson-teacher{
+        font-size: 1em;
+    }
 }
 

@@ -26,7 +26,7 @@ class TeachersSlider extends React.Component {
             }
         },]
         };
-      return <div className="directions-slider">
+      return <div className="team-slider">
       <Slider {...settings}>
         {this.props.children}
       </Slider>

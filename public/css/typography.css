@@ -46,10 +46,20 @@
     font-size: 1em;
     text-transform: uppercase;
 }
+@media screen and (max-width: 1300px){
+    .typo-nav{
+        font-size: 0.8em;
+    }
+}
 .typo-nav__contact{
     font-family: OpenSansSemiBold,  sans-serif;
     font-size: 1em;
     color: white;
+}
+@media screen and (max-width: 1300px){
+    .typo-nav__contact{
+        font-size: 0.8em;
+    }
 }
 .typo-slogan{
     font-family: EBGaramondBold,  sans-serif;
@@ -57,12 +67,32 @@
     text-align: center;
     color: white;
 }
+@media screen and (max-width: 1650px){
+    .typo-slogan{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1360px){
+    .typo-slogan{
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-width: 1000px){
+    .typo-slogan{
+        font-size: 1.8em;
+    }
+}
 
 .typo-autor{
     font-family: CormorantGaramondBoldItalic, sans-serif;
     font-size: 2em;
     text-align: right;
     color: white;
+}
+@media screen and (max-width: 1000px){
+    .typo-autor{
+        font-size: 1.5em;
+    }
 }
 .down {
     text-align: center;
@@ -74,6 +104,16 @@
     font-size: 2em;
     text-align: center;
     color: #1c1c1c;
+}
+@media screen and (max-width: 1000px){
+    .typo-title{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 450px){
+    .typo-title{
+        font-size: 1.5em;
+    }
 }
 
 .typo-subtitle{
@@ -102,12 +142,7 @@
     color: #1c1c1c;
     text-decoration: none;
 }
-.typo-cost{
-    font-family: OpenSansRegular,  sans-serif;
-    font-size: 3em;
-    text-align: center;
-    color: #1c1c1c;
-}
+
 .typo-cost-title{
     font-family: OpenSansRegular, sans-serif;
     font-size: 1em;
@@ -139,19 +174,39 @@
     font-size: 1em;
     color: white;
 }
+@media screen and (max-width:1300px){
+    .copyright{
+        font-size: 0.7em;
+    }
+}
 .footer-title{
     font-family: OpenSansSemiBold,  sans-serif;
     font-size: 1em;
     color: white;
+    text-align: center;
     text-transform: uppercase;
 }
-
+@media screen and (max-width:800px){
+    .footer-title{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:450px){
+    .footer-title{
+        font-size: 1em;
+    }
+}
 .typo-subtitle-price{
     font-family: OpenSansLight, sans-serif;
     font-size: 0.75em;
     text-align: center;
     text-transform: lowercase;
     color: #828282;
+}
+@media screen and (max-width:450px){
+    .typo-subtitle-price{
+        margin-bottom: 3px;
+    }
 }
 .typo-cost{
     font-family: OpenSansRegular, sans-serif;
@@ -160,6 +215,11 @@
     color: #828282;
     margin-top: -10px;
 }
+@media screen and (max-width: 450px){
+    .typo-cost{
+        font-size: 1.5em;
+    }
+}
 .typo-title-price{
     margin: -10px;
     font-family: 'CormorantGaramondBold';
@@ -167,6 +227,11 @@
     font-size: 2.7em;
     text-transform: lowercase;
     color: #1c1c1c;
+}
+@media screen and (max-width: 450px){
+    .typo-title-price{
+        font-size: 1.8em;
+    }
 }
 .typo-cost-title{
     font-family: OpenSansRegular, sans-serif;

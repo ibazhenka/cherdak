@@ -24,6 +24,7 @@ module.exports = {
         dancePage: './assets/dance/page/index.js',
         teacherPage: './assets/teacher/page/index.js',
         price: './assets/price/index.js',
+        burgerMenu:'./assets/burger-menu/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

@@ -30,11 +30,9 @@ const MainDirection=(props)=><section className="main-section-white-background">
         {Object.values(directions).filter(direction=> direction.species == 'couple').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
     <div className="standart-margin row-button">
+        <RegistrationWindow />        
         <div>
-            <RegistrationWindow />
-        </div>
-        <div>
-            <a href='/dance' className='button typo-button'>все направления</a>
+            <button className='button typo-button'><a href='/dance'>все направления</a></button>
         </div>
     </div>
     <div className="standart-margin">
@@ -44,23 +42,20 @@ const MainDirection=(props)=><section className="main-section-white-background">
         {Object.values(directions).filter(direction=> direction.species == 'solo').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
     <div className="row-button">
+        <RegistrationWindow />        
         <div>
-            <RegistrationWindow />
-        </div>
-        <div>
-            <a href='/dance' className='button typo-button'>все направления</a>
+            <button className='button typo-button'><a href='/dance'>все направления</a></button>
         </div>
     </div>
-    {/* <div className="standart-margin typo-title title_width2">В среднем базовый курс по любому из выше представленных направлений
-        длится в течение 3-х месяцев, но все зависит от общей скорости группы. 
+    <div className="standart-margin typo-title title_width2">В среднем базовый курс по любому из выше представленных направлений
+        длится в течение 3-х месяцев, все зависит от общей скорости группы. 
         По окончании начального курса, появляется уверенность в своих силах 
-        и желание танцевать усиливается, нужна еще строчка фигни о танцах, 
-        а в голову ничего не лезет, шрифт корявый.
-    </div> */}
+        и желание совершенствоваться усиливается.
+    </div>
 </section>
 
 
-const MainPrice=(props)=><section className="main-section-photo-background price-img">
+const MainPrice=(props)=><section className="main-section-photo-background price-img main-section-photo-background_h">
     <H2 color="white" OpenSansRegular>СТОИМОСТЬ ЗАНЯТИЙ</H2>
     <h2 className="typo-title white">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
     <h3 className="typo-cost-title white-opacity">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
@@ -86,7 +81,7 @@ const MemberCard=(props)=><div>
             <img src={`/static/img/${props.img}`}  alt={props.img} className={`carusel-direction-img`}/>
             <h3 className="typo-title">{getTeacherFullName(props.id)}</h3>
             <div className="typo-subtitle">{props.position}</div>
-            {/* <div className="typo-subtitle">{getTeacherDirections(props.direction)}</div> */}
+            <div className="typo-subtitle upper">{getTeacherDirections(props.direction)}</div>
         </a>
     </div>
 </div>
@@ -95,11 +90,11 @@ const MemberCard=(props)=><div>
 const MainTeam=(props)=><section className="main-section-white-background">
     <H2 color="grey" OpenSansRegular>наша команда</H2>
     <TeachersSlider>
-        {Object.values(Object.assign(teachers, team)).map(member=><MemberCard parentsPage={member.parentsPage} img={member.img} id={member.id} position={member.position} direction={member.directionsID}/>)}
+        {Object.values(Object.assign(teachers, team)).sort((a,b)=> a.surname>b.surname? 1: a.surname<b.surname? -1:0).map(member=><MemberCard parentsPage={member.parentsPage} img={member.img} id={member.id} position={member.position} direction={member.directionsID}/>)}
     </TeachersSlider>
-    {/* <div className="typo-title standart-margin title_width2">
-        Кадры решают все. А у нас они лучшие.
-    </div> */}
+    <div className="typo-title standart-margin title_width2">
+        Кадры решают все. У нас они лучшие.
+    </div>
 </section>
 
 const HallSlide=(props)=><div className="slide-hall">
@@ -116,7 +111,7 @@ const MainHalls=(props)=><section className="main-section-white-background">
         По нашему мнению пространство, где учатся, творят и отдыхают,
         должно быть удобным и уютным
     </div>
-    <div className="standart-margin"><a href='/about/arenda' className='button typo-button'>РАССМОТРЕТЬ ПРОСТРАНСТВО И  УЗНАТЬ ОБ АРЕНДЕ МОЖНО ЗДЕСЬ</a></div>
+    <div className="standart-margin"><a href='/about/arenda' className='button typo-button'>подробнее о залах и аренде</a></div>
 </section>
 
 const MainEvents=(props)=><section className="main-section-photo-background event-img">

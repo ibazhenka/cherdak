@@ -28,6 +28,11 @@
     font-size: 1.5em;
     text-transform: uppercase;
 }
+@media screen and (max-width:500px){
+    .sans-serif{
+        font-size: 1.3em;
+    }
+}
 .serif{
 font-family: EBGaramondBold, sans-serif;
 font-size: 3em;
