@@ -1,9 +1,9 @@
 .header{
     min-height: 100vh;
 }
-.header__img{
+/* .header__img{
     background-image: url(/static/img/main-title.jpg)
-}
+} */
 @media screen and (max-width: 450px) {
     .header__img{
         background-image: url(/static/img/main-title-small.jpg)
@@ -11,7 +11,7 @@
 }
 
 .video {
-    filter: grayscale(70%)
+    filter: grayscale(50%)
 }
 .header__video{
     position: fixed;
