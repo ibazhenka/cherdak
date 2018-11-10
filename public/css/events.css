@@ -10,19 +10,21 @@
     display: flex;
     flex-flow: row wrap;
     margin: auto;
-    width: 94vw;
-    justify-content: space-between;
+    width: 1240px;
+    justify-content: space-around;
 }
 .event-card{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 7px;
+    padding: 10px;
     border: solid 1px #72a9b066;
-    width: 24%;
+    width: 290px;
     align-items: center;
+    height: fit-content;
 }
 .event-img{
-    width: 20vw;
+    width: 270px;
 }
 .when:before{
     font-family: 'Font Awesome 5 Free';

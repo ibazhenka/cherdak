@@ -35,7 +35,7 @@ class BurgerMenu extends React.Component {
         <div className="contact">
           <p className="department typo-nav__contact">
             <span>Красноярск | Авиаторов</span> 
-            <i className="fas fa-angle-down department-choose"></i>
+            {/* <i className="fas fa-angle-down department-choose"></i> */}
           </p>
           <p className="adress">
             <a className="typo-nav__contact" href="about/#map" title="Схема проезда">
@@ -50,7 +50,7 @@ class BurgerMenu extends React.Component {
             </a>
           </p> 
         </div>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+        {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> */}
       </Menu>
     );
   }

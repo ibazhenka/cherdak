@@ -9,7 +9,7 @@
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: white;
+    background: rgb(245, 245, 245);
   }
   
   /* Position and sizing of clickable cross button */
@@ -20,9 +20,10 @@
   
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background: rgb(245, 245, 245);
   }
-  
+
+ 
   /* General sidebar styles */
   .bm-menu {
     background: rgba(3, 114, 125, 0.95);

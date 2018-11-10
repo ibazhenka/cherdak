@@ -24,7 +24,7 @@ html
         //- video.video.header__video(src="/static/video/bachata.mp4" autoplay loop)
         block navigation
           div.nav-container
-            .logo: a(href="/"): img.header__logo(src="/static/img/logo-w-t.svg", alt="logo")
+            a.logo.header__logo(href="/")
             #burger-menu
             script(src="/static/burgerMenu.js")
             ul.nav
@@ -36,26 +36,24 @@ html
               li: a.nav__item.typo-nav(href="/about/arenda") Аренда залов
               li: a.nav__item.typo-nav(href="/about") О клубе
               li.social-nets
-                .social-nets__icon_row
-                  a.social-nets__icon(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
-                    i.fab.fa-vk
-                  a.social-nets__icon(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
-                    i.fab.fa-facebook-square
-                .social-nets__icon_row
-                  a.social-nets__icon(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
-                    i.fab.fa-instagram  
-                  a.social-nets__icon(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
-                    i.fab.fa-youtube
+                //- .social-nets__icon_row
+                a.social-nets__icon.vk(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
+                  //- i.fab.fa-vk
+                a.social-nets__icon.fb(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
+                  //- i.fab.fa-facebook-square
+                //- .social-nets__icon_row
+                a.social-nets__icon.insta(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
+                  //- i.fab.fa-instagram  
+                a.social-nets__icon.youtube(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
+                  //- i.fab.fa-youtube
               li.contact
                 p.department.typo-nav__contact 
                   span Красноярск | Авиаторов
-                  i.fas.fa-angle-down.department-choose
-                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда")
-                  i.fas.fa-map-marker-alt.special-sign_padding-right  
-                  span ул. Авиаторов, 23а
-                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 
-                  i.fas.fa-phone.special-sign_padding-right  
-                  span 271-22-77 
+                  //- i.fas.fa-angle-down.department-choose
+                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда") ул. Авиаторов, 23а
+                  //- i.fas.fa-map-marker-alt.special-sign_padding-right                    
+                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 271-22-77 
+                  //- i.fas.fa-phone.special-sign_padding-right  
           
         
         block header-content  
@@ -87,12 +85,11 @@ html
             li.contact
                 p.department.typo-nav__contact 
                   span Красноярск | Авиаторов
-                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда")
-                  i.fas.fa-map-marker-alt.special-sign_padding-right  
-                  span ул. Авиаторов, 23а
-                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 
-                  i.fas.fa-phone.special-sign_padding-right  
-                  span 271-22-77 
+                  //- i.fas.fa-angle-down.department-choose
+                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда") ул. Авиаторов, 23а
+                  //- i.fas.fa-map-marker-alt.special-sign_padding-right                    
+                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 271-22-77 
+                  //- i.fas.fa-phone.special-sign_padding-right  
         ul.nav-footer
           li: a.nav__item.typo-nav(href="/events") События
           li: a.nav__item.typo-nav(href="/dance") Направления

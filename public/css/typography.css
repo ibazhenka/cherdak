@@ -56,6 +56,9 @@
     font-size: 1em;
     color: white;
 }
+a.typo-nav__contact:hover{
+    color: rgb(203, 224, 228);
+}
 @media screen and (max-width: 1300px){
     .typo-nav__contact{
         font-size: 0.8em;
@@ -215,7 +218,7 @@
     color: #828282;
     margin-top: -10px;
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width:500px){
     .typo-cost{
         font-size: 1.5em;
     }
@@ -228,7 +231,7 @@
     text-transform: lowercase;
     color: #1c1c1c;
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .typo-title-price{
         font-size: 1.8em;
     }

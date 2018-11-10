@@ -62,6 +62,9 @@ const MainPrice=(props)=><section className="main-section-photo-background price
     <div className="price-subscription-container">
         {Object.values(price).filter(item => item.type== 'subscription' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>
+    <div className="standart-margin">
+        <H2 color="white" OpenSansRegular >Безлимитные абонементы</H2>
+    </div>
     <div className="price-unlimited-container">
         {Object.values(price).filter(item => item.type== 'unlimited' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>

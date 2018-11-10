@@ -47,7 +47,7 @@ class EventsPage extends React.Component{
                 {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=> <EventCard {...event} />)}
             </div>
             <div className="event-container">
-                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=> <EventCard {...event} />)}
+                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=> <EventCard {...event} />)}
             </div>
         </div>
     }

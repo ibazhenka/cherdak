@@ -27,7 +27,6 @@ app.get('/dance', render('dance'));
 app.get('/dance/:danceName', (req, res) => {res.render('dance-page',  {danceName: req.params.danceName})});
 app.get('/price', render('price'));
 app.get('/events', render('events'));
-app.get('/teacher/:teacherName', (req, res) => {res.render('teacher-page',  {teacherName: req.params.teacherName})});
 app.get('/schedule', render('schedule'));
 app.get('/teacher', render('teacher'));
 app.get('/teacher/:teacherName', (req, res) => {res.render('teacher-page',  {teacherName: req.params.teacherName})});
