@@ -7,7 +7,7 @@ function changeState(state) {
     const b = document.body
     if (state.isOpen) {
         b.className += " noscroll"
-        b.addEventListener("touchmove", blockTouch)
+        b.addEventListener("touchmove", blockTouch, { passive: false })
     } else {
         b.className = b.className.replace(" noscroll", "")
         b.removeEventListener("touchmove", blockTouch)
