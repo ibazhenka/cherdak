@@ -2,17 +2,16 @@ import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import './burger.css'
 
+
 class BurgerMenu extends React.Component {
     showSettings (event) {
         event.preventDefault();
     }
 
     render () {
-        const styles = {
-            bmMenuWrap: {position:"absolute", top:0, bottom:0, left:0, right:0}
-        }
         return (
-        <Menu left styles={styles} bodyClassName="noscroll">
+        <Menu left bodyClassName="noscroll">
+            
             <div className="icons-in-burger"><a href="/" className="logo header__logo"></a></div>
             <a id="events" className="nav__item typo-nav" href="/events">События</a>
             <a id="dance" className="nav__item typo-nav" href="/dance">Направления</a>

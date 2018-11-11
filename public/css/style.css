@@ -8,6 +8,7 @@
 }
 .noscroll{
     overflow: hidden;
+    touch-action: none;
 }
 /* header-menu*/
 .header{
