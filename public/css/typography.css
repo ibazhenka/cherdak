@@ -46,7 +46,7 @@
     font-size: 1em;
     text-transform: uppercase;
 }
-@media screen and (max-width: 1300px){
+@media screen and (min-width: 1101px) and (max-width: 1300px){
     .typo-nav{
         font-size: 0.8em;
     }
@@ -56,9 +56,7 @@
     font-size: 1em;
     color: white;
 }
-a.typo-nav__contact:hover{
-    color: rgb(203, 224, 228);
-}
+
 @media screen and (max-width: 1300px){
     .typo-nav__contact{
         font-size: 0.8em;
@@ -174,7 +172,7 @@ a.typo-nav__contact:hover{
 
 .copyright{
     font-family: OpenSansSemiBold,  sans-serif;
-    font-size: 1em;
+    font-size: 0.7em;
     color: white;
 }
 @media screen and (max-width:1300px){
@@ -184,7 +182,7 @@ a.typo-nav__contact:hover{
 }
 .footer-title{
     font-family: OpenSansSemiBold,  sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     color: white;
     text-align: center;
     text-transform: uppercase;

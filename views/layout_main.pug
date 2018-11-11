@@ -13,8 +13,6 @@ html
     link(rel="stylesheet", href="/static/css/typography.css")
     block link-css
         link(rel="stylesheet", href="/static/css/main.css")
-                //- <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-        //- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     block title 
       title Танцевальный клуб Чердак Красноярск | школа танцев, обучение танцам в Красноярске
   body.page
@@ -36,60 +34,49 @@ html
               li: a.nav__item.typo-nav(href="/about/arenda") Аренда залов
               li: a.nav__item.typo-nav(href="/about") О клубе
               li.social-nets
-                //- .social-nets__icon_row
                 a.social-nets__icon.vk(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
-                  //- i.fab.fa-vk
                 a.social-nets__icon.fb(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
-                  //- i.fab.fa-facebook-square
-                //- .social-nets__icon_row
                 a.social-nets__icon.insta(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
-                  //- i.fab.fa-instagram  
                 a.social-nets__icon.youtube(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
-                  //- i.fab.fa-youtube
               li.contact
-                p.department.typo-nav__contact 
-                  span Красноярск | Авиаторов
-                  //- i.fas.fa-angle-down.department-choose
-                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда") ул. Авиаторов, 23а
-                  //- i.fas.fa-map-marker-alt.special-sign_padding-right                    
-                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 271-22-77 
-                  //- i.fas.fa-phone.special-sign_padding-right  
-          
-        
+                p.department.typo-nav__contact Красноярск | Авиаторов
+                a.contact-container(href="about/#map" title="Схема проезда") 
+                  .adress-icon 
+                  span.typo-nav__contact ул. Авиаторов, 23а                   
+                a.contact-container(href="tel: +79631912277" title="Позвоните нам!")
+                  .phone-icon
+                  span.typo-nav__contact 271-22-77 
+
         block header-content  
           .header-content
             p.typo-slogan Я&nbsp;не&nbsp;хочу этим ничего доказать.
             p.typo-slogan Это ни&nbsp;самовыражение, ни&nbsp;способ высвободить что-либо. 
             p.typo-slogan Я&nbsp;просто танцую. 
             .typo-autor Фред Астер
-            i.fas.fa-angle-down.down#scroll_down
     block content
+
     block footer
       footer.footer-container
         .row-container
           .column-container
-            h4.footer-title ПРИСОЕДИНЯЙТЕСЬ К НАМ
-            .social-nets-footer
-              a.social-nets__icon-footer(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
-                i.fab.fa-vk
-              a.social-nets__icon-footer(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
-                i.fab.fa-facebook-square
-              a.social-nets__icon-footer(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
-                i.fab.fa-instagram  
-              a.social-nets__icon-footer(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
-                i.fab.fa-youtube
-          .column-container
-            .logo-footer: a(href="/"): img.footer__logo(src="/static/img/logo-footer-w.svg", alt="logo")
+            a.logo-footer(href="/")
             .copyright © Чердак, 2011-#{today.getFullYear()}
           .column-container
-            li.contact
-                p.department.typo-nav__contact 
-                  span Красноярск | Авиаторов
-                  //- i.fas.fa-angle-down.department-choose
-                p.adress: a.typo-nav__contact(href="about/#map" title="Схема проезда") ул. Авиаторов, 23а
-                  //- i.fas.fa-map-marker-alt.special-sign_padding-right                    
-                p.phone: a.typo-nav__contact(href="tel: +79631912277" title="Позвоните нам!") 271-22-77 
-                  //- i.fas.fa-phone.special-sign_padding-right  
+            h4.footer-title ПРИСОЕДИНЯЙТЕСЬ К НАМ
+            .social-nets-footer
+              a.social-nets__icon-footer.vk(href="https://vk.com/tk_cherdak" title="#Хастл#Танго#Сальса - Клуб «ЧЕРДАК» Красноярск")
+              a.social-nets__icon-footer.fb(href="https://www.facebook.com/clubcherdak/" title="Cherdak Dance Club / Танцевальный клуб 'Чердак'")
+              a.social-nets__icon-footer.insta(href="https://www.instagram.com/clubcherdak/" title="@clubcherdak")
+              a.social-nets__icon-footer.youtube(href="https://www.youtube.com/user/clubcherdak" title="Клуб Чердак")
+          .column-container
+            .contact
+              p.department.typo-nav__contact Красноярск | Авиаторов
+              a.contact-container(href="about/#map" title="Схема проезда") 
+                .adress-icon 
+                span.typo-nav__contact ул. Авиаторов, 23а                   
+              a.contact-container(href="tel: +79631912277" title="Позвоните нам!")
+                .phone-icon
+                span.typo-nav__contact 271-22-77 
         ul.nav-footer
           li: a.nav__item.typo-nav(href="/events") События
           li: a.nav__item.typo-nav(href="/dance") Направления
