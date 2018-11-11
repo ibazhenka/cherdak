@@ -2,6 +2,18 @@ import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import './burger.css'
 
+const blockTouch=(e)=> e.preventDefault()
+function changeState(state) {
+    const b = document.body
+    if (state.isOpen) {
+        b.className += " noscroll"
+        b.addEventListener("touchmove", blockTouch)
+    } else {
+        b.className = b.className.replace(" noscroll", "")
+        b.removeEventListener("touchmove", blockTouch)
+    }
+    return state.isOpen;
+};
 
 class BurgerMenu extends React.Component {
     showSettings (event) {
@@ -10,7 +22,7 @@ class BurgerMenu extends React.Component {
 
     render () {
         return (
-        <Menu left bodyClassName="noscroll">
+        <Menu left onStateChange={changeState} styles={styles}>
             
             <div className="icons-in-burger"><a href="/" className="logo header__logo"></a></div>
             <a id="events" className="nav__item typo-nav" href="/events">События</a>
