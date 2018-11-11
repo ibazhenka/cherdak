@@ -31,6 +31,11 @@ app.get('/schedule', render('schedule'));
 app.get('/teacher', render('teacher'));
 app.get('/teacher/:teacherName', (req, res) => {res.render('teacher-page',  {teacherName: req.params.teacherName})});
 app.get('/registration', render('registration'));
+app.get('/robots.txt', (req, res)=>{
+  res.type('text/plain');
+  res.status(200);
+  res.send("User-agent: * \nDisallow: /");
+})
 
 
 // пользовательская страница 404
