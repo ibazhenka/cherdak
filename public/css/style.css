@@ -6,6 +6,9 @@
     margin: auto;
     position: relative;
 }
+.noscroll{
+    overflow: hidden;
+}
 /* header-menu*/
 .header{
     box-sizing: border-box;
