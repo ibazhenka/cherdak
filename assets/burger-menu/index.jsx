@@ -21,8 +21,9 @@ class BurgerMenu extends React.Component {
     }
 
     render () {
+        
         return (
-        <Menu left onStateChange={changeState} styles={styles}>
+        <Menu left onStateChange={changeState}>
             
             <div className="icons-in-burger"><a href="/" className="logo header__logo"></a></div>
             <a id="events" className="nav__item typo-nav" href="/events">События</a>
