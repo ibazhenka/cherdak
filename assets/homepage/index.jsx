@@ -127,9 +127,9 @@ const MainEvents=(props)=><section className="main-section-photo-background even
     </div>
 </section>
 
-const MainContact=(props)=><section className="main-section-white-background">
-    <H2 color="grey" OpenSansRegular>Как к нам добраться</H2>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lYxRwitvV5aNJkPYtKZwXDxB7tKFG1LJ"  frameborder="0" style={{width: "98vw", height: "700px"}}></iframe>
+const MainContact=(props)=><section className="main-section-end">
+    <H2 color="grey" OpenSansRegular>Как нас найти:</H2>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lYxRwitvV5aNJkPYtKZwXDxB7tKFG1LJ"  frameBorder="0" className="map standart-margin"></iframe>
 </section>
 
 class HomePage extends React.Component{
