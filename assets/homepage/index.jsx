@@ -32,7 +32,7 @@ const MainDirection=(props)=><section className="main-section-white-background">
     <div className="standart-margin row-button">
         <RegistrationWindow />        
         <div>
-            <button className='button typo-button'><a href='/dance'>все направления</a></button>
+            <button className='button-short-main typo-button'><a href='/dance'>все направления</a></button>
         </div>
     </div>
     <div className="standart-margin">
@@ -44,7 +44,7 @@ const MainDirection=(props)=><section className="main-section-white-background">
     <div className="row-button">
         <RegistrationWindow />        
         <div>
-            <button className='button typo-button'><a href='/dance'>все направления</a></button>
+            <button className='button-short-main typo-button'><a href='/dance'>все направления</a></button>
         </div>
     </div>
     <div className="standart-margin typo-title title_width2">В среднем базовый курс по любому из выше представленных направлений

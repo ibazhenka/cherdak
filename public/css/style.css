@@ -284,6 +284,21 @@
 
 /* /header-menu*/
 
+.button-short-main{
+    background-color:#8dcadc;
+    width: 170px;
+    height: 40px;
+    border: none;
+}
+@media screen and (max-width:450px){
+    .button-short-main{
+        width: 153px;
+    }
+}
+
+.button-short-main:hover{
+    background-color:#488294;
+}
 .button{
     background-color:#8dcadc;
     padding: 0.75em;
@@ -328,11 +343,16 @@
     }
 }
 .row-button{
-    width: 340px;
+    width: 350px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+}
+@media screen and (max-width: 450px){
+    .row-button{
+        width: 310px;
+    }
 }
 .standart-margin{
     margin-top: 2vw;
