@@ -1,6 +1,6 @@
 import React from 'react'
 import DirectionsSlider from '../slider-directions-main/slider-directions.js'
-import {directions, teachers, team, price, halls} from '../../data'
+import {directions, teachers, team, price, halls, groups} from '../../data'
 import TeachersSlider from '../slider-teachers-main/slider-teachers.js'
 import {TeacherCard} from '../teacher/index.jsx'
 import RegistrationWindow from '../dance/registration.js'
@@ -8,7 +8,41 @@ import {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/
 import HallsSlider from '../slider-halls-main/slider-halls.js'
 import {H1, H2} from '../typography/titles/index.jsx'
 import {CardCostMiniGroups} from '../price/index.jsx'
+import days from "../schedule/table/table/const.js"
+import moment from 'moment'
+import 'moment/locale/ru'
 
+
+function getLessonWeekDayToday(day, today){
+    for (const group of groups){
+        for (const time of group.times){
+            if(day.id==today.getDay()){
+                return {
+                    time: `${time.start} - ${time.end}`,
+                    levels: group.levels, 
+                    name: group.title, 
+                    type: group.type,
+                }
+            }
+        }
+    }
+}
+
+function x(group, weekday){
+    for (const time of group.times){
+        if (time.day == weekday){
+            const lesson = Object.assign({}, group,  time)
+            delete lesson.times
+            return lesson
+        }
+    }
+    return null
+}
+const weekday = moment().format('dd')
+console.log(groups.map(gtoup=>x(gtoup, weekday)).filter(x => x != null))
+
+
+//console.log(days.filter(day=>getLessonWeekDayToday(day, today)))
 const DirectionSlide=(props)=><div className="direction-slide">
     <a href={`/dance/${props.id}`} className="slide">
         <img src={`/static/img/${props.img}`}  alt={props.img} className={`carusel-direction-img`}/>
@@ -55,17 +89,19 @@ const MainDirection=(props)=><section className="main-section-white-background">
 </section>
 
 
+
+
 const MainPrice=(props)=><section className="main-section-photo-background price-img main-section-photo-background_h">
     <H2 color="white" OpenSansRegular>СТОИМОСТЬ ЗАНЯТИЙ</H2>
-    <h2 className="typo-title white">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
+    <h2 className="typo-title white small-margin">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
     <h3 className="typo-cost-title white-opacity">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
-    <div className="price-subscription-container">
+    <div className="price-subscription-container small-margin">
         {Object.values(price).filter(item => item.type== 'subscription' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>
-    <div className="standart-margin">
+    <div className="big-margin">
         <H2 color="white" OpenSansRegular >Безлимитные абонементы</H2>
     </div>
-    <div className="price-unlimited-container">
+    <div className="price-unlimited-container small-margin">
         {Object.values(price).filter(item => item.type== 'unlimited' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>
     <a href='/price' className='button typo-button standart-margin'>ПОДРОБНЕЕ ОБ АБОНЕМЕНТАХ И СКИДКАХ</a>
@@ -77,6 +113,7 @@ const MainPrice=(props)=><section className="main-section-photo-background price
     </div>
     <a href='/schedule' className="button typo-button standart-margin">Расписание</a>
 </section>
+
 
 const MemberCard=(props)=><div>
     <div className="member-slide">
@@ -95,7 +132,7 @@ const MainTeam=(props)=><section className="main-section-white-background">
     <TeachersSlider>
         {Object.values(Object.assign(teachers, team)).sort((a,b)=> a.surname>b.surname? 1: a.surname<b.surname? -1:0).map(member=><MemberCard parentsPage={member.parentsPage} img={member.img} id={member.id} position={member.position} direction={member.directionsID}/>)}
     </TeachersSlider>
-    <div className="typo-title standart-margin title_width2">
+    <div className="typo-title small-margin title_width2">
         Кадры решают все. У нас они лучшие.
     </div>
 </section>
@@ -110,7 +147,7 @@ const MainHalls=(props)=><section className="main-section-white-background">
     <HallsSlider>
         {Object.values(halls).map(hall=><HallSlide img={hall.imgs[0]} title={hall.title} department={hall.department}/>)}
     </HallsSlider>
-    <div className="typo-title standart-margin title_width2">
+    <div className="typo-title small-margin title_width2">
         По нашему мнению пространство, где учатся, творят и отдыхают,
         должно быть удобным и уютным
     </div>

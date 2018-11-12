@@ -205,7 +205,7 @@ teachers: ['kaurakov', 'nepomnyaschaya']
         {day:'вт', start: '20:00', end: '21:00', hall: 'bighall'},
         {day:'чт', start: '20:00', end: '21:00', hall: 'bighall'}
     ],
-    teachers: ['bogdan','perykina']
+    teachers: ['bogdan','peryakina']
 },
 {
     id:'tango',
@@ -216,7 +216,7 @@ teachers: ['kaurakov', 'nepomnyaschaya']
         {day:'вт', start: '21:00', end: '22:30', hall: 'bighall'},
         {day:'чт', start: '21:00', end: '22:30', hall: 'bighall'}
     ],
-    teachers: ['bogdan','perykina']
+    teachers: ['bogdan','peryakina']
 },
 {
     id:'tango',

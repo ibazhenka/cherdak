@@ -12,7 +12,7 @@ function checkLevels(levels){
     }
     return levels
 }
-// className={props.lesson.className
+
 const LessonCard = (props) => {
     if (!props.lesson) {
         return <div></div>

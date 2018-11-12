@@ -76,8 +76,7 @@ function filterGroups(groups, filter) {
     }
     return groupsFiltered
 }
-// console.log(filterGroups(groups, {type:[], levels: [], title: []}))
-// console.log(filterGroups(groups, {type:[], levels: ['Начинающие'], title: ['Аргентинское танго','Хастл']}))
+
 /**
  * Функция возвращает отфильтрованный по запросу объект с данными необходимыми для отрисовки ячейки в таблице
  * @param {*} day День недели(в заголовке)
@@ -110,6 +109,9 @@ function getLesson(day, timeStart, hall, filter){
     }
     return null
 }
+
+
+
 
 
 export default getLesson 
