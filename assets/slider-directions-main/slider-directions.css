@@ -120,9 +120,19 @@
     /* bottom:2em; */
     width:100%;
     margin:0;
-    margin-top: 2vh;
+    margin-top: 25px;
     list-style:none;
     text-align:center;
+}
+@media screen and (max-width:1450px){
+    .slick-dots{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1100px){
+    .slick-dots{
+        margin-top: 15px;
+    }
 }
 .slick-dots li{
     position:relative;
@@ -133,9 +143,9 @@
     padding:0;
     cursor:pointer;
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
     .slick-dots li{
-        margin:0 3px;
+        margin:0;
     }
 }
 
@@ -171,9 +181,15 @@
     /* opacity:.25; */
     color:#e4ebf3;
 }
+@media screen and (max-width: 600px){
+    .slick-dots li button:before{
+        font-size: 30px;
+        line-height:10px;
+    }
+}
 .slick-dots li.slick-active button:before{
     /* opacity:.75; */
-    color:#cad3dd;
+    color:#acbdcf;
 }
 /*точки*/
 
@@ -300,7 +316,23 @@
     border: 0;
   }
   .slick-slider {
-    margin: 30px auto 50px;
+    margin: 50px auto 50px;
+  }
+
+  @media screen and (max-width: 1450px){
+    .slick-slider {
+        margin: 40px auto 40px;
+      }
+  }
+  @media screen and (max-width: 1450px){
+    .slick-slider {
+        margin: 35px auto 35px;
+      }
+  }
+  @media screen and (max-width: 450px){
+    .slick-slider {
+        margin: 25px auto 25px;
+      }
   }
 
   .slick-thumb {
@@ -317,9 +349,9 @@
     filter: grayscale(0%);
   }
   @media (max-width: 768px) {
-    h3 {
+    /* h3 {
       font-size: 24px;
-    }
+    } */
     .center {
       margin-left: -40px;
       margin-right: -40px;

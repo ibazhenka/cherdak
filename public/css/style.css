@@ -85,7 +85,7 @@
 }
 @media screen and (max-width:1300px){
     .contact{
-        line-height: 1em;
+        line-height: 1.2em;
     }
 }
 @media screen and (max-width:1100px){
@@ -312,12 +312,23 @@
 .main-section-white-background {
     box-sizing: border-box;
     /* height: 100vh; */
-    padding: 3vw;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #fff;
 }
+@media screen and (max-width: 1450px){
+    .main-section-white-background {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 450px){
+    .main-section-white-background {
+        padding: 25px;
+    }
+}
+
 .main-section-end {
     box-sizing: border-box;
     /* height: 100vh; */
@@ -342,6 +353,19 @@
         height: 550px;
     }
 }
+.main-buttons-directions{
+    width: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 450px){
+    .main-buttons-directions{
+        width: 310px;
+    }
+}
+
 .row-button{
     width: 350px;
     display: flex;
@@ -354,11 +378,62 @@
         width: 310px;
     }
 }
+.big-margin{
+    margin-top: 50px;
+}
+@media screen and (max-width: 1450px){
+    .big-margin{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .big-margin{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 450px){
+    .big-margin{
+        margin-top: 25px;
+    }
+}
 .standart-margin{
-    margin-top: 2vw;
+    margin-top: 40px;
+}
+@media screen and (max-width: 1450px){
+    .standart-margin{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .standart-margin{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 450px){
+    .standart-margin{
+        margin-top: 20px;
+    }
 }
 .small-margin{
-    margin-top: 1vw;
+    margin-top: 35px;
+}
+@media screen and (max-width: 1100px){
+    .small-margin{
+        margin-top: 25px;
+    }
+}
+.special-margin-buttons{
+    margin-top: 0;
+}
+@media screen and (max-width: 1200px){
+    .special-margin-buttons{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .special-margin-buttons{
+        margin-top: 25px;
+    }
 }
 
 .title_width{

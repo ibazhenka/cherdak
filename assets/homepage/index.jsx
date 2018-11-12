@@ -29,19 +29,19 @@ const MainDirection=(props)=><section className="main-section-white-background">
     <DirectionsSlider>
         {Object.values(directions).filter(direction=> direction.species == 'couple').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
-    <div className="standart-margin row-button">
+    <div className="small-margin main-buttons-directions">
         <RegistrationWindow />        
         <div>
             <button className='button-short-main typo-button'><a href='/dance'>все направления</a></button>
         </div>
     </div>
-    <div className="standart-margin">
+    <div className="big-margin">
         <H2 color="grey" OpenSansRegular>Сольные ТАНЦЫ</H2>
     </div>
     <DirectionsSlider>
         {Object.values(directions).filter(direction=> direction.species == 'solo').map(direction=> <DirectionSlide id={direction.id} title={direction.title} img={direction.dancesPageImg} description={direction.caruselDescription}/>)}
     </DirectionsSlider>
-    <div className="row-button">
+    <div className="main-buttons-directions special-margin-buttons">
         <RegistrationWindow />        
         <div>
             <button className='button-short-main typo-button'><a href='/dance'>все направления</a></button>
