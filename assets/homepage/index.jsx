@@ -7,7 +7,7 @@ import RegistrationWindow from '../dance/registration.js'
 import {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js'
 import HallsSlider from '../slider-halls-main/slider-halls.js'
 import {H1, H2} from '../typography/titles/index.jsx'
-import {CardCostMiniGroups} from '../price/index.jsx'
+import {CardCostDarkFon} from '../price/index.jsx'
 import days from "../schedule/table/table/const.js"
 import moment from 'moment'
 import 'moment/locale/ru'
@@ -86,13 +86,13 @@ const MainPrice=(props)=><section className="main-section-photo-background price
     <H2 color="white" OpenSansRegular>СТОИМОСТЬ ЗАНЯТИЙ</H2>
     <h2 className="typo-title white small-margin">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
     <h3 className="typo-cost-title white-opacity">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
-    <div className="price-subscription-container small-margin">
-        {Object.values(price).filter(item => item.type== 'subscription' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
+    <div className="price-4subscription-container small-margin">
+        {Object.values(price).filter(item => item.type== 'subscription' ).map(item=><CardCostDarkFon id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>
     {/* <div className="big-margin">
         <H2 color="white" OpenSansRegular >Безлимитные абонементы</H2>
     </div>
-    <div className="price-unlimited-container small-margin">
+    <div className="price-2subscription-container small-margin">
         {Object.values(price).filter(item => item.type== 'unlimited' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div> */}
     <a href='/price' className='button typo-button standart-margin'>ПОДРОБНЕЕ ОБ АБОНЕМЕНТАХ И СКИДКАХ</a>

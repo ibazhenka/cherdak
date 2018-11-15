@@ -543,6 +543,7 @@ a.slide:hover{
 
 /* \слайдер */
 
+/* цены */
 
 .cost-container{
     display: flex;
@@ -550,14 +551,16 @@ a.slide:hover{
     align-items: center;
     width: 240px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .cost-container{
-        margin-top:5vw;
+        margin-top: 20px;
     }
 } 
+
 @media screen and (max-width: 600px) {
     .cost-container{
         width: 150px;
+        margin-top: 10px;
     }
 } 
 .title-subscription-container{
@@ -572,77 +575,45 @@ a.slide:hover{
     .title-subscription-container{
         width: 150px;
         padding: 5px;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* padding-left: 16px;
+        padding-right: 16px; */
     }
 }
-.price-subscription-container{
+.price-4subscription-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
     width: 1080px;
 }
-/* @media screen and (max-width:1600px){
-    .price-subscription-container{
-        width: 65vw;
-    }
-}
-@media screen and (max-width:1300px){
-    .price-subscription-container{
-        width: 82vw;
-    }
-} */
+
 @media screen and (max-width:1100px){
-    .price-subscription-container{
+    .price-4subscription-container{
         width: 520px;
     }
 }
 
 @media screen and (max-width:600px){
-    .price-subscription-container{
+    .price-4subscription-container{
         width: 320px;
     }
 }
 
-.price-unlimited-container{
-    margin-top: 1vw;
+.price-2subscription-container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-between;
-    width: 30vw;
+    width: 520px;
 }
-@media screen and (max-width:1600px){
-    .price-unlimited-container{
-        width: 40vw;
-    }
-}
-@media screen and (max-width:1300px){
-    .price-unlimited-container{
-        width: 48vw;
-    }
-}
-@media screen and (max-width: 1000px){
-    .price-unlimited-container {
-        width: 70vw;
-    }
-}
-@media screen and (max-width:800px){
-    .price-unlimited-container{
-        width: 80vw;
-    }
-}
+
 @media screen and (max-width:600px){
-    .price-unlimited-container{
-        width: 95vw;
+    .price-2subscription-container{
+        width: 320px;
     }
 }
-/* @media screen and (max-width:450px){
-    .price-unlimited-container{
-        width: 75vw;
-    }
-} */
+/* \цены */
+
 .schedule-today{
     text-align: left;
     line-height: 2em;

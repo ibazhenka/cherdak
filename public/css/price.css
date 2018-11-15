@@ -1,8 +1,23 @@
 
-.cost-container{
+.price-button{
+    background-color:#bcf0ffa3;
+    padding: 0.75em;
+    width: 310px;
+    height: 40px;
+    border: none;
+
+}
+.price-button:hover{
+    background-color:#8dcadc;
+}
+
+.price-button-row{
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow: row wrap;
+    width: 960px;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 52vh;
 }
 
 .price-list {
@@ -16,11 +31,11 @@
 
 .price-mini{
     box-sizing: border-box;
-    padding: 3vw;
+    padding: 50px;
     display: flex;
-    text-align: center;
-    align-content: center;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,23 +47,8 @@
     background-image: url(/static/img/mini-groups.jpg);
 }
 
-.minigroup-container{
-    margin: auto;
-    margin-top: 3vh;
-    display: flex;
-    flex-flow: row wrap;
-    width: 25vw;
-    justify-content: space-between;
-}
 
-.button-row{
-    display: flex;
-    flex-flow: row wrap;
-    width: 46vw;
-    justify-content: space-between;
-    align-self: center;
-    margin-top: 52vh;
-}
+
 
 .rules-subscription{
     width: 40vw;
@@ -56,7 +56,11 @@
 .row-rules{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 1300px;
 }
-
+.rules-img{
+    width: 600px;
+}
 
