@@ -1,15 +1,17 @@
 .Modal {
     position: absolute;
-    width: 550px;
+    box-sizing: border-box;
+    width: 510px;
     height: 600px;
-    border: solid 3px #831b52;
-    background-color: white;
+    border:none;
+    background-color: #1a7983;
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 2vw;
+    padding: 30px;
+    
   }
 
 .Overlay {
@@ -19,72 +21,70 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.80);
+    z-index: 150;
   }
-
+.form-container{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 90px;
+    width: 410px;
+}
 .form-input{
-    border: solid 1px lightgrey;
+    border: none;
     background-color: white;
     color:lightgray;
     width: 200px;
-    height: 50px;
+    height: 40px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 10px;
+    font-size: 0.7em;
 }
 .close-button{
     position: absolute;
-    top: -3px;
-    right: -3px;
+    top: 0;
+    right: 0;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid #831b52;
+    border: none;
     color: white;
-    background-color: #841b52;
+    background-color: #1a7983;
     font-size: 30px;
 }
 
-.form-button{
-    padding: 10px;
-    border: 2px solid black;
-    padding-left: 30px;
-    padding-right: 30px;
-    color:white;
-    background-color: #841b52;
-}
-
-.form-button:hover {
-background-color: coral;
-color: #000;
-text-decoration: none;
-}
-.form-container{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
-    justify-content: space-between;
-    height: 450px;
-    width: 430px;
-}
-
-.accept-text{
-    width: 200px;
-    height: 50px;
-    font-size: 10px;
+.accept-text{    
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    font-size: 0.7em;
+    text-align: center;
+    color: #ffffffa8;
 }
 
 .registration-panel{
     margin: auto;
-    border: solid 1px lightgrey;
-    padding: 10px;
+    padding: 30px;
+    padding-bottom: 0;
+    color: white;
 }
 .registration-panel h4{
-    font-size: 10px;
+    font-size: 1em;
     text-transform: uppercase;
+    text-align: center;
+    color: white;
 }
 
 .registration-panel-content{
+    margin-top: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    width: 408px;
+}
+.button-submit-registration{
+    margin: auto;
+    width: 185px;
+    margin-top: 10px;
 }

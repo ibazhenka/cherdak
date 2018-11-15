@@ -6,6 +6,7 @@ import Checkbox from '../schedule/table/checkbox/index.jsx'
 import {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js' 
 import {TeacherCard} from '../teacher/index.jsx'
 import Modal from 'react-modal'
+import {H1, H2} from '../typography/titles/index.jsx'
 Modal.setAppElement('#modal')
 
 function getDanceTitle(){
@@ -18,6 +19,22 @@ function getDanceTitle(){
 
 const danceTitle = getDanceTitle()
 
+class Blocker {
+    constructor(){
+        this.blockTouch=(e)=> e.preventDefault()
+        this.body = document.body
+    }
+    block(){
+        this.body.className += " noscroll"
+        this.body.addEventListener("touchmove", blockTouch, { passive: false })
+    }
+    unblock(){
+        this.body.className = this.body.className.replace(" noscroll", "")
+        this.body.removeEventListener("touchmove", blockTouch)
+    }
+}
+const blocker = new Blocker()
+
 class RegistrationWindow extends React.Component {
     constructor(props){
         super(props)
@@ -25,13 +42,14 @@ class RegistrationWindow extends React.Component {
         this.state = {
             modalIsOpen: false
         };
-
     }
     openModal() {
-        this.setState({modalIsOpen: true});
+        this.setState({modalIsOpen: true});        
+        blocker.block()
     }
     closeModal() {
         this.setState({modalIsOpen: false});
+        blocker.unblock()
     }
     
     render() {
@@ -44,27 +62,23 @@ class RegistrationWindow extends React.Component {
                 contentLabel="Example Modal"
             >
 
-            <h2 className="title-dance-page_text_dark" ref={subtitle => this.subtitle = subtitle}>Записаться на урок</h2>
+            <H2 color="white" OpenSansRegular>Записаться на урок</H2>
             <button className="close-button" onClick={()=>this.closeModal()}>&#215;</button>
             <form>
                 <div className="form-container">
                     <input className="form-input" type="text" required pattern="^[A-Za-zА-Яа-яЁё]+$" placeholder="Имя" name="Имя"/>
-                
                     <input className="form-input" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" placeholder="Фамилия" name="Фамилия"/>
-         
                     <input className="form-input" type="tel" required pattern="[0-9]{,11}" placeholder="Телефон" name="Телефон"/>
-               
                     <input className="form-input" type="email" placeholder="Email" name="Email"/>
-
-                    <Panel title="Выберите направление:" page="registration">
-                    {
-                        danceTitle.map(dance=><Checkbox title={dance} />)
-                    }
-                    </Panel>
-                    <input className="form-button" type="submit" value="Записаться на урок"/>
-                    <div className="accept-text">
-                        ОТПРАВЛЯЯ ДАННЫЕ ФОРМЫ, Я ТЕМ САМЫМ СОГЛАШАЮСЬ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ
-                    </div>
+                </div>
+                <Panel title="Выберите направление:" page="registration">
+                    {danceTitle.map(dance=><Checkbox title={dance} />)}
+                </Panel>
+                <div className="button-submit-registration">
+                    <input className="button typo-button button-submit-registration" type="submit" value="Записаться на урок"/>
+                </div> 
+                <div className="accept-text">
+                    ОТПРАВЛЯЯ ДАННЫЕ ФОРМЫ, Я ТЕМ САМЫМ СОГЛАШАЮСЬ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ
                 </div>
             </form>
             </Modal>

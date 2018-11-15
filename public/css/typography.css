@@ -218,7 +218,7 @@
     color: #828282;
     margin-top: -10px;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .typo-cost{
         font-size: 1.5em;
     }
@@ -231,7 +231,7 @@
     text-transform: lowercase;
     color: #1c1c1c;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .typo-title-price{
         font-size: 1.8em;
     }
@@ -271,6 +271,29 @@
 }
 .upper{
     text-transform: uppercase;
+}
+
+.typo-lesson-time{
+    font-family: CormorantGaramondBold,  sans-serif;
+    font-size: 1.5em;
+    color: #1c1c1c;
+    text-align: center;
+}
+@media screen and (max-width:1500px){
+    .typo-lesson-time{
+        font-size: 1.3em;
+    }
+}
+.typo-lesson-level{
+    font-family: OpenSansRegular,  sans-serif;
+    font-size: 0.7em;
+    color: #5d5d5d;
+    text-transform: uppercase;
+}
+@media screen and (max-width:1500px){
+    .typo-lesson-level{
+        font-size: 0.65em;
+    }
 }
 
 ._typography-name-item-menu {

@@ -13,20 +13,7 @@ import moment from 'moment'
 import 'moment/locale/ru'
 
 
-function getLessonWeekDayToday(day, today){
-    for (const group of groups){
-        for (const time of group.times){
-            if(day.id==today.getDay()){
-                return {
-                    time: `${time.start} - ${time.end}`,
-                    levels: group.levels, 
-                    name: group.title, 
-                    type: group.type,
-                }
-            }
-        }
-    }
-}
+
 
 function x(group, weekday){
     for (const time of group.times){
@@ -39,10 +26,9 @@ function x(group, weekday){
     return null
 }
 const weekday = moment().format('dd')
-console.log(groups.map(gtoup=>x(gtoup, weekday)).filter(x => x != null))
+console.log(groups.map(group=>x(group, weekday)).filter(x => x != null).sort((a,b)=>a.start<b.start))
 
 
-//console.log(days.filter(day=>getLessonWeekDayToday(day, today)))
 const DirectionSlide=(props)=><div className="direction-slide">
     <a href={`/dance/${props.id}`} className="slide">
         <img src={`/static/img/${props.img}`}  alt={props.img} className={`carusel-direction-img`}/>
@@ -51,7 +37,7 @@ const DirectionSlide=(props)=><div className="direction-slide">
     </a>
 </div>
 
-const MainDirection=(props)=><section className="main-section-white-background">
+const MainDirections=(props)=><section className="main-section-white-background">
     {/* <div className="typo-title title_width">
         Мы - танцевальный клуб Чердак, 
         и уже семь лет мы учим танцевать взрослых и детей
@@ -88,6 +74,11 @@ const MainDirection=(props)=><section className="main-section-white-background">
     </div>
 </section>
 
+const ScheduleToday=(props)=><div className="schedule-today">
+    <span className="typo-lesson-time white">{props.time}</span>
+    <span className="footer-title"> {props.title}</span>
+    <span className="typo-lesson-level white"> {props.level}</span>
+</div>
 
 
 
@@ -98,18 +89,24 @@ const MainPrice=(props)=><section className="main-section-photo-background price
     <div className="price-subscription-container small-margin">
         {Object.values(price).filter(item => item.type== 'subscription' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
     </div>
-    <div className="big-margin">
+    {/* <div className="big-margin">
         <H2 color="white" OpenSansRegular >Безлимитные абонементы</H2>
     </div>
     <div className="price-unlimited-container small-margin">
         {Object.values(price).filter(item => item.type== 'unlimited' ).map(item=><CardCostMiniGroups id={item.id} title={item.title} practice={item.practice} adult={item.cost.adult} preferential={item.cost.preferential}/>)}
-    </div>
+    </div> */}
     <a href='/price' className='button typo-button standart-margin'>ПОДРОБНЕЕ ОБ АБОНЕМЕНТАХ И СКИДКАХ</a>
-    <div className="typo-title standart-margin title_width2 white">Обычно, занятия проходят два раза в неделю.
+    {/* <div className="typo-title standart-margin title_width2 white">Обычно, занятия проходят два раза в неделю.
         Для улучшения танцевальных навыков могут
         проводится специальные занятия по технике,
         спецкурсы.
         Кроме того, проводятся самостоятельные практические занятия
+    </div> */}
+    <div className="big-margin">
+        <H2 color="white" OpenSansRegular >Расписание занятий | {`${moment().format('dddd')} ${moment().format('LL')}`}</H2>
+    </div>
+    <div className="main-shedule-today big-margin">
+        {groups.map(group=>x(group, weekday)).filter(x => x != null).sort((a,b)=>a.start<b.start).map(group=><ScheduleToday title={group.title} time={group.start} level={group.levels} type={group.type} />)}
     </div>
     <a href='/schedule' className="button typo-button standart-margin">Расписание</a>
 </section>
@@ -176,7 +173,7 @@ class HomePage extends React.Component{
     render() {
         const props = this.props
         return <div>
-            <MainDirection />
+            <MainDirections />
             <MainPrice adult={price.oneTime.cost.adult} preferential={price.oneTime.cost.preferential}/>
             <MainTeam />
             <MainEvents/>

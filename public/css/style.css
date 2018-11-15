@@ -548,35 +548,42 @@ a.slide:hover{
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 240px;
 }
 @media screen and (max-width: 1000px) {
     .cost-container{
         margin-top:5vw;
     }
 } 
+@media screen and (max-width: 600px) {
+    .cost-container{
+        width: 150px;
+    }
+} 
 .title-subscription-container{
     border-top: solid 2px #4a90a0;
     border-bottom: solid 2px #4a90a0;
-    margin: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    width: 240px;
+   
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .title-subscription-container{
+        width: 150px;
         padding: 5px;
         padding-left: 16px;
         padding-right: 16px;
     }
 }
 .price-subscription-container{
-    margin-top: 1vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    width: 55vw;
+    width: 1080px;
 }
-@media screen and (max-width:1600px){
+/* @media screen and (max-width:1600px){
     .price-subscription-container{
         width: 65vw;
     }
@@ -585,22 +592,16 @@ a.slide:hover{
     .price-subscription-container{
         width: 82vw;
     }
-}
-@media screen and (max-width:1000px){
+} */
+@media screen and (max-width:1100px){
     .price-subscription-container{
-        margin-top:0;
-        width: 55vw;
+        width: 520px;
     }
 }
-@media screen and (max-width:800px){
-    .price-subscription-container{
-        width: 70vw;
-        justify-content: space-around;
-    }
-}
+
 @media screen and (max-width:600px){
     .price-subscription-container{
-        width: 83vw;
+        width: 320px;
     }
 }
 
@@ -642,10 +643,14 @@ a.slide:hover{
         width: 75vw;
     }
 } */
+.schedule-today{
+    text-align: left;
+    line-height: 2em;
+}
 .main-section-photo-background{
     box-sizing: border-box;
-    height: 100vh;
-    padding: 50px;
+    height: 100%;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -664,11 +669,11 @@ a.slide:hover{
         padding: 25px;
     }
 }
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     .main-section-photo-background_h{
         height: 100%;
     }
-}
+} */
 .section-photo-background{
     box-sizing: border-box;
     height: 5vw;
@@ -857,3 +862,4 @@ a.slide:hover{
     align-content: space-between;
     width: 40vw;
 }
+
