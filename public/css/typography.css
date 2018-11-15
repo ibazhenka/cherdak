@@ -249,10 +249,24 @@
     color: #1c1c1c;
     text-align: left;
 }
+.typo-arenda-title{
+    font-family: OpenSansRegular;
+    font-size: 1.5em;
+    text-align: center;
+    color:#1c1c1c;
+}
+
+.typo-arenda-subtitle{
+    font-family: OpenSansRegular;
+    font-size: 1em;
+    text-align: justify;
+    color:#1c1c1c;
+}
+
 .typo-arenda-text{
     font-family: OpenSansRegular;
     font-size: 1.2em;
-    text-align: center;
+    text-align: justify;
     color:#1c1c1c;
 }
 

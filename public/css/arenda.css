@@ -1,8 +1,18 @@
+.arenda-button{
+    background-color:#bcf0ffa3;
+    padding: 0.75em;
+    width: 220px;
+    height: 40px;
+    border: none;
 
+}
+.arenda-button:hover{
+    background-color:#8dcadc;
+}
 .arenda-title-buttons-row{
     display: flex;
     flex-flow: row wrap;
-    width: 35vw;
+    width: 925px;
     justify-content: space-between;
     align-self: center;
     margin-top: 2vw;
@@ -10,7 +20,7 @@
 .arenda-title-txt-row{
     display: flex;
     flex-flow: row wrap;
-    width: 70vw;
+    width: 1000px;
     justify-content: space-between;
     align-items: baseline;
     margin-top: 1vw;
@@ -18,7 +28,7 @@
 .arenda-text-column{
     display: flex;
     flex-flow: column ;
-    width: 34vw;
+    width: 485px;;
     margin-top: 1vw;
 }
 .hall-container{
@@ -35,13 +45,7 @@
     width: 100%;
     justify-content: space-between;
  }
-.hall-additionally {
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    width: 48vw;
-    justify-content: space-between;
-}
+
 .description{
     width: 50%;
 }

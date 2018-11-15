@@ -511,7 +511,7 @@ a.slide:hover{
 }
 .arenda-slider{
     margin: auto;
-    max-width: 60vw;
+    width: 60vw;
 }
 /* .carusel-direction-title{
     margin-top: 1vw;
@@ -816,7 +816,7 @@ a.slide:hover{
     margin: auto;
     box-sizing: border-box;
     height: 89vh;
-    padding: 3vw;
+    padding: 50px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -831,6 +831,6 @@ a.slide:hover{
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    width: 40vw;
+    width: 800px;
 }
 

@@ -15,9 +15,9 @@ const DanceHall=(props)=><div>
                 {props.imgs.map(img=>SlideHall(img))}
             </HallsSlider>
         </div>
-        <div className="hall-additionally">
-            <div className="typo-arenda-text additionally">{props.description}</div>
-            <div className="typo-arenda-text additionally">{props.equipments}</div>
+        <div className="arenda-title-txt-row">
+            <div className="typo-arenda-text arenda-text-column">{props.description}</div>
+            <div className="typo-arenda-text arenda-text-column">{props.equipments}</div>
         </div>
     </section>
     <div className="section-photo-background arenda-title-img"></div>
@@ -52,15 +52,15 @@ const ArendaTitle=(props)=><section className="first-section-container arenda-ti
         {/* <p className= "typo-arenda-text white title_width2 small-margin">Приглашаем к сотрудничеству йога-студии, центры саморазвития и дошкольные учреждения</p> */}
     </div>
     <div className="small-margin">
-        <H2 color="white" OpenSansRegular>Стоимость и условия аренды</H2>
+        <H2 color="white" OpenSansRegular>Стоимость и условия аренды:</H2>
     </div>
-    <p className="typo-arenda-text white">В случае единовременной аренды (один раз на один час, 08:00 — 17:00) составляет:</p>
+    <p className="typo-arenda-subtitle white">В случае единовременной аренды (один раз на один час, 08:00 — 17:00) составляет:</p>
     <div className="arenda-cost-container">
         {Object.values(halls).filter(hall=> hall.type=="dancehall").map(hall=> <ArendaCost area ={hall.area} cost={hall.cost} title={hall.title}/>)}
     </div>
     <div className="arenda-title-txt-row">
         <div className="arenda-text-column">
-            <p className="typo-arenda-text white">В стоимость аренды входит: </p>
+            <p className="typo-arenda-title white">В стоимость аренды входит: </p>
             <ul className="typo-arenda-text white">
                 <li>использование общих зон: ресепшн, мужская и женская гардеробные, туалетные комнаты, душевая</li>
                 <li>использование музыкального и светового оборудования в танцевальных залах</li>
@@ -69,7 +69,7 @@ const ArendaTitle=(props)=><section className="first-section-container arenda-ti
             </ul>
         </div>
         <div className="arenda-text-column">
-            <p className="typo-arenda-text white">Дополнительно:</p>
+            <p className="typo-arenda-title white">Дополнительно:</p>
             <ul className="typo-arenda-text white">
                 <li>Проектор высокой мощности + экран</li>
                 <li>Магнитная доска + маркеры</li>
@@ -79,10 +79,10 @@ const ArendaTitle=(props)=><section className="first-section-container arenda-ti
         </div>
     </div>
     <div className="arenda-title-buttons-row">
-        <a href="/about/arenda/#bighall" className='button typo-button'>Большой зал</a>
-        <a href="/about/arenda/#loft" className='button typo-button'>Мансарда</a>
-        <a href="/about/arenda/#poledancehall" className='button typo-button'>Пилонный зал</a>
-        <a href="/about/arenda/#otherhalls" className='button typo-button'>Остальные помещения</a>
+        <a href="/about/arenda/#bighall" className='arenda-button typo-button'>Большой зал</a>
+        <a href="/about/arenda/#loft" className='arenda-button typo-button'>Мансарда</a>
+        <a href="/about/arenda/#poledancehall" className='arenda-button typo-button'>Пилонный зал</a>
+        <a href="/about/arenda/#otherhalls" className='arenda-button typo-button'>Остальные помещения</a>
     </div>
 </section>
 
