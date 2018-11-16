@@ -7,37 +7,85 @@
     src: url(/public/font/fa-solid-900.svg) format('svg');
 }
 .event-container{
-    display: flex;
-    flex-flow: row wrap;
+    display: block;
+    /* display: flex;
+    flex-flow: row wrap; */
     margin: auto;
-    width: 1240px;
-    justify-content: space-around;
+    width: 1200px;
+    /* justify-content: space-between; */
+}
+@media screen and (max-width: 1300px){
+    .event-container{
+        width: 900px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .event-container{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 600px){
+    .event-container{
+        width: 300px;
+    }
 }
 .event-card{
+    display: inline-block;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: column; */
     padding: 10px;
-    border: solid 1px #72a9b066;
+    border: solid 1px #72a9b026;
     width: 290px;
     align-items: center;
-    height: fit-content;
+    /* height: fit-content; */
 }
 .event-img{
-    width: 270px;
+    width: 268px;
 }
-.when:before{
-    font-family: 'Font Awesome 5 Free';
-    content:'\f073 ';
-}
-.time::before{
-    font-family: 'Font Awesome 5 Free';
-    content:'\f017 ';
-}
+
 .time-none{
     display: none;
 }
-.place::before{
-    font-family: 'Font Awesome 5 Free';
-    content:'\f3c5 ';
+
+
+.event-adress-icon {
+    display: inline-block;
+    background-image: url("/static/img/map-marker-alt-solid-darkgrey.svg");
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    height: 20px;
+    width: 15px;
+}
+
+.event-calendar-icon {
+    display: inline-block;
+    background-image: url("/static/img/calendar-alt-regular.svg");
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    height: 18px;
+    width: 20px;
+}
+.event-clock-icon{
+    display: inline-block;
+    background-image: url("/static/img/clock-regular.svg");
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    height: 20px;
+    width: 20px;
+}
+.event-date-time-place{
+    align-self: flex-start;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.event-empty-card{
+    width: 290px;
+}
+.event-title-margin{
+    margin-top: 7px;
 }

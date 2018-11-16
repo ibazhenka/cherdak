@@ -367,3 +367,34 @@
 .white-text {
     color: white;
 }
+
+/* event-page */
+
+.typo-event-title{
+    font-family: EBGaramondSemiBold,  sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1c1c1c;
+    line-height: 1em;
+}
+
+.typo-event-subtitle{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: lowercase;
+    line-height: 2em;
+}
+
+.typo-event-text{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: #1c1c1c;
+}
+.typo-event-time-text{
+    font-family: OpenSansSemiBold,  sans-serif;
+    font-size: 1em;
+    color: #1c1c1c;
+}
