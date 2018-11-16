@@ -22,14 +22,20 @@ moment.locale('ru')
 // isQuantityCards(upcomingEvents)
 // console.log(upcomingEvents)
 
-function drawEventCard(event){
-    if (event.type==='open lesson'){
-        return <EventCardOpenLesson {...event}/>
+function getTypeEvent(type, vk){
+    if (type==='open lesson'){
+        return <div className="event-card-button">
+            <RegistrationWindow />
+        </div>
     }
-    return <EventCard {...event}/>
+    if(type==='theme event'){
+        return<div className="event-in-vk">
+            <div className="event-vk-icon"></div>
+            <a href={vk} className="typo-event-time-text"> {vk.replace('https://vk.com/', '')}</a>
+        </div>
+    }
+    return <div className="time-none"></div>    
 }
-
-
 
 function getDate(date_start, date_end){    
     if (date_end.diff(date_start,"hour")<24){
@@ -50,28 +56,7 @@ function getTime(date_start, date_end){
     }
     return <div className="time-none"></div>
 }
-console.log(getTime(moment('2018-09-15 20:00'), moment('2018-09-18 01:00')))
 
-const EventCardOpenLesson=(props)=> <div className="event-card">
-    <img src={`/static/img/${props.img}`} alt={props.img} className="event-img"/>
-    <h3 className="typo-event-title event-title-margin">{props.title}</h3>
-    <p className="typo-event-subtitle">{props.subtitle}</p>
-    <p className="typo-event-text">{props.description}</p>
-    <div className="event-date-time-place">
-        <div className="when">
-            <div className="event-calendar-icon"></div>
-            <span className="typo-event-time-text"> {getDate(moment(props.date_start),moment(props.date_end))}</span>
-        </div>
-        {getTime(moment(props.date_start),moment(props.date_end))}
-        <div className="place">
-            <div className="event-adress-icon"></div>
-            <span className="typo-event-time-text"> {props.place}</span>
-        </div>
-    </div>    
-    <div className="event-card-button">
-        <RegistrationWindow />
-    </div>
-</div>
 
 const EventCard=(props)=> <div className="event-card">
     <img src={`/static/img/${props.img}`} alt={props.img} className="event-img"/>
@@ -88,8 +73,10 @@ const EventCard=(props)=> <div className="event-card">
             <div className="event-adress-icon"></div>
             <span className="typo-event-time-text"> {props.place}</span>
         </div>
-    </div>
+    </div>    
+    {getTypeEvent(props.type, props.vk)}
 </div>
+
 
 class EventsPage extends React.Component{
     constructor(props){
@@ -100,11 +87,11 @@ class EventsPage extends React.Component{
         return <div>
             <H2 color="grey" OpenSansRegular>Ближайшие события</H2>
             <div className="event-container">
-                {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=>drawEventCard(event))}
+                {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=><EventCard {...event}/>)}
             </div>
             <H2 color="grey" OpenSansRegular>Архив мероприятий</H2>
             <div className="event-container">
-                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=>drawEventCard(event))}
+                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=><EventCard {...event}/>)}
             </div>
         </div>
     }
