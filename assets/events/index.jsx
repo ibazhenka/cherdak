@@ -3,7 +3,7 @@ import {events} from '../../data'
 import moment, { isMoment } from 'moment'
 import 'moment/locale/ru'
 import { H2 } from '../typography/titles/index.jsx';
-// import {getTimeStart} from './data-builders-eventpage.js'
+import RegistrationWindow from '../dance/registration.js'
 moment.locale('ru')
 // const upcomingEvents = events.filter(event=>moment(event.date_start)>moment(new Date()))
 
@@ -21,6 +21,13 @@ moment.locale('ru')
 // }
 // isQuantityCards(upcomingEvents)
 // console.log(upcomingEvents)
+
+function drawEventCard(event){
+    if (event.type==='open lesson'){
+        return <EventCardOpenLesson {...event}/>
+    }
+    return <EventCard {...event}/>
+}
 
 
 
@@ -45,10 +52,10 @@ function getTime(date_start, date_end){
 }
 console.log(getTime(moment('2018-09-15 20:00'), moment('2018-09-18 01:00')))
 
-const EventCard=(props)=> <div className="event-card">
+const EventCardOpenLesson=(props)=> <div className="event-card">
     <img src={`/static/img/${props.img}`} alt={props.img} className="event-img"/>
     <h3 className="typo-event-title event-title-margin">{props.title}</h3>
-    <p className="typo-event-subtitle">{props.type}</p>
+    <p className="typo-event-subtitle">{props.subtitle}</p>
     <p className="typo-event-text">{props.description}</p>
     <div className="event-date-time-place">
         <div className="when">
@@ -61,7 +68,27 @@ const EventCard=(props)=> <div className="event-card">
             <span className="typo-event-time-text"> {props.place}</span>
         </div>
     </div>    
-    <button className='button typo-button'><a href='/'></a>button</button>
+    <div className="event-card-button">
+        <RegistrationWindow />
+    </div>
+</div>
+
+const EventCard=(props)=> <div className="event-card">
+    <img src={`/static/img/${props.img}`} alt={props.img} className="event-img"/>
+    <h3 className="typo-event-title event-title-margin">{props.title}</h3>
+    <p className="typo-event-subtitle">{props.subtitle}</p>
+    <p className="typo-event-text">{props.description}</p>
+    <div className="event-date-time-place">
+        <div className="when">
+            <div className="event-calendar-icon"></div>
+            <span className="typo-event-time-text"> {getDate(moment(props.date_start),moment(props.date_end))}</span>
+        </div>
+        {getTime(moment(props.date_start),moment(props.date_end))}
+        <div className="place">
+            <div className="event-adress-icon"></div>
+            <span className="typo-event-time-text"> {props.place}</span>
+        </div>
+    </div>
 </div>
 
 class EventsPage extends React.Component{
@@ -73,11 +100,11 @@ class EventsPage extends React.Component{
         return <div>
             <H2 color="grey" OpenSansRegular>Ближайшие события</H2>
             <div className="event-container">
-                {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=> <EventCard {...event} />)}
+                {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=>drawEventCard(event))}
             </div>
             <H2 color="grey" OpenSansRegular>Архив мероприятий</H2>
             <div className="event-container">
-                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=> <EventCard {...event} />)}
+                {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=>drawEventCard(event))}
             </div>
         </div>
     }

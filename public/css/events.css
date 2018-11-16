@@ -1,11 +1,4 @@
-@font-face{
-    font-family:'Font Awesome 5 Free';
-    font-weight:900;
-    src: url(/public/font/fa-solid-900.ttf) format('truetype');
-    src: url(/public/font/fa-solid-900.eot) format('embedded-opentype'); 
-    src: url(/public/font/fa-solid-900.woff) format('woff');
-    src: url(/public/font/fa-solid-900.svg) format('svg');
-}
+
 .event-container{
     display: block;
     /* display: flex;
@@ -38,6 +31,7 @@
     /* display: flex;
     flex-direction: column; */
     padding: 10px;
+    padding-bottom: 20px;
     border: solid 1px #72a9b026;
     width: 290px;
     align-items: center;
@@ -88,4 +82,9 @@
 }
 .event-title-margin{
     margin-top: 7px;
+}
+.event-card-button{
+    margin: auto;
+    margin-top: 12px; 
+    text-align: center;
 }
