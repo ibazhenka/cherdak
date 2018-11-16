@@ -94,11 +94,23 @@ class EventsPage extends React.Component{
             <EventsSlider>
                 {events.filter(event=>event.slideImg!='').map(event=><EventSlide slideImg={event.slideImg} />)}
             </EventsSlider>
-            <H2 color="grey" OpenSansRegular>Ближайшие события</H2>
+            <div className="small-margin event-buttons">
+                <div>
+                    <button className='event-button typo-button'><a href='#upcomingEvents'>Ближайшие события</a></button>
+                </div>
+                <div>
+                    <button className='event-button typo-button'><a href='#pastEvents'>Архив мероприятий</a></button>
+                </div>
+            </div>
+            <div id="upcomingEvents">
+                <H2 color="grey" OpenSansRegular >Ближайшие события</H2>
+            </div>
             <div className="event-container">
                 {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=><EventCard {...event}/>)}
             </div>
-            <H2 color="grey" OpenSansRegular>Архив мероприятий</H2>
+            <div id="pastEvents">
+                <H2 color="grey" OpenSansRegular>Архив мероприятий</H2>
+            </div>
             <div className="event-container">
                 {events.filter(event=>moment(event.date_end)<moment(new Date())).sort((a,b)=> a.date_start<b.date_start? 1: a.date_start>b.date_start? -1:0).map(event=><EventCard {...event}/>)}
             </div>
