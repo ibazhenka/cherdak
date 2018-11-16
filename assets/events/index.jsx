@@ -4,6 +4,8 @@ import moment, { isMoment } from 'moment'
 import 'moment/locale/ru'
 import { H2 } from '../typography/titles/index.jsx';
 import RegistrationWindow from '../dance/registration.js'
+import EventsSlider from '../slider-event/slider-event.js'
+
 moment.locale('ru')
 // const upcomingEvents = events.filter(event=>moment(event.date_start)>moment(new Date()))
 
@@ -21,6 +23,10 @@ moment.locale('ru')
 // }
 // isQuantityCards(upcomingEvents)
 // console.log(upcomingEvents)
+
+const EventSlide=(props)=> <div clasname="event-slide">
+    <img src={`/static/img/${props.slideImg}`} className="event-slide-img"/>
+</div>
 
 function getTypeEvent(type, vk){
     if (type==='open lesson'){
@@ -76,7 +82,7 @@ const EventCard=(props)=> <div className="event-card">
     </div>    
     {getTypeEvent(props.type, props.vk)}
 </div>
-
+console.log(events[0])
 
 class EventsPage extends React.Component{
     constructor(props){
@@ -85,6 +91,9 @@ class EventsPage extends React.Component{
     render() {
         const props = this.props
         return <div>
+            <EventsSlider>
+                {events.filter(event=>event.slideImg!='').map(event=><EventSlide slideImg={event.slideImg} />)}
+            </EventsSlider>
             <H2 color="grey" OpenSansRegular>Ближайшие события</H2>
             <div className="event-container">
                 {events.filter(event=>moment(event.date_start)>moment(new Date())).sort((a,b)=> a.date_start>b.date_start? 1: a.date_start<b.date_start? -1:0).map(event=><EventCard {...event}/>)}

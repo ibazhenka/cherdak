@@ -1,7 +1,7 @@
 const events = [
 {
     img: 'sstf2019.jpg',
-    slideImg: '',
+    slideImg: 'sstf2019-slide.jpg',
     subtitle: '#sstf2019',
     title: 'Сибирский снежный танго фестиваль',
     type: 'theme event',
@@ -50,7 +50,7 @@ const events = [
 },
 {
     img:'hippy.jpg',
-    slideImg: '',
+    slideImg: 'test.jpg',
     subtitle: 'тематическая вечеринка',
     title: 'Все что нам нужно - это любовь!',
     type: 'theme event',

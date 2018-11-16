@@ -307,22 +307,22 @@
     border: 0;
   }
   .slick-slider {
-    margin: 50px auto 50px;
+    margin: 0px auto 50px;
   }
 
   @media screen and (max-width: 1450px){
     .slick-slider {
-        margin: 40px auto 40px;
+        margin: 0px auto 40px;
       }
   }
   @media screen and (max-width: 1450px){
     .slick-slider {
-        margin: 35px auto 35px;
+        margin: 0px auto 35px;
       }
   }
   @media screen and (max-width: 450px){
     .slick-slider {
-        margin: 25px auto 25px;
+        margin: 0px auto 25px;
       }
   }
 

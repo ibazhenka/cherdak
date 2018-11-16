@@ -1,4 +1,15 @@
-
+.event-slider{
+    margin: auto;
+    width: 95vw;
+}
+.event-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event-slide-img{
+    width: 95vw;
+}
 .event-container{
     display: block;
     /* display: flex;
