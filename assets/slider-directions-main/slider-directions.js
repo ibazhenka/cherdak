@@ -31,7 +31,7 @@ class DirectionsSlider extends React.Component {
     };
     
     const b = document.body
-      return <div onMouseEnter={()=>blocker.block()} onMouseLeave={()=>blocker.unblock()} className="directions-slider">
+      return <div onTouchStart={()=>blocker.block()} onTouchEnd={()=>blocker.unblock()} className="directions-slider">
       <Slider {...settings}>
         {this.props.children}
       </Slider>
