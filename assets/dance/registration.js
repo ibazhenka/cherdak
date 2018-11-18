@@ -7,6 +7,7 @@ import {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/
 import {TeacherCard} from '../teacher/index.jsx'
 import Modal from 'react-modal'
 import {H1, H2} from '../typography/titles/index.jsx'
+import blocker from '../blocker/blocker.js'
 Modal.setAppElement('#modal')
 
 function getDanceTitle(){
@@ -19,21 +20,21 @@ function getDanceTitle(){
 
 const danceTitle = getDanceTitle()
 
-class Blocker {
-    constructor(){
-        this.blockTouch=(e)=> e.preventDefault()
-        this.body = document.body
-    }
-    block(){
-        this.body.className += " noscroll"
-        this.body.addEventListener("touchmove", blockTouch, { passive: false })
-    }
-    unblock(){
-        this.body.className = this.body.className.replace(" noscroll", "")
-        this.body.removeEventListener("touchmove", blockTouch)
-    }
-}
-const blocker = new Blocker()
+// class Blocker {
+//     constructor(){
+//         this.blockTouch=(e)=> e.preventDefault()
+//         this.body = document.body
+//     }
+//     block(){
+//         this.body.className += " noscroll"
+//         this.body.addEventListener("touchmove", blockTouch, { passive: false })
+//     }
+//     unblock(){
+//         this.body.className = this.body.className.replace(" noscroll", "")
+//         this.body.removeEventListener("touchmove", blockTouch)
+//     }
+// }
+// const blocker = new Blocker()
 
 class RegistrationWindow extends React.Component {
     constructor(props){
