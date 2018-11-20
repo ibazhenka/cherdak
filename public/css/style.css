@@ -805,6 +805,16 @@ a.slide:hover{
 .price-img{
     background-image: url(/static/img/main-price.jpg);
 }
+@media screen and (max-width:1100px){
+    .price-img{
+        background-image: url(/static/img/main-price1100.jpg);
+    }
+}
+@media screen and (max-width:450px){
+    .price-img{
+        background-image: url(/static/img/main-price-small.jpg);
+    }
+}
 .event-img{
     background-image: url(/static/img/event-img.jpg);
     background-color: #658886;
