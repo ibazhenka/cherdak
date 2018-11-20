@@ -3,9 +3,9 @@ import {groups, teachers} from '../../data'
 import getLesson, {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js' 
 import {H1, H2} from '../typography/titles/index.jsx'
 
-const TeacherCard=(props)=><div className="teacher-card">
+const TeacherCard=(props)=><div className="member-card">
     <a href={`/${props.parentsPage}/${props.id}`} className="slide">
-        <img src={`/static/img/${props.img}`}  alt={props.img} className={`carusel-direction-img`}/>
+        <img src={`/static/img/${props.img}`}  alt={props.img} className={`member-img`}/>
         <h3 className="typo-title">{getTeacherFullName(props.id)}</h3>
         <div className="typo-subtitle">{props.position}</div>
         <div className="typo-subtitle upper">{getTeacherDirections(props.direction)}</div>
