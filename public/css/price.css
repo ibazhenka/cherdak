@@ -61,10 +61,10 @@
 }
 .row-rules{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    min-width: 1300px;
+    max-width: 1300px;
 }
 .rules-img{
     width: 600px;
