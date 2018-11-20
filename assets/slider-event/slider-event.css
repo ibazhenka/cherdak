@@ -86,19 +86,19 @@
   }
   .slick-prev {
     z-index: 100;
-    left: -35px !important;
+    /* left: -35px !important; */
   }
   .slick-next {
     z-index: 100;
-    right: -35px !important;
+    /* right: -35px !important; */
   }
 
 @media screen and (max-width: 1000px){
     .slick-prev {
-        left: -25px !important;
+        /* left: -25px !important; */
     }
       .slick-next {
-        right: -25px !important;
+        /* right: -25px !important; */
       }
 }
 /*стрелки*/
