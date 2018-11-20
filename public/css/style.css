@@ -833,4 +833,11 @@ a.slide:hover{
     align-content: space-between;
     width: 800px;
 }
-
+.team-container{
+    margin:auto;
+    display: block;
+}
+.member-card{
+    display: inline-block;
+    margin: 10px;
+}

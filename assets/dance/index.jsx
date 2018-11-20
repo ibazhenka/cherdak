@@ -15,9 +15,7 @@ class DancesPage extends React.Component{
     render() {
         const props = this.props
         return  <div className="dance-container">
-        {
-            Object.values(directions).map(dance=><DanceCard id={dance.id} title={dance.title} img={dance.dancesPageImg}/>)
-        }
+        {Object.values(directions).map(dance=><DanceCard id={dance.id} title={dance.title} img={dance.dancesPageImg}/>)}
         </div>
     }
 }

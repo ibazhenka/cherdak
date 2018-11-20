@@ -17,15 +17,6 @@ const teamData= {
         biography: '',
         img: 'sikilinda.jpg'
     },
-    ivanova: {
-        parentsPage: 'about',
-        id:'ivanova',
-        forename: 'София',
-        surname: 'Иванова',
-        position: 'Администратор филиала',
-        biography: '',
-        img: 'sikilinda.jpg'
-    },
     yakovleva_a: {
         parentsPage: 'about',
         id:'yakovleva_a',
