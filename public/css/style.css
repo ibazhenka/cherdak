@@ -835,9 +835,51 @@ a.slide:hover{
 }
 .team-container{
     margin:auto;
+    margin-top: 40px;
     display: block;
+    max-width: 1480px;
+}
+@media screen and (max-width:1500px){
+    .team-container{
+        max-width: 1280px;
+    }
+}
+@media screen and (max-width:1300px){
+    .team-container{
+        max-width: 1080px;
+    }
 }
 .member-card{
     display: inline-block;
     margin: 10px;
+    max-width: 350px;
 }
+@media screen and (max-width:1500px){
+    .member-card{
+        max-width: 300px;
+    }
+}
+@media screen and (max-width:1300px){
+    .member-card{
+        max-width: 250px;
+    }
+}
+
+.text-about{
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.about-container{
+    padding-top: 50px;
+}
+
+.member-img{
+    width: 100%;
+}
+/* @media screen and (max-width:1500px){
+    .member-img{
+        width: 80%;
+    }
+} */

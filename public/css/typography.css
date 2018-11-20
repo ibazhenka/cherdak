@@ -398,3 +398,9 @@
     font-size: 1em;
     color: #1c1c1c;
 }
+.typo-about-text{
+    font-family: OpenSansLight,  sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    color: #1c1c1c;
+}

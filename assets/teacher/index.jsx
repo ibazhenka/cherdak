@@ -3,7 +3,7 @@ import {groups, teachers} from '../../data'
 import getLesson, {getTeacherFullName, getTeacherDirections} from '../schedule/table/table/data-builder.js' 
 import {H1, H2} from '../typography/titles/index.jsx'
 
-const MemberCard=(props)=><div className="teacher-card">
+const TeacherCard=(props)=><div className="teacher-card">
     <a href={`/${props.parentsPage}/${props.id}`} className="slide">
         <img src={`/static/img/${props.img}`}  alt={props.img} className={`carusel-direction-img`}/>
         <h3 className="typo-title">{getTeacherFullName(props.id)}</h3>
@@ -20,7 +20,7 @@ class TeachersPage extends React.Component{
         return <div>
             <H1 color="grey" OpenSansRegular>Команда преподавателей чердака</H1>
             <div className="teacher-container">            
-                {Object.values(teachers).sort((a,b)=> a.surname>b.surname? 1: a.surname<b.surname? -1:0).map(teacher=><MemberCard parentsPage={teacher.parentsPage} img={teacher.img} id={teacher.id} direction={teacher.directionsID} position={teacher.position}/>)}
+                {Object.values(teachers).sort((a,b)=> a.surname>b.surname? 1: a.surname<b.surname? -1:0).map(teacher=><TeacherCard parentsPage={teacher.parentsPage} img={teacher.img} id={teacher.id} direction={teacher.directionsID} position={teacher.position}/>)}
             </div>
         </div>
     }

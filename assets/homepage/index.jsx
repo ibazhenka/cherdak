@@ -163,7 +163,7 @@ const MainEvents=(props)=><section className="main-section-photo-background even
 
 const MainContact=(props)=><section className="main-section-end">
     <H2 color="grey" OpenSansRegular>Как нас найти:</H2>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lYxRwitvV5aNJkPYtKZwXDxB7tKFG1LJ"  frameBorder="0" className="map standart-margin"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2228.5541666142444!2d92.92005020000002!3d56.04370790000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7af0c4ae695c1%3A0xb225dc0e078e8e0!2z0KfQldCg0JTQkNCaLCDRgtCw0L3RhtC10LLQsNC70YzQvdGL0Lkg0LrQu9GD0LE!5e0!3m2!1sru!2sru!4v1542703704235" frameBorder="0" className="map standart-margin"></iframe>
 </section>
 
 class HomePage extends React.Component{
