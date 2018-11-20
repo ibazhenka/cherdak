@@ -151,7 +151,7 @@ const MainHalls=(props)=><section className="main-section-white-background">
     <div className="standart-margin"><a href='/about/arenda' className='button typo-button'>подробнее о залах и аренде</a></div>
 </section>
 
-const MainEvents=(props)=><section className="main-section-photo-background event-img">
+const MainEvents=(props)=><section className="main-event-section-photo-background event-img">
     <div className="typo-slogan title_width2">На Чердаке не только учатся, но еще и танцуют.
         Вечеринки для друзей каждую неделю!
         Ждем Вас в ближайшую субботу.

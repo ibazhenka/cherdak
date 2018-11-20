@@ -618,6 +618,18 @@ a.slide:hover{
     text-align: left;
     line-height: 2em;
 }
+.main-event-section-photo-background{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .main-section-photo-background{
     box-sizing: border-box;
     height: 100%;
