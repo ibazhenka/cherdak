@@ -45,13 +45,13 @@ const ArendaCost=(props)=><div>
     <div className="typo-cost white-opacity">{props.cost}<span className="ruble">₽</span></div>
 </div>
 
-const ArendaTitle=(props)=><section className="first-section-container arenda-title-img">
+const ArendaTitle=(props)=><section className="first-section-container arenda-title-img arenda-container">
     <h1 className="typo-slogan">Аренда залов в клубе Чердак</h1>
-    <div className="small-margin">
+    <div className="arenda-margin">
         <p className="typo-arenda-text white title_width2">Танцевальный клуб «Чердак» предлагает в аренду три зала для проведения мероприятий — психологических и бизнес тренингов, семинаров, презентаций, организационных собраний, art-мастерских, творческих показов, детских праздников и других форматов.</p>
         {/* <p className= "typo-arenda-text white title_width2 small-margin">Приглашаем к сотрудничеству йога-студии, центры саморазвития и дошкольные учреждения</p> */}
     </div>
-    <div className="small-margin">
+    <div className="arenda-margin">
         <H2 color="white" OpenSansRegular>Стоимость и условия аренды:</H2>
     </div>
     <p className="typo-arenda-subtitle white">В случае единовременной аренды (один раз на один час, 08:00 — 17:00) составляет:</p>
