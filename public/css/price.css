@@ -47,6 +47,8 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url(/static/img/price-title.jpg);
 }
 .price-one-time-img{
