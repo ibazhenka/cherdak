@@ -3,18 +3,21 @@ import {price} from '../../data'
 import {H1, H2} from '../typography/titles/index.jsx'
 
 
-const PriceOneTime=(props)=> <section className="first-section-container price-one-time-img" id="oneTime">
-    <h2 className="typo-slogan">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
-    <h3 className="typo-cost-title">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
-    <div className="price-button-row">
-        {/* <a href='/price#oneTime' className='price-button typo-button'>РАЗОВОЕ ПОСЕЩЕНИЕ</a> */}
-        <a href='/price#subscriptions' className='price-button typo-button'>АБОНЕМЕНТЫ И БЕЗЛИМИТЫ</a>
-        <a href='/price#miniGroups' className='price-button typo-button'>СТОИМОСТЬ ЗАНЯТИЙ В МИНИГРУППАХ</a>
-        {/* <a href='/price' className='price-button typo-button'>ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</a> */}
-        <a href='/price#rules' className='price-button typo-button'>ПРАВИЛА</a>
-    </div>
-    <div className="typo-cost-title standart-margin">
-        *льготное посещение для детей до 18 лет, студентов, аспирантов и пенсионеров 
+const PriceOneTime=(props)=> <section /*className=first-section-container " "*/ id="oneTime">
+    <div className="test-fixed"></div>
+    <div className="price-one-time-img">
+        <h2 className="typo-slogan">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
+        <h3 className="typo-cost-title">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
+        <div className="price-button-row">
+            {/* <a href='/price#oneTime' className='price-button typo-button'>РАЗОВОЕ ПОСЕЩЕНИЕ</a> */}
+            <a href='/price#subscriptions' className='price-button typo-button'>АБОНЕМЕНТЫ И БЕЗЛИМИТЫ</a>
+            <a href='/price#miniGroups' className='price-button typo-button'>СТОИМОСТЬ ЗАНЯТИЙ В МИНИГРУППАХ</a>
+            {/* <a href='/price' className='price-button typo-button'>ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</a> */}
+            <a href='/price#rules' className='price-button typo-button'>ПРАВИЛА</a>
+        </div>
+        <div className="typo-cost-title standart-margin">
+            *льготное посещение для детей до 18 лет, студентов, аспирантов и пенсионеров 
+        </div>
     </div>
 </section>
 
