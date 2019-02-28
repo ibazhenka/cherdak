@@ -53,18 +53,7 @@
     width: 50%;
     text-align: justify;
 }
-.title-section-arenda-page {
-    box-sizing: border-box;
-    height: 100vh;
-    padding: 2vw;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 .arenda-title-img {
     background-image: url(/static/img/arenda-title.jpg);
 }
@@ -83,14 +72,7 @@
     text-shadow: 0 0 5px rgba(0,0,0,0.4);
     padding: 2vw;
 }
-.odd-section__text {
-    color: black;
-    background-color: #fff;
-    font-size: 2vh;
-    text-align: left;
-    width: 60vw;
-    padding: 2vw;
-}
+
 ._align-row {
     display: flex;
     justify-content: flex-end;
@@ -111,5 +93,21 @@
 }
 .title_center{
     margin: auto;
+}
+/* .arenda-container{
+    padding-top: 30px; 
+} */
+
+.arenda-margin{
+    margin-top: 20px;
+}
+
+.arenda-title-section-padding{
+    padding: 25px;
+}
+
+.section-photo-background{
+    height: 5vw;
+ 
 }
 

@@ -4,8 +4,8 @@ import {H1, H2} from '../typography/titles/index.jsx'
 
 
 const PriceOneTime=(props)=> <section /*className=first-section-container " "*/ id="oneTime">
-    <div className="test-fixed"></div>
-    <div className="price-one-time-img">
+    <div className="price-title-img static-background-img"></div>
+    <div className="title-section price-title-section-padding">
         <h2 className="typo-slogan">Впервые у нас? Пробное занятие в группе — бесплатно!</h2>
         <h3 className="typo-cost-title">{`разовое посещение группового занятия — ${props.adult}`} <span className="ruble">₽</span>{`, льготное* —  ${props.preferential}`} <span className="ruble">₽</span></h3>
         <div className="price-button-row">

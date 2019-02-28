@@ -286,6 +286,17 @@
 
 /* /header-menu*/
 
+.static-background-img{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .button-short-main{
     background-color:#8dcadc;
     width: 170px;
@@ -313,7 +324,6 @@
 }
 .main-section-white-background {
     box-sizing: border-box;
-    /* height: 100vh; */
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -333,8 +343,6 @@
 
 .main-section-end {
     box-sizing: border-box;
-    /* height: 100vh; */
-    /* padding-top: 3vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -654,23 +662,8 @@ a.slide:hover{
         padding: 25px;
     }
 }
-/* @media screen and (max-width:1000px){
-    .main-section-photo-background_h{
-        height: 100%;
-    }
-} */
-.section-photo-background{
-    box-sizing: border-box;
-    height: 5vw;
-    padding: 3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
+
 .main-about-photo-background {
     background-image: url(../img/salsa-title-page.jpg);
 }
@@ -836,6 +829,16 @@ a.slide:hover{
     justify-content: center;
 }
 
+.title-section{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .first-section-container {
     margin: auto;
     box-sizing: border-box;
@@ -901,11 +904,4 @@ a.slide:hover{
 
 .member-img{
     width: 100%;
-}
-.arenda-container{
-    padding-top: 30px; 
-}
-
-.arenda-margin{
-    margin-top: 20px;
 }
